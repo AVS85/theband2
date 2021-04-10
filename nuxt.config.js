@@ -1,5 +1,8 @@
 
 export default {
+  // publicRuntimeConfig: {
+  //   baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
+  // },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -36,6 +39,7 @@ export default {
   */
   plugins: [
   ],
+
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
@@ -45,15 +49,19 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/style-resources',
   ],
+  styleResources: {
+    sass: [
+      '@/assets/*.sass'
+    ]
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    'bootstrap-vue/nuxt', // Doc: https://bootstrap-vue.js.org
+    '@nuxtjs/axios',      // Doc: https://axios.nuxtjs.org/usage
   ],
   /*
   ** Axios module configuration
@@ -65,5 +73,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
+
 }
