@@ -1,12 +1,109 @@
+@font-face
+	font-family: 'main-regular'
+	font-display: swap
+	src: url('~assets/fonts/GraphikLCG-Regular.ttf')
+@font-face
+	font-family: 'main-bold'
+	font-display: swap
+	src: url('~assets/fonts/GraphikLCG-Bold.ttf')
+	
 $acc: #474747
-$elem: #aaa
+$text1: #344756
+
 $textMain: #aaa
 $textIn: #fff
 
+$green_acc: #7ADAA2
+// $green_sec: #75B38E
+$purple: #CEA4F9
+$orange: #EE814F
+$blue: #87D0F0
+$yellow: #F4B755
+$grey_dark1: #344756
+$grey_dark2: #BCC5D4
+$grey_lite1: #F3F6F9
+$grey_lite2: #FCFCFD
 
-.btn1
-  border: 0
-  border-radius: 5px
-  background-color: $acc
-  color: $textIn
+$elem: $grey_dark2
 
+body
+	background-color: $grey_lite2
+	font-family: 'main-regular'
+// h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5
+// 	font-style: normal
+h1, .h1
+	font-size: 42px
+	line-height: 42px
+	font-family: 'main-bold'
+h2, .h2
+	font-size: 30px
+	line-height: 34px
+	font-family: 'main-bold'
+h3, .h3
+	font-size: 28px
+	line-height: 28px
+	font-family: 'main-bold'
+h4, .h4
+	font-size: 20px
+	line-height: 20px
+	font-family: 'main-regular'
+
+h5, .h5
+	font-size: 18px
+	line-height: 18px
+	font-family: 'main-regular'
+p
+	font-family: inherit
+.text1
+	font-size: 18px
+	line-height: 24px
+.text2
+	font-size: 15px
+	line-height: 20px
+
+
+a
+	text-decoration: none !important
+
+//* КНОПКИ
+.btn_main
+	border: 0
+	border-radius: 5px
+	color: #fff
+	font-family: inherit
+	font-size: 18px
+	height: 50px
+	width: 255px
+	transition: .25s
+	&-first
+		background-color: $green_acc
+		&:hover
+			background-color: rgba($green_acc, .75)
+	&-second1
+		background-color: $grey_dark1
+		&:hover
+			background-color: rgba($grey_dark1, .75)
+	&-second2
+		background-color: $grey_dark2
+		&:hover
+			background-color: rgba($grey_dark2, .75)
+	&-optional
+		background-color: transparent
+		border: 2px solid $grey_dark1
+		color: $grey_dark1
+		&:hover
+			border: 2px solid  rgba($green_acc, .75)
+			color: $green_acc
+
+
+.btn-slide	
+	height: 22px
+	width: 22px
+	border: 0
+	background-image: url('/icons/button-arrow.svg')
+	background-position: center center
+	background-size: contain
+	&-r
+		transform: rotate(180deg)
+.btn-slide-grey
+	filter: grayscale(1)
