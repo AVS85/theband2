@@ -1,6 +1,7 @@
 <template>
 <header>
 	<div class="container">
+
 		<div class="row row_header">
 			<div class="col-auto">
 				<div class="logo">
@@ -23,24 +24,75 @@
 				<button class="btn_main btn_main-second2">Связаться</button>
 			</div>
 		
-			<div class="d-lg-none burger"></div>
-
+			<div class="d-lg-none burger"
+			:class="{ show: isShow }"
+			@click="isShow = !isShow"/>
 		</div>
-	</div>
 
+		<div class="d-lg-none row_mobilemenu" :class="{ show: isShow }">
+			<ul>
+				<li>О нас</li>
+				<li>Услуги</li>
+				<li>Контакты</li>
+				<li>Блог</li>
+			</ul>
+			<button class="btn_main btn_main-second2">Связаться</button>
+		</div>
+	
+
+	</div>
 </header>
 </template>
 
+<script>
+export default {
+	data() {
+		return {
+			isShow: false
+		}
+	},
+}
+</script>
+
 <style lang="sass">
+
 header
-	// border: 1px solid $elem
+	position: relative
 	display: flex
 	align-items: center
 	background-color: #fff
 	box-shadow: 0px -1px 32px -10px #EAEEF2
+	z-index: 99
+	.row_mobilemenu
+		// border: 1px solid $elem
+		position: absolute
+		display: flex
+		align-items: center
+		flex-direction: column
+		background-color: #fff
+		left: 0
+		right: 0
+		transition: .35s
+		min-height: 100vh
+		transform: translateY(-100vh)
+		z-index: 98
+		&.show
+			text-transform: uppercase
+			transform: translateY(0vh)
+		ul
+			margin: 0
+			padding: 0
+			margin: 34px 0
+			li
+				margin: 16px 0
+				list-style: none
+				text-align: center
 	.row_header
+		position: relative
 		align-items: center
 		justify-content: space-between
+		background-color: #fff
+		z-index: 99
 		@media (max-width: 998px)
 			justify-content: center
 
@@ -55,6 +107,9 @@ header
 		right: 20px
 		height: 30px
 		width: 30px
+		&.show
+			background-image: url(/icons/menu-burger-close.svg)
+
 
 	.logo
 		display: flex
@@ -81,10 +136,3 @@ header
 				a
 					color: $text1
 </style>
-
-<script>
-export default {
-	mounted(){
-	}
-}
-</script>

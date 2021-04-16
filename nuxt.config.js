@@ -73,6 +73,28 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
+	router: {
+    extendRoutes(routes, resolve) {
+      routes.push(
+        // {
+        //   path: '*/detail*',
+        //   component: resolve(__dirname, 'pages/catalog/card.vue')
+        // },
+        {
+          path: '/blog/*',
+          component: resolve(__dirname, 'pages/blog/index.vue')
+        },
+        // {
+        //   path: '/catalog2/*',
+        //   component: resolve(__dirname, 'pages/catalog/index.vue')
+        // },
+        // {
+        //   path: '*',
+        //   component: resolve(__dirname, 'pages/404.vue')
+        // }
+      )
+    }
+  },
   build: {
   },
 

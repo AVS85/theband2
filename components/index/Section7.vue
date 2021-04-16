@@ -66,5 +66,5 @@
 		.profile-name
 			font-weight: bold
 			margin: 20px 0 10px 0
-		.profile-msg
+		// .profile-msg
 </style>

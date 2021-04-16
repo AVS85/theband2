@@ -13,11 +13,10 @@ $text1: #344756
 $textMain: #aaa
 $textIn: #fff
 
-$green_acc: #7ADAA2
-// $green_sec: #75B38E
-$purple: #CEA4F9
-$orange: #EE814F
 $blue: #87D0F0
+$green_acc: #7ADAA2
+$orange: #EE814F
+$purple: #CEA4F9
 $yellow: #F4B755
 $grey_dark1: #344756
 $grey_dark2: #BCC5D4
@@ -63,6 +62,7 @@ p
 
 
 a
+	color: $grey_dark1
 	text-decoration: none !important
 
 //* КНОПКИ
@@ -95,6 +95,26 @@ a
 			border: 2px solid  rgba($green_acc, .75)
 			color: $green_acc
 
+.btn_tags
+	border: 0
+	border-radius: 5px
+	color: #fff
+	font-family: inherit
+	font-size: 12px
+	line-height: 12px
+	height: 26px
+	min-width: 47px
+	transition: .25s
+	&-green
+		background-color: $green_acc
+	&-blue
+		background-color: $blue
+	&-orange
+		background-color: $orange
+	&-purple
+		background-color: $purple
+	&-yellow
+		background-color: $yellow
 
 .btn-slide	
 	height: 22px
@@ -107,3 +127,16 @@ a
 		transform: rotate(180deg)
 .btn-slide-grey
 	filter: grayscale(1)
+
+//* Input'ы в форме
+input.form_input
+	background-color: transparent
+	border: 0
+	border-bottom: 1px solid $grey_dark2
+	color: $grey_dark2
+	font-size: 15px
+	padding: 10px 5px
+	width: 100%
+	margin-bottom: 40px
+	&::placeholder
+		color: $grey_dark2
