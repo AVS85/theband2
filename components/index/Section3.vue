@@ -16,36 +16,14 @@
 
 		<div class="col-12">
 			<swiper ref="swServices" :options="swServicesOptions">
-				<swiper-slide>
+				<swiper-slide v-for="(item, i) in servicesItems" :key="i">
 					<div class="slide_wr">
 						<div class="slide_icon"
-						style="background-image: url(/icons/services1.svg)"></div>
-						<div class="slide_title">Разработка структуры презентации</div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_icon"
-						style="background-image: url(/icons/services2.svg)"></div>
-						<div class="slide_title">Цифры: анализ рынка, конкурентные бенчмарки, финансовые модели</div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_icon"
-						style="background-image: url(/icons/services3.svg)"></div>
-						<div class="slide_title">Дизайн презентаций</div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_icon"
-						style="background-image: url(/icons/services4.svg)"></div>
-						<div class="slide_title">Тест-драйв вашей идеи: UX тест, обратная связь экспертов </div>
-						<button class="slide_btn">Подробнее</button>
+						:style="`background-image: url('${item.icon}')`"></div>
+						<div class="slide_title">{{item.title}}</div>
+						<button 
+						class="slide_btn"
+						@click="openReadmore(item)">Подробнее</button>
 					</div>
 				</swiper-slide>
 			</swiper>
@@ -68,6 +46,7 @@ export default {
 	},
 	data() {
 		return {
+			servicesItems: [],
 			swServicesOptions: {
         // loop: true,
         slidesPerView: 1,
@@ -94,6 +73,18 @@ export default {
 			return this.$refs.swServices.$swiper;
 		}
 	},
+	mounted(){
+		this.$axios('/api_services.json')
+		.then(res => {
+			this.servicesItems = res.data
+			console.log(res.data)
+		})
+	},
+	methods: {
+		openReadmore(item){
+			console.log(item);
+		}
+	}
 }
 </script>
 

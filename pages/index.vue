@@ -11,12 +11,12 @@
 		</div>
 	</section>
 
-	<Section2/>
-	<Section3/>
-	<Section4/>
-	<Section5/>
-	<Section6/>
-	<Section7/>
+	<Section2 id="about"/>
+	<Section3 id="services"/>
+	<Section4 />
+	<Section5 />
+	<Section6 />
+	<Section7 id="contacts"/>
 
 </div>
 </template>
@@ -36,7 +36,25 @@ export default {
 		Section5,
 		Section6,
 		Section7,
-	}
+	},
+	head() {
+		return {
+			title: "TheBand",
+			link: [{ rel: "canonical", href: `https://theband.design${this.$route.path}` }],
+			meta: [
+				{	hid: "description",	name: "description", content: "TheBand"	},
+				{	hid: "keywords", name: "keywords", content: "TheBand" },
+				// { property: "og:title", content: this.content?.meta?.opengraph?.title },
+				// {
+				// property: "og:description",
+				// content: this.content?.meta?.opengraph?.description,
+				// },
+				// { property: "og:image", content: this.content?.meta?.opengraph?.image },
+				// { property: "og:type", content: this.content?.meta?.opengraph?.type },
+				// { property: "og:url", content: this.content?.meta?.opengraph?.url },
+			],
+		};
+	},
 }
 </script>
 
