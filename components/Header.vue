@@ -25,11 +25,11 @@
 			</div>
 		
 			<div class="d-lg-none burger"
-			:class="{ show: isShow }"
-			@click="isShow = !isShow"/>
+			:class="{ show: isShowMenu }"
+			@click="isShowMenu = !isShowMenu"/>
 		</div>
 
-		<div class="d-lg-none row_mobilemenu" :class="{ show: isShow }">
+		<div class="d-lg-none row_mobilemenu" :class="{ show: isShowMenu }">
 			<ul>
 				<li>О нас</li>
 				<li>Услуги</li>
@@ -41,14 +41,21 @@
 	
 
 	</div>
+	<popup/>
 </header>
 </template>
 
 <script>
+import popup from '/components/Popup_services.vue'
+
 export default {
+	components: {
+		popup
+	},
 	data() {
 		return {
-			isShow: false
+			isShowMenu: false,
+			isShowPopup: false
 		}
 	},
 }

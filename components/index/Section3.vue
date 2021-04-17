@@ -35,10 +35,11 @@
 			<button class="btn_main btn_main-optional">Заказать проект</button>
 		</div>
 	</div>
-	</section>
+</section>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 export default {
 	components: {
@@ -46,7 +47,7 @@ export default {
 	},
 	data() {
 		return {
-			servicesItems: [],
+			// servicesItems: [],
 			swServicesOptions: {
         // loop: true,
         slidesPerView: 1,
@@ -68,21 +69,23 @@ export default {
       },
 		}
 	},
+
 	computed: {
+		...mapGetters(
+			{ servicesItems: "getServices", }
+		),
 		swiper() {
 			return this.$refs.swServices.$swiper;
 		}
 	},
-	mounted(){
-		this.$axios('/api_services.json')
-		.then(res => {
-			this.servicesItems = res.data
-			console.log(res.data)
-		})
-	},
+
+	mounted(){	},
+
 	methods: {
 		openReadmore(item){
 			console.log(item);
+			this.$store.commit('setPopupContent', item)
+			this.$store.commit('togglePopup', true)
 		}
 	}
 }
@@ -110,10 +113,13 @@ export default {
 		flex-direction: column
 		justify-content: space-between
 		align-items: flex-start
-		background-color: $grey_lite1
+		background-color: $grey_lite2
 		padding: 30px 14px
 		min-height: 300px
 		width: 100%
+		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
+		margin-bottom: 60px
+		cursor: pointer
 		.slide_icon
 			// border: 1px solid grey
 			background-position: center
