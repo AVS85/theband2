@@ -1,6 +1,6 @@
 export const state = () => ({
 	services: [], //items услуг
-	popupIsShow: true, // 
+	popupIsShow: false, // 
 	popupContent: []
 })
 
