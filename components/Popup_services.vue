@@ -32,7 +32,7 @@
 									<div class="slide_desc-text">{{item.price}}</div>
 								</div>
 
-								<button class="slide_btn"
+								<button class="btn_main btn_main-first"
 								@click="openReadmore(item)">Подробнее</button>
 							</div>
 						</swiper-slide>
@@ -140,6 +140,7 @@ export default {
 			.slide_title
 				border-bottom: 2px solid $grey_dark2
 				font-size: 18px
+				font-weight: bold
 				line-height: 18px
 				padding-bottom: 14px
 			.slide_desc
@@ -152,5 +153,5 @@ export default {
 				.slide_desc-text
 					font-size: 15px
 					line-height: 20px
-					font-weight: bold
+					// font-weight: bold
 </style>

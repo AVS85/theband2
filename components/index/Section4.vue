@@ -7,15 +7,15 @@
 		<div class="d-none d-md-block col-auto">
 			<div class="swiperbtn">
 				<span>Узнать больше</span>
-				<button class="btn-slide btn-slide-grey"></button>
-				<button class="btn-slide btn-slide-r btn-slide-grey"></button>
+				<button class="btn-slide 						 btn-slide-grey swSlideL-portfolio"></button>
+				<button class="btn-slide btn-slide-r btn-slide-grey swSlideR-portfolio"></button>
 			</div>
 		</div>
 
 		<div class="w-100"></div>
 
 		<div class="col-12">
-			<swiper ref="swPortfolio" :options="swPortfolioOptions">
+			<swiper ref="swPortfolio" :options="swOptions_portfolio">
 				<swiper-slide>
 					<div class="slide_wr">
 						<div class="slide_num">01</div>
@@ -52,7 +52,7 @@
 						<button class="slide_btn">Подробнее</button>
 					</div>
 				</swiper-slide>
-				
+				<div class="d-sm-none swPagination-portfolio" slot="pagination"></div>
 			</swiper>
 		</div>
 	</div>
@@ -67,24 +67,26 @@ export default {
 	},
 	data() {
 		return {
-			swPortfolioOptions: {
+			swOptions_portfolio: {
         // loop: true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 30,
         // autoplay: {
         //   delay: 3500,
         //   disableOnInteraction: false,
         // },
 				breakpoints: {   
-					0: { slidesPerView: 1, spaceBetween: 0 },
-					400: { slidesPerView: 2, spaceBetween: 5 },
-					768: { slidesPerView: 3, spaceBetween: 10 },
-          992: { slidesPerView: 4, spaceBetween: 20 }
+					501: { slidesPerView: 2, spaceBetween: 20 },
+					768: { slidesPerView: 3, spaceBetween: 30 },
+          992: { slidesPerView: 4, spaceBetween: 30 }
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swSlideR-portfolio",
+          prevEl: ".swSlideL-portfolio",
         },
+				pagination: {
+					el: '.swPagination-portfolio'
+				},
       },
 		}
 	},
@@ -111,19 +113,26 @@ export default {
 		display: flex
 		justify-content: flex-end
 		margin-top: 30px
+	.swiper-slide
+		display: flex
+		justify-content: center
 	.slide_wr
-		// position: relative
-		// display: flex
 		flex-direction: column
 		justify-content: space-between
 		align-items: flex-start
 		border: 1px solid transparent
-		border-radius: 5px
 		background-color: $grey_lite1
-		
+		border-radius: 5px
 		padding: 12px 28px 20px 0 
 		min-height: 300px
 		width: 100%
+		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
+		margin-bottom: 60px
+		cursor: grab
+		&:active
+			cursor: grabbing
+		@media (max-width: 575px)
+			width: 85%
 		.slide_num
 			font-size: 80px
 			line-height: 80px

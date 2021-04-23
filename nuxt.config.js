@@ -1,8 +1,10 @@
 
 export default {
-  // publicRuntimeConfig: {
-  //   baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
-  // },
+  publicRuntimeConfig: {
+    wpBaseURL: 'http://wp-theband.na4u.ru/',
+    // baseURL:  'http://localhost' : 'http://dev.jmart.ru'
+    // baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
+  },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -69,7 +71,9 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+		baseURL: 'http://wp-theband.na4u.ru/wp-json/wp'
+	},
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

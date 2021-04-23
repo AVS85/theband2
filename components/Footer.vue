@@ -23,22 +23,22 @@
 		</div>
 
 		<div class="row row_bottom">
-			<div class="col-lg-auto col_bottom">
+			<div class="order-lg-3 col-lg-auto col_bottom contacts">
+				<ul>
+					<li>theband@gmail com</li>
+					<li>+7 (999) 999-99-99</li>
+				</ul>
+			</div>
+			<div class="order-lg-1 col-lg-auto col_bottom">
 				<ul>
 					<li>Пользовательское соглашение</li>
 					<li>Соглашение о персональных данных</li>
 					<li>Политика рекламной рассылки </li>
 				</ul>
 			</div>
-			<div class="col-lg-auto col_bottom copyright">
+			<div class="order-lg-2 col-lg-auto col_bottom copyright">
 				<ul>
 					<li>2021 © The Band.Slides Все права защищены</li>
-				</ul>
-			</div>
-			<div class="col-lg-auto col_bottom">
-				<ul>
-					<li>theband@gmail com</li>
-					<li>+7 (999) 999-99-99</li>
 				</ul>
 			</div>
 		</div>
@@ -79,7 +79,7 @@ footer
 				display: flex
 				margin: 0
 				padding: 0
-				@media (max-width: 998px)
+				@media (max-width: 991px)
 					display: block
 				li
 					// border: 1px solid rede: none
@@ -119,9 +119,17 @@ footer
 				li
 					list-style: none
 					padding: 7px 0
+					@media (max-width: 992px)
+						text-align: center
+						justify-content: center
 		.copyright
+			display: flex
 			color: $grey_dark2
 			font-size: 12px
+		.contacts
+			font-weight: bold
+			@media (max-width: 992px)
+				margin-bottom: 30px
 
 </style>
 

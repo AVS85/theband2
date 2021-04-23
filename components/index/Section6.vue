@@ -58,6 +58,8 @@ export default {
 
 <style lang="sass">
 .index_section6
+	padding-top: 75px
+	padding-bottom: 75px
 	.slide_wr
 		border: 10px solid $grey_lite1
 		background-color: $grey_lite1
@@ -68,7 +70,7 @@ export default {
 
 		filter: grayscale(1)
 		opacity: .5
-		
+		cursor: pointer
 	.swiper-wrapper 
 		transition-timing-function: linear !important
 		// .swiper-slide

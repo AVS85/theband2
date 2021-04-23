@@ -4,8 +4,8 @@
 		<div class="row">
 			<div class="col-lg-9">
 				<button class="article_btn-rollback" @click="$router.go(-1)">Вернуться назад</button>
-				<h1 class="article_title">История презентаций: как появились PowerPoint и Keynote (часть 2)</h1>
-				<span class="text2">Каким был первый софт для оформления слайдов</span>
+				<h1 class="article_title">{{title}}</h1>
+				<span class="text2">{{subtitle}}</span>
 				<div class="article_tags">
 					<button class="btn_tags btn_tags-blue">Презентация</button>
 					<button class="btn_tags btn_tags-green">Исследование</button>
@@ -14,7 +14,7 @@
 			<div class="w-100"></div>
 			<div class="col">
 				<div class="article_img">
-					<div class="article_img-bg" :style="`background-image: url('/blog/article-01.png')`"></div>
+					<div class="article_img-bg" :style="`background-image: url('${imgReview}')`" />
 				</div>
 			</div>
 			<div class="w-100"></div>
@@ -34,32 +34,42 @@
 		
 		<div class="row">
 			<div class="col-md-8 offset-md-2">
-
-				<article class="article-wysiwyg">
-
-					<ul>
-						<li>Почему миру был нужен PowerPoint</li>
-						<li>Как PowerPoint вышел на рынок</li>
-						<li>Что умела первая программа</li>
-						<li>Что умела первая программа</li>
-						<li>Как развивался PowerPoint</li>
-						<li>Выводы</li>
-					</ul>
-					<p>Мы уже рассказали вам о первых технологиях для отображения слайдов: презентации с текстом, инфографикой и картинками появились задолго до изобретения привычного нам PowerPoint. Но подготовка материалов отнимала много времени и сил. Даже незатейливые текстовые слайды оставались роскошью – до тех пор, пока не был создан удобный графический редактор.Давайте разберемся, почему потребность в автоматизации работы стояла так остро, и как развивались первые программы для создания презентаций.</p>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni error voluptatibus illo eius, asperiores cupiditate tempore delectus? Nesciunt dolore magni ratione saepe voluptatum nulla quisquam autem soluta quidem adipisci perspiciatis, fugiat corporis aliquam incidunt deleniti error ex et nam tempore exercitationem. Quis exercitationem corrupti ab alias rem eligendi cumque. Illo!</p>
-					<h3>Lorem ipsum dolor sit amet.</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ex iure tempore ipsa quas minima fugiat cupiditate nostrum, rerum sequi rem modi cumque eos numquam eligendi deserunt autem blanditiis veniam doloribus voluptatem porro provident illum magni quod. Temporibus sunt, perferendis dolorum, veniam porro cum culpa modi incidunt ducimus similique vel perspiciatis consectetur amet ullam. Nam vitae ea distinctio odio vero voluptatibus ratione vel magni, exercitationem, enim mollitia necessitatibus. Corporis voluptates aliquam vel explicabo exercitationem aut?</p>
-					<h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore libero similique incidunt illo!</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt reiciendis minus quibusdam sequi blanditiis dolore, labore ipsam ipsa laborum, officia consequuntur delectus placeat sapiente. Sit suscipit repellat illo at inventore officia tenetur deserunt?</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quaerat corrupti magni ut maxime consequuntur quae delectus distinctio quo dolorum officia, nulla dolor, vero illo eligendi fugiat sit quisquam enim? Magnam non iure voluptatibus quisquam beatae, nihil aliquam similique ipsam, voluptatum vitae sint consectetur minima iusto explicabo quae soluta excepturi dignissimos? Dolores vel maxime alias, consequatur dicta earum iusto odio error harum illo! Odio maxime iusto soluta quaerat, quia ab, corrupti assumenda dolorem libero dolor dolorum itaque aut expedita earum. Repellat hic expedita ducimus, dolores facere in qui eos voluptatibus?</p>
-				</article>
-				
+				<article class="article-wysiwyg" v-html="content"></article>
 			</div>
 		</div>
 	</div>
 	<Subscribe />
 </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+	async asyncData({$axios, isDev, route, store, env, params, query, req, res, redirect, error}) {
+	},
+
+	data() {
+		return {
+			posts: null, 
+		}
+	},
+
+	computed:{
+		...mapGetters({
+			article: 'getBlogArticle'
+		}),
+		title(){ return this.article?.acf?.title || '' },
+		subtitle(){ return this.article?.acf?.title || '' },
+		imgReview(){ return this.article?.acf?.img_review || '' },
+		content(){ return this.article?.content?.rendered || '' }
+	},
+
+	mounted(){
+		if (!this.article.acf) this.$router.push('/blog')
+	}
+}
+</script>
+
 <style lang="sass">
 .article-wrapper
 	padding: 50px 0

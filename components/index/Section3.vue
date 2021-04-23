@@ -7,8 +7,8 @@
 		<div class="d-none d-md-block col-auto">
 			<div class="swiperbtn">
 				<span>Узнать больше</span>
-				<button class="btn-slide btn-slide-grey"></button>
-				<button class="btn-slide btn-slide-r btn-slide-grey"></button>
+				<button class="btn-slide 						 btn-slide-grey swSlideL-services"></button>
+				<button class="btn-slide btn-slide-r btn-slide-grey swSlideR-services"></button>
 			</div>
 		</div>
 
@@ -26,12 +26,13 @@
 						@click="openReadmore(item)">Подробнее</button>
 					</div>
 				</swiper-slide>
+				<div class="d-sm-none swPagination-services" slot="pagination"></div>
 			</swiper>
 		</div>
+	</div>
 
-		<div class="w-100"></div>
-
-		<div class="col-12 ind_services-btn">
+	<div class="row justify-content-center">
+		<div class="col-auto col-md-12 ind_services-btn">
 			<button class="btn_main btn_main-optional">Заказать проект</button>
 		</div>
 	</div>
@@ -51,21 +52,23 @@ export default {
 			swServicesOptions: {
         // loop: true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 30,
         // autoplay: {
         //   delay: 3500,
         //   disableOnInteraction: false,
         // },
 				breakpoints: {   
-					0: { slidesPerView: 1, spaceBetween: 0 },
-					400: { slidesPerView: 2, spaceBetween: 5 },
-					768: { slidesPerView: 3, spaceBetween: 10 },
-          992: { slidesPerView: 4, spaceBetween: 20 }
+					576: { slidesPerView: 2, spaceBetween: 20 },
+					768: { slidesPerView: 3, spaceBetween: 30 },
+          992: { slidesPerView: 4, spaceBetween: 30 }
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swSlideR-services",
+          prevEl: ".swSlideL-services",
         },
+				pagination: {
+					el: '.swPagination-services'
+				},
       },
 		}
 	},
@@ -82,6 +85,9 @@ export default {
 	mounted(){	},
 
 	methods: {
+		slide(){
+			console.log(this.$refs.swServices.$swiper)
+		},
 		openReadmore(item){
 			console.log(item);
 			this.$store.commit('setPopupContent', item)
@@ -106,20 +112,30 @@ export default {
 		display: flex
 		justify-content: flex-end
 		margin-top: 30px
+	.swiper-slide
+		display: flex
+		justify-content: center
 	.slide_wr
-		// border: 1px solid red
 		position: relative
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		align-items: flex-start
 		background-color: $grey_lite2
+		// border: 1px solid grey
+		border-radius: 5px
 		padding: 30px 14px
 		min-height: 300px
 		width: 100%
 		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
 		margin-bottom: 60px
-		cursor: pointer
+		user-select: none
+		cursor: grab
+		&:active
+			cursor: grabbing
+			
+		@media (max-width: 575px)
+			width: 85%
 		.slide_icon
 			// border: 1px solid grey
 			background-position: center

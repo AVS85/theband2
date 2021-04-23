@@ -80,9 +80,9 @@ export default {
 		Swiper,	SwiperSlide,
 	},
 	computed: {
-		...mapGetters(
-			{ servicesItems: "getServices", }
-		),
+		...mapGetters({
+			servicesItems: "getServices", 
+		}),
 		swiper() {
 			// return this.$refs.swServices.$swiper;
 		}
@@ -113,6 +113,9 @@ section
 	// border: 1px solid grey
 	padding-top: 105px
 	padding-bottom: 105px
+	@media (max-width: 998px)
+		padding-top: 75px
+		padding-bottom: 75px
 	.section_title
 		margin-bottom: 40px
 	.section_subtitle
@@ -122,7 +125,7 @@ section
 		p
 			margin: 20px 0
 		button
-			margin: 40px 0
+			margin: 40px 0 0 0
 	.sideB
 		// border: 1px solid grey
 	.slide_wr
@@ -139,6 +142,10 @@ section
 		width: 100%
 		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
 		margin-bottom: 60px
+		user-select: none
+		cursor: grab
+		&:active
+			cursor: grabbing
 		.slide_icon
 			// border: 1px solid grey
 			background-position: center
