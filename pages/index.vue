@@ -48,7 +48,8 @@ import Section7 from '/components/index/Section7.vue'
 
 export default {
 	async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
-		await store.dispatch('loadServices')
+		await store.dispatch('loadServices');
+		await store.dispatch('loadProjects')
 	},
 	data() {
 		return {

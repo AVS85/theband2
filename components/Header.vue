@@ -42,15 +42,18 @@
 
 	</div>
 	<popup/>
+	<popupProjects/>
 </header>
 </template>
 
 <script>
 import popup from '/components/Popup_services.vue'
+import popupProjects from '/components/Popup_projects.vue'
 
 export default {
 	components: {
-		popup
+		popup,
+		popupProjects
 	},
 	data() {
 		return {

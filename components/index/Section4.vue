@@ -16,42 +16,19 @@
 
 		<div class="col-12">
 			<swiper ref="swPortfolio" :options="swOptions_portfolio">
-				<swiper-slide>
+				<swiper-slide  v-for="(item, i) in projectsItems" :key="i">
 					<div class="slide_wr">
-						<div class="slide_num">01</div>
-						<div class="slide_title text1">Ростелеком</div>
+						<div class="slide_num">{{item.num}}</div>
+						<div class="slide_title text1">{{item.title}}</div>
 						<div class="slide_subtitle text2">Защита проекта</div>
-						<div class="slide_img" style="background-image: url(/projects/01.jpg)"></div>
-						<button class="slide_btn">Подробнее</button>
+						<div class="slide_img"
+						:style="`background-image: url('${item.imgs[0].img_link}')`"></div>
+						<button 
+						class="slide_btn"
+						@click="openReadmore(item)">Подробнее</button>
 					</div>
 				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_num">02</div>
-						<div class="slide_title text1">Ростелеком</div>
-						<div class="slide_subtitle text2">Защита проекта</div>
-						<div class="slide_img" style="background-image: url(/projects/01.jpg)"></div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_num">03</div>
-						<div class="slide_title text1">Ростелеком</div>
-						<div class="slide_subtitle text2">Защита проекта</div>
-						<div class="slide_img" style="background-image: url(/projects/01.jpg)"></div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="slide_wr">
-						<div class="slide_num">04</div>
-						<div class="slide_title text1">Ростелеком</div>
-						<div class="slide_subtitle text2">Защита проекта</div>
-						<div class="slide_img" style="background-image: url(/projects/01.jpg)"></div>
-						<button class="slide_btn">Подробнее</button>
-					</div>
-				</swiper-slide>
+			
 				<div class="d-sm-none swPagination-portfolio" slot="pagination"></div>
 			</swiper>
 		</div>
@@ -60,6 +37,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 export default {
 	components: {
@@ -91,10 +69,20 @@ export default {
 		}
 	},
 	computed: {
+		...mapGetters(
+			{ projectsItems: "getProjects", }
+		),
 		swiper() {
 			return this.$refs.swPortfolio.$swiper;
 		}
 	},
+	methods: {
+		openReadmore(item){
+			console.log(item);
+			this.$store.commit('setPopupContent', item)
+			this.$store.commit('togglePopup', true)
+		}
+	}
 }
 </script>
 
