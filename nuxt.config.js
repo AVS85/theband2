@@ -2,7 +2,7 @@
 export default {
   publicRuntimeConfig: {
     wpBaseURL: 'http://wp-theband.na4u.ru/',
-    // baseURL:  'http://localhost' : 'http://dev.jmart.ru'
+    baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://192.168.1.12:3333',
     // baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
   },
   /*
@@ -130,5 +130,9 @@ export default {
   },
   build: {
   },
+	// server: {
+  //   host: '127.0.5.75',
+  //   port: '53797'
+  // }
 
 }

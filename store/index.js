@@ -12,7 +12,7 @@ export const actions = {
 	},
 
 	async loadServices( {commit} ){
-		await this.$axios('/api_services.json')
+		await this.$axios(`${this.$config.baseURL}/api_services.json`)
 		.then(res => {
 			commit('setServices', res.data)
 		}).catch( err => console.log('err ', err) )

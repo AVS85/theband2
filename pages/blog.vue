@@ -8,14 +8,9 @@
 					<div class="blog_img-wrapper">
 						<div class="blog_img-wrapper-bg" :style="`background-image: url('${item.acf.img_review}')`"></div>
 					</div>
-					<div class="blog_title h5">
-						<nuxt-link :to="linker(item.link)">{{item.acf.title}}</nuxt-link>
-					</div>
-					<div class="blog_subtitle text2">
-						<nuxt-link :to="linker(item.link)">{{item.acf.subtitle}}</nuxt-link>
-					</div>
-					<button class="blog_btn-readmore"
-					@click="routeto(item)">Подробнее</button>
+					<div class="blog_title h5" @click="routeto(item)">{{item.acf.title}}</div>
+					<div class="blog_subtitle text2" @click="routeto(item)">{{item.acf.subtitle}}</div>
+					<button class="blog_btn-readmore" @click="routeto(item)">Подробнее</button>
 				</article>
 			</div>
 		</div>
