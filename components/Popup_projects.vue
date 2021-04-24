@@ -5,7 +5,7 @@
 			
 			<div class="row d-none d-md-block">
 				<div class="col">
-					<h2>123123{{content.title}}</h2>
+					<h2>{{content.title}}</h2>
 					<span class="text2">{{content.desc}}</span>
 				</div>
 			</div>
