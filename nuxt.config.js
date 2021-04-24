@@ -130,9 +130,9 @@ export default {
   },
   build: {
   },
-	// server: {
-  //   host: '127.0.5.75',
-  //   port: '53797'
-  // }
+	server: {
+    host: '127.0.5.75',
+    port: '53797'
+  }
 
 }
