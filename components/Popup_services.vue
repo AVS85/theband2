@@ -22,18 +22,22 @@
 									<div class="slide_desc-text">{{item.desc}}</div>
 								</div>
 
-								<div class="slide_desc">
+								<div class="slide_desc" v-if="item.period">
 									<div class="slide_desc-label">Продолжительность консультации</div>
 									<div class="slide_desc-text">{{item.period}}</div>
 								</div>
 
-								<div class="slide_desc">
+								<div class="slide_desc" v-if="item.price">
 									<div class="slide_desc-label">Стоимость</div>
 									<div class="slide_desc-text">{{item.price}}</div>
 								</div>
 
+								<div class="slide_desc" v-if="item.price_desc">
+									<div class="slide_desc-text-cursiv">{{item.price_desc}}</div>
+								</div>
+
 								<button class="btn_main btn_main-first"
-								@click="openReadmore(item)">Подробнее</button>
+								@click="openReadmore(item)">Заказать</button>
 							</div>
 						</swiper-slide>
 					</swiper>
@@ -154,4 +158,8 @@ export default {
 					font-size: 15px
 					line-height: 20px
 					// font-weight: bold
+					&-cursiv
+						font-style: italic
+						font-size: 12px
+						line-height: 12px
 </style>

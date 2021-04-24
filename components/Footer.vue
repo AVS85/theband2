@@ -9,10 +9,10 @@
 			</div>
 			<div class="col-lg-auto menu">
 					<ul>
-						<li><nuxt-link to="/about">О нас</nuxt-link></li>
-						<li><nuxt-link to="/services">Услуги</nuxt-link></li>
-						<li><nuxt-link to="/contacts">Контакты</nuxt-link></li>
-						<li><nuxt-link to="/blog">Блог</nuxt-link></li>
+						<li><nuxt-link :to="{ path: '/', hash:'#about'}">О нас</nuxt-link></li>
+						<li><nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link></li>
+						<li><nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link></li>
+						<li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li>
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
