@@ -1,16 +1,17 @@
 export const state = () => ({
 	services: [], //items услуг
 	projects: [], //items проекты
-	popupIsShow: false, // 
-	popupContent: [],
-	blogArticle: {}
+	blogArticle: {},
+
+	popupServices: [],
+	isPopupServices: [],
+
+	popupProjects: [],
+	isPopupProject: false,
 })
 
 export const actions = {
-	async nuxtServerInit ( {$axios, commit, dispatch, params} ) {
-	// const URL = `${this.$config.baseURL}/api-ms/catalog/menu`
-	// console.log(`mainmenu ${URL}`)
-	},
+	async nuxtServerInit ( {$axios, commit, dispatch, params} ) {	},
 
 	async loadServices( {commit} ){
 		await this.$axios(`${this.$config.baseURL}/api_services.json`)
@@ -48,13 +49,15 @@ export const mutations = {
 	
 	setBlogArticle: (state, obj) => state.blogArticle = obj,
 	togglePopup: (state, bool) =>  state.popupIsShow = bool,
-	setPopupContent: (state, item) =>  state.popupContent = item,
+	setPpupServices: (state, item) =>  state.popupServices = item,
 }
 
 export const getters = {
 	getBlogArticle: state =>  state.blogArticle,
+
 	getServices: state =>  state.services,
 	getProjects: state =>  state.projects,
+
 	getPopupIsShow: state =>  state.popupIsShow,
-	getPopupContent: state =>  state.popupContent,
+	getPopupServices: state =>  state.popupServices,
 }

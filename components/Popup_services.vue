@@ -5,7 +5,7 @@
 			
 			<div class="row d-none d-md-block">
 				<div class="col">
-					<h2>{{content.title}}</h2>
+					<h2>1{{content.title}}</h2>
 					<span class="text2">{{content.desc}}</span>
 				</div>
 			</div>
@@ -82,7 +82,7 @@ export default {
 	computed: {
 		...mapGetters({ 
 			isShow:  "getPopupIsShow", 
-			content: "getPopupContent",
+			content: "getPopupServices",
 		}),
 	},
 

@@ -90,7 +90,7 @@ export default {
 		},
 		openReadmore(item){
 			console.log(item);
-			this.$store.commit('setPopupContent', item)
+			this.$store.commit('setPopupServices', item)
 			this.$store.commit('togglePopup', true)
 		}
 	}

@@ -81,8 +81,8 @@ export default {
 
 	computed: {
 		...mapGetters({ 
-			isShow:  "getPopupIsShow", 
-			content: "getPopupContent",
+			isShow:  "getIsPopupServices", 
+			content: "getPopupServices",
 		}),
 	},
 
