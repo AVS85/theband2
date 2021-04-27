@@ -95,6 +95,8 @@ a
 			border: 2px solid  rgba($green_acc, .75)
 			color: $green_acc
 
+
+
 .btn_tags
 	border: 0
 	border-radius: 5px
@@ -105,15 +107,15 @@ a
 	height: 26px
 	min-width: 47px
 	transition: .25s
-	&-green
+	&-c1
 		background-color: $green_acc
-	&-blue
+	&-c2
 		background-color: $blue
-	&-orange
+	&-c3
 		background-color: $orange
-	&-purple
+	&-c4
 		background-color: $purple
-	&-yellow
+	&-c5
 		background-color: $yellow
 
 .btn-slide	
@@ -156,3 +158,10 @@ input.form_input
 	background: $grey_dark1
 	// opacity: .75
 	// width: 34px
+
+a.nuxt-link-active 
+	font-weight: bold
+
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active 
+	color: $grey_dark1

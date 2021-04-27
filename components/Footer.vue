@@ -12,13 +12,19 @@
 						<li><nuxt-link :to="{ path: '/', hash:'#about'}">О нас</nuxt-link></li>
 						<li><nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link></li>
 						<li><nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link></li>
-						<li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li>
+						<!-- <li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li> -->
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
-				<img src="/icons/social-vk.svg" alt="theband.design-vk">
-				<img src="/icons/social-fb.svg" alt="theband.design-fb">
-				<img src="/icons/social-in.svg" alt="theband.design-in">
+				<a href="https://www.facebook.com/TheBand.Slides/">
+					<img src="/icons/social-vk.svg" alt="theband.design-vk">
+				</a>
+				<a href="">
+					<img src="/icons/social-fb.svg" alt="theband.design-fb">
+				</a>
+				<a href="">
+					<img src="/icons/social-in.svg" alt="theband.design-in">
+				</a>
 			</div>
 		</div>
 

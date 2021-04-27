@@ -16,7 +16,7 @@
 						<li><nuxt-link :to="{ path: '/', hash:'#about'}">О нас</nuxt-link></li>
 						<li><nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link></li>
 						<li><nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link></li>
-						<li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li>
+						<!-- <li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li> -->
 					</ul>
 				</div>
 			</div>
@@ -31,10 +31,15 @@
 
 		<div class="d-lg-none row_mobilemenu" :class="{ show: isShowMenu }">
 			<ul>
-				<li>О нас</li>
-				<li>Услуги</li>
-				<li>Контакты</li>
-				<li>Блог</li>
+				<li @click="isShowMenu = !isShowMenu">
+					<nuxt-link :to="{ path: '/', hash:'#about'}">О нас</nuxt-link>
+				</li>
+				<li @click="isShowMenu = !isShowMenu">
+					<nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link>
+				</li>
+				<li @click="isShowMenu = !isShowMenu">
+					<nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link>
+				</li>
 			</ul>
 			<button class="btn_main btn_main-second2">Связаться</button>
 		</div>

@@ -13,9 +13,9 @@
 			{ "img_link":"/projects/gana-04.jpg", "title":"Проанализировали рынок страны, где планируется запускать проект" }	
 		],
 		"info": [
-			{	"icon": "",	"desc": "15 слайдов" },
-			{	"icon": "",	"desc": "15 дней на реализацию" },
-			{	"icon": "",	"desc": "3 чел.в команде проекта" }
+			{	"icon": "/icons/services1.svg",	"desc": "15 слайдов" },
+			{	"icon": "/icons/services2.svg",	"desc": "15 дней на реализацию" },
+			{	"icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" }
 		]
 	},
 	
@@ -33,9 +33,9 @@
 			{ "img_link":"/projects/qonversion-04.jpg", "title":"Упаковали" }	
 		],
 		"info": [
-			{	"icon": "",	"desc": "15 слайдов" },
-			{	"icon": "",	"desc": "15 дней на реализацию" },
-			{	"icon": "",	"desc": "3 чел.в команде проекта" }
+			{	"icon": "/icons/services1.svg",	"desc": "15 слайдов" },
+			{	"icon": "/icons/services2.svg",	"desc": "15 дней на реализацию" },
+			{	"icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" }
 		]
 	},
 	
@@ -51,9 +51,9 @@
 			{ "img_link":"/projects/shokolad-02.jpg", "title":"Расставили акценты" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "80 слайдов" },
-			{ "icon": "",	"desc": "8 дней на реализацию" },
-			{ "icon": "",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "/icons/services1.svg",	"desc": "80 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "8 дней на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" }
 		]
 	},
 	
@@ -69,9 +69,9 @@
 			{ "img_link":"/projects/gazprom-02.jpg", "title":"Расставили акценты" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "35 слайдов" },
-			{ "icon": "",	"desc": "21 день на реализацию" },
-			{ "icon": "",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "/icons/services1.svg",	"desc": "35 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "21 день на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" }
 		]
 	},
 	
@@ -90,9 +90,9 @@
 			{ "img_link":"/projects/dpd-05.jpg", "title":"Расставили акценты" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "58 слайдов" },
-			{ "icon": "",	"desc": "18 день на реализацию" },
-			{ "icon": "",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "/icons/services1.svg",	"desc": "58 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "18 день на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" }
 		]
 	},
 	
@@ -110,9 +110,9 @@
 			{ "img_link":"/projects/skolkovo-04.jpg", "title":"Показали эффект на прибыль от реализации" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "31 слайд" },
-			{ "icon": "",	"desc": "14 день на реализацию" },
-			{ "icon": "",	"desc": "1 чел.в команде проекта" }
+			{ "icon": "/icons/services1.svg",	"desc": "31 слайд" },
+			{ "icon": "/icons/services2.svg",	"desc": "14 день на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "1 чел.в команде проекта" }
 		]
 	},
 	
@@ -131,10 +131,10 @@
 			{ "img_link":"/projects/lifestyle-05.jpg", "title":"" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "32 слайд" },
-			{ "icon": "",	"desc": "4 дня на реализацию" },
-			{ "icon": "",	"desc": "3 чел.в команде проекта" },
-			{ "icon": "",	"desc": "Приз в номинации" }
+			{ "icon": "/icons/services1.svg",	"desc": "32 слайд" },
+			{ "icon": "/icons/services2.svg",	"desc": "4 дня на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" },
+			{ "icon": "/icons/services4.svg",	"desc": "Приз в номинации" }
 		]
 	},
 	
@@ -152,10 +152,10 @@
 			{ "img_link":"/projects/relife_spa-04.jpg", "title":"Показали влияние выбранных отелем концепта и бизнес-модели на экономику проекта" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "18 слайдов" },
-			{ "icon": "",	"desc": "8 дней на реализацию" },
-			{ "icon": "",	"desc": "3 чел.в команде проекта" },
-			{ "icon": "",	"desc": "Презентация признана лучшей в рамках конференции" }
+			{ "icon": "/icons/services1.svg",	"desc": "18 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "8 дней на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "3 чел.в команде проекта" },
+			{ "icon": "/icons/services4.svg",	"desc": "Презентация признана лучшей в рамках конференции" }
 		]
 	},
 	
@@ -174,10 +174,10 @@
 			{ "img_link":"/projects/rostelecom-05.jpg", "title":"" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "38 слайдов" },
-			{ "icon": "",	"desc": "14 дней на реализацию" },
-			{ "icon": "",	"desc": "1 чел.в команде проекта" },
-			{ "icon": "",	"desc": "Проект занял 2-ое место на внутреннем конкурсе проектного комитета Ростелеком. Сама презентация признана лучшей на конкурсе" }
+			{ "icon": "/icons/services1.svg",	"desc": "38 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "14 дней на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "1 чел.в команде проекта" },
+			{ "icon": "/icons/services4.svg",	"desc": "Проект занял 2-ое место на внутреннем конкурсе проектного комитета Ростелеком. Сама презентация признана лучшей на конкурсе" }
 		]
 	},
 	
@@ -198,9 +198,9 @@
 			{ "img_link":"/projects/pkt-07.jpg", "title":"" }
 		],
 		"info": [
-			{ "icon": "",	"desc": "34 слайдов" },
-			{ "icon": "",	"desc": "3 дней на реализацию" },
-			{ "icon": "",	"desc": "2 чел.в команде проекта" }
+			{ "icon": "/icons/services1.svg",	"desc": "34 слайдов" },
+			{ "icon": "/icons/services2.svg",	"desc": "3 дней на реализацию" },
+			{ "icon": "/icons/services3.svg",	"desc": "2 чел.в команде проекта" }
 		]
 	}
 ]

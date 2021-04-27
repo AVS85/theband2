@@ -4,10 +4,10 @@ export const state = () => ({
 	blogArticle: {},
 
 	popupServices: [],
-	isPopupServices: [],
+	isPopupServices: false,
 
 	popupProjects: [],
-	isPopupProject: false,
+	isPopupProjects: false,
 })
 
 export const actions = {
@@ -46,10 +46,13 @@ export const actions = {
 export const mutations = {
 	setServices: (state, items) => state.services = items,
 	setProjects: (state, items) => state.projects = items,
-	
 	setBlogArticle: (state, obj) => state.blogArticle = obj,
-	togglePopup: (state, bool) =>  state.popupIsShow = bool,
-	setPpupServices: (state, item) =>  state.popupServices = item,
+	
+	togglePopupServices: (state, bool) =>  state.isPopupServices = bool,
+	setPopupServices: (state, item) =>  state.popupServices = item,
+
+	togglePopupProjects: (state, bool) =>  state.isPopupProjects = bool,
+	setPopupProjects: (state, item) =>  state.popupProjects = item,
 }
 
 export const getters = {
@@ -58,6 +61,9 @@ export const getters = {
 	getServices: state =>  state.services,
 	getProjects: state =>  state.projects,
 
-	getPopupIsShow: state =>  state.popupIsShow,
-	getPopupServices: state =>  state.popupServices,
+	getIsPopupServices: state =>  state.isPopupServices,
+	getPopupServices: state => state.popupServices,
+
+	getIsPopupProjects: state =>  state.isPopupProjects,
+	getPopupProjects: state => state.popupProjects,
 }

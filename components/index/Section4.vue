@@ -79,8 +79,8 @@ export default {
 	methods: {
 		openReadmore(item){
 			console.log(item);
-			this.$store.commit('setPopupContent', item)
-			this.$store.commit('togglePopup', true)
+			this.$store.commit('setPopupProjects', item)
+			this.$store.commit('togglePopupProjects', true)
 		}
 	}
 }

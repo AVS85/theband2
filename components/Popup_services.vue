@@ -1,11 +1,11 @@
 <template>
-	<div class="popup_wrapper" v-if="isShow">
+	<div class="popup_wrapper-services" v-if="isShow">
 		<div class="container popup_container">
 			<div class="popup_btn-close" @click="close"></div>
 			
 			<div class="row d-none d-md-block">
 				<div class="col">
-					<h2>1{{content.title}}</h2>
+					<h2>{{content.title}}</h2>
 					<span class="text2">{{content.desc}}</span>
 				</div>
 			</div>
@@ -81,21 +81,21 @@ export default {
 
 	computed: {
 		...mapGetters({ 
-			isShow:  "getPopupIsShow", 
+			isShow:  "getIsPopupServices", 
 			content: "getPopupServices",
 		}),
 	},
 
 	methods: {
 		close(){
-			this.$store.commit('togglePopup', false)
+			this.$store.commit('togglePopupServices', false)
 		}
 	},
 
 }
 </script>
 <style lang="sass">
-.popup_wrapper
+.popup_wrapper-services
 	// border: 1px solid red
 	background: rgba(208, 219, 230, 0.9)
 	// background-color: rgba(#fff, .91)

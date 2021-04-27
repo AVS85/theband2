@@ -30,6 +30,7 @@ export default {
 	data() {
 		return {
 			swPartnersOptions: {
+				allowTouchMove: false,
 				slidesPerView: 1,
         spaceBetween: 5,
         loop: true,
@@ -70,7 +71,7 @@ export default {
 
 		filter: grayscale(1)
 		opacity: .5
-		cursor: pointer
+		// cursor: pointer
 	.swiper-wrapper 
 		transition-timing-function: linear !important
 		// .swiper-slide
