@@ -66,6 +66,9 @@ export default {
 			isShowPopup: false
 		}
 	},
+	methods: {
+		
+	},
 }
 </script>
 

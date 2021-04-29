@@ -15,7 +15,8 @@
 			</div>	
 		</div>
 		<div class="col-lg-6">
-			<form class="form" action="">
+			<form class="form" 
+			@submit.prevent="sendMsg">
 				<input type="text" class="input_main" placeholder="Имя и фамилия">
 				<input type="text" class="input_main" placeholder="E-mail">
 				<input type="text" class="input_main" placeholder="+7(000)000-00-00">
@@ -28,6 +29,21 @@
 	</div>
 	</section>
 </template>
+
+<script>
+export default {
+	methods: {
+		sendMsg(){
+			this.$axios.$post(`${this.$config.baseURL}/mail/send`, {
+				// config: 1, // resolves to 'support'
+				from: 'John Doe',
+				subject: 'Incredible',
+				text: 'This is an incredible test message',
+			})
+		}
+	},
+}
+</script>
 
 <style lang="sass">
 .index_section7

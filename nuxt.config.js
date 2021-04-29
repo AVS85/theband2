@@ -2,18 +2,18 @@
 export default {
   publicRuntimeConfig: {
     wpBaseURL: 'http://wp-theband.na4u.ru/',
-    baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband.na4u.ru' : 'http://192.168.1.12:3333',
+    baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://192.168.1.12:3333',
     // baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
   },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
-  */
-  mode: 'universal',
-  /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
+	** Nuxt target
+	** See https://nuxtjs.org/api/configuration-target
+	 */
+ 	mode: 'universal',
+ 	// mode: 'universal',
+  // target: 'static',
   target: 'server',
   /*
   ** Headers of the page
@@ -66,6 +66,21 @@ export default {
   modules: [
     'bootstrap-vue/nuxt', // Doc: https://bootstrap-vue.js.org
     '@nuxtjs/axios',      // Doc: https://axios.nuxtjs.org/usage
+		['nuxt-mail', {
+      message: {
+        to: 'seo.resait@yandex.ru',
+      },
+      smtp: {
+        host: "http://mail.getcode.xyz",
+        port: 465,
+				secure: true, // true for 465, false for other ports
+        // port: 587,
+				auth: {
+					login: 'test@getcode.xyz',
+					pass: 'tEst2021test'
+				}
+      },
+    }],
   ],
   /*
   ** Axios module configuration

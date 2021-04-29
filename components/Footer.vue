@@ -32,14 +32,14 @@
 			<div class="order-lg-3 col-lg-auto col_bottom contacts">
 				<ul>
 					<li>theband@gmail com</li>
-					<li>+7 (999) 999-99-99</li>
+					<li>+7 (925) 709 7259</li>
 				</ul>
 			</div>
 			<div class="order-lg-1 col-lg-auto col_bottom">
 				<ul>
-					<li>Пользовательское соглашение</li>
-					<li>Соглашение о персональных данных</li>
-					<li>Политика рекламной рассылки </li>
+					<li><nuxt-link to="/" >Пользовательское соглашение</nuxt-link></li>
+					<li><nuxt-link to="/" >Соглашение о персональных данных</nuxt-link></li>
+					<li><nuxt-link to="/" >Политика рекламной рассылки </nuxt-link></li>
 				</ul>
 			</div>
 			<div class="order-lg-2 col-lg-auto col_bottom copyright">

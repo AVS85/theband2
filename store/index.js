@@ -23,7 +23,7 @@ export const actions = {
 		await this.$axios(`${this.$config.baseURL}/api_projects.json`)
 		.then(res => {
 			commit('setProjects', res.data)
-			console.log(res.data);
+			// console.log(res.data);
 		}).catch( err => console.log('err ', err) )
 	},
 
