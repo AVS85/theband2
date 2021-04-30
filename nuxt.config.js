@@ -11,10 +11,10 @@ export default {
 	** Nuxt target
 	** See https://nuxtjs.org/api/configuration-target
 	 */
- 	mode: 'universal',
+ 	mode: 'spa',
  	// mode: 'universal',
-  // target: 'static',
-  target: 'server',
+  target: 'static',
+  // target: 'server',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head

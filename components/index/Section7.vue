@@ -15,13 +15,17 @@
 			</div>	
 		</div>
 		<div class="col-lg-6">
-			<form class="form" 
-			@submit.prevent="sendMsg">
-				<input type="text" class="input_main" placeholder="Имя и фамилия">
-				<input type="text" class="input_main" placeholder="E-mail">
-				<input type="text" class="input_main" placeholder="+7(000)000-00-00">
-				<input type="text" class="input_main" placeholder="Чем вам помочь?">
-				<input type="text" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
+			<!-- action="https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a" -->
+			<!-- method="post" -->
+			<form 
+			class="form"
+			@submit.prevent="sendMsg"
+			>
+				<input type="text" name="name" class="input_main" placeholder="Имя и фамилия" required>
+				<input type="text" name="email" class="input_main" placeholder="E-mail">
+				<input type="text" name="phone" class="input_main" placeholder="+7(000)000-00-00" required>
+				<input type="text" name="q" class="input_main" placeholder="Чем вам помочь?">
+				<input type="text" name="task" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
 				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
 			</form>
@@ -34,12 +38,16 @@
 export default {
 	methods: {
 		sendMsg(){
-			this.$axios.$post(`${this.$config.baseURL}/mail/send`, {
-				// config: 1, // resolves to 'support'
-				from: 'John Doe',
-				subject: 'Incredible',
-				text: 'This is an incredible test message',
+			this.$axios.post("https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a", {
+				message: "Hello, World",
+				// "g-recaptcha-response": grecaptcha.getResponse(),
 			})
+			.then(function (response) {
+				console.log(response);
+			})
+			.catch(function (response) {
+				console.error(response);
+			});
 		}
 	},
 }
