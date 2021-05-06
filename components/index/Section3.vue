@@ -6,7 +6,7 @@
 		</div>
 		<div class="d-none d-md-block col-auto">
 			<div class="swiperbtn">
-				<span>Узнать больше</span>
+				<span>Больше услуг</span>
 				<button class="btn-slide 						 btn-slide-grey swSlideL-services"></button>
 				<button class="btn-slide btn-slide-r btn-slide-grey swSlideR-services"></button>
 			</div>
@@ -33,7 +33,7 @@
 
 	<div class="row justify-content-center">
 		<div class="col-auto col-md-12 ind_services-btn">
-			<button class="btn_main btn_main-optional">Заказать проект</button>
+			<button class="btn_main btn_main-optional"  @click="openContactForm">Заказать проект</button>
 		</div>
 	</div>
 </section>
@@ -85,6 +85,9 @@ export default {
 	mounted(){	},
 
 	methods: {
+		openContactForm(){
+			this.$router.push('/#contacts')
+		},
 		slide(){
 			console.log(this.$refs.swServices.$swiper)
 		},

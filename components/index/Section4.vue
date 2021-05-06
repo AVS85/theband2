@@ -6,7 +6,7 @@
 		</div>
 		<div class="d-none d-md-block col-auto">
 			<div class="swiperbtn">
-				<span>Узнать больше</span>
+				<span>Больше проектов</span>
 				<button class="btn-slide 						 btn-slide-grey swSlideL-portfolio"></button>
 				<button class="btn-slide btn-slide-r btn-slide-grey swSlideR-portfolio"></button>
 			</div>
@@ -20,7 +20,7 @@
 					<div class="slide_wr">
 						<div class="slide_num">{{item.num}}</div>
 						<div class="slide_title text1">{{item.title}}</div>
-						<div class="slide_subtitle text2">Защита проекта</div>
+						<div class="slide_subtitle text2">{{ (item.tags) ? item.tags.join(', ') : null  }}</div>
 						<div class="slide_img"
 						:style="`background-image: url('${item.imgs[0].img_link}')`"></div>
 						<button 
@@ -77,6 +77,9 @@ export default {
 		}
 	},
 	methods: {
+		// openContactForm(){
+		// 	this.$router.push('/#contacts')
+		// },
 		openReadmore(item){
 			console.log(item);
 			this.$store.commit('setPopupProjects', item)
@@ -101,66 +104,70 @@ export default {
 		display: flex
 		justify-content: flex-end
 		margin-top: 30px
-	.swiper-slide
-		display: flex
-		justify-content: center
-	.slide_wr
-		flex-direction: column
-		justify-content: space-between
-		align-items: flex-start
-		border: 1px solid transparent
-		background-color: $grey_lite1
-		border-radius: 5px
-		padding: 12px 28px 20px 0 
-		min-height: 300px
-		width: 100%
-		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
+	.swiper-wrapper
 		margin-bottom: 60px
-		cursor: grab
-		&:active
-			cursor: grabbing
-		@media (max-width: 575px)
-			width: 85%
-		.slide_num
-			font-size: 80px
-			line-height: 80px
-			font-family: "main-bold"
-			color: $grey_lite2
-			margin-left: 12px
-		.slide_title
-			// border: 1px solid grey
-			font-weight: bold
-			flex: 1
-			margin-left: 12px
-		.slide_subtitle
-			// border: 1px solid grey
-			flex: 1
-			margin-left: 12px
-		.slide_img
-			// border: 1px solid grey
-			background-position: center
-			background-repeat: no-repeat
-			background-size: cover
-			height: 140px
-			width: 100%
-			margin: 45px 0 20px 0
-		.slide_btn
-			border: 0
-			position: relative
-			font-size: 12px
-			color: $elem
-			background: transparent
-			margin-left: 12px
-			&::after
-				content: ''
-				position: absolute
+		.swiper-slide
+			// border: 1px solid red
+			display: flex
+			// justify-content: center
+			height: auto
+			.slide_wr
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-start
+				border: 1px solid transparent
 				// border: 1px solid red
-				background-image: url('/icons/arrow-sm.svg')
-				background-size: contain
-				height: 10px
-				min-width: 14px
-				top: calc(50% - 5px)
-				margin-left: 10px
+				background-color: $grey_lite1
+				border-radius: 5px
+				padding: 12px 28px 20px 0 
+				min-height: 300px
+				width: 100%
+				box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
+				cursor: grab
+				&:active
+					cursor: grabbing
+				@media (max-width: 575px)
+					width: 85%
+				.slide_num
+					font-size: 80px
+					line-height: 80px
+					font-family: "main-bold"
+					color: $grey_lite2
+					margin-left: 12px
+				.slide_title
+					// border: 1px solid grey
+					font-weight: bold
+					flex: 1
+					margin-left: 12px
+				.slide_subtitle
+					// border: 1px solid grey
+					flex: 1
+					margin-left: 12px
+				.slide_img
+					// border: 1px solid grey
+					background-position: center
+					background-repeat: no-repeat
+					background-size: cover
+					height: 140px
+					width: 100%
+					margin: 45px 0 20px 0
+				.slide_btn
+					border: 0
+					position: relative
+					font-size: 12px
+					color: $elem
+					background: transparent
+					margin-left: 12px
+					&::after
+						content: ''
+						position: absolute
+						// border: 1px solid red
+						background-image: url('/icons/arrow-sm.svg')
+						background-size: contain
+						height: 10px
+						min-width: 14px
+						top: calc(50% - 5px)
+						margin-left: 10px
 
 
 

@@ -64,7 +64,7 @@ export default {
 					0: { slidesPerView: 1, spaceBetween: 0 },
 					// 400: { slidesPerView: 2, spaceBetween: 5 },
 					768: { slidesPerView: 4, spaceBetween: 30 },
-          992: { slidesPerView: 4, spaceBetween: 30 }
+          992: { slidesPerView: 5, spaceBetween: 30 }
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -182,8 +182,9 @@ export default {
 			.info-icon
 				margin-right: 10px
 				background-size: contain
-				height: 18px
-				width: 18px
+				background-repeat: no-repeat
+				min-height: 18px
+				min-width: 18px
 			.info-desc
 				// border: 1px solid red
 				font-size: 15px

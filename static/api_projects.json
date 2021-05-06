@@ -9,8 +9,8 @@
 			{ "img_link":"/projects/gana-00.jpg", "title":"Разработали структуру презентации" },	
 			{ "img_link":"/projects/gana-01.jpg", "title":"Проанализировали рынок страны, где планируется запускать проект" },	
 			{ "img_link":"/projects/gana-02.jpg", "title":"Сделали акцент на текущих потерях рынка в отсутствие единого верного data-источника" },	
-			{ "img_link":"/projects/gana-03.jpg", "title":"Проанализировали рынок страны, где планируется запускать проект" },	
-			{ "img_link":"/projects/gana-04.jpg", "title":"Проанализировали рынок страны, где планируется запускать проект" }	
+			{ "img_link":"/projects/gana-03.jpg", "title":"Сформулировали ценности продукта" },	
+			{ "img_link":"/projects/gana-04.jpg", "title":"Разработали дизайн" }	
 		],
 		"info": [
 			{	"icon": "/icons/services1.svg",	"desc": "15 слайдов" },
@@ -30,7 +30,7 @@
 			{ "img_link":"/projects/qonversion-01.jpg", "title":"Расставили акценты" },	
 			{ "img_link":"/projects/qonversion-02.jpg", "title":"Предложили лучшее визуальное решение для отображения данных и цифр" },	
 			{ "img_link":"/projects/qonversion-03.jpg", "title":"Визуализировали цифры и графики" },	
-			{ "img_link":"/projects/qonversion-04.jpg", "title":"Упаковали" }	
+			{ "img_link":"/projects/qonversion-04.jpg", "title":"Упаковали дизайн" }	
 		],
 		"info": [
 			{	"icon": "/icons/services1.svg",	"desc": "15 слайдов" },
@@ -48,7 +48,9 @@
 		"imgs": [
 			{ "img_link":"/projects/shokolad-00.jpg", "title":"Разработали структуру презентации" },	
 			{ "img_link":"/projects/shokolad-01.jpg", "title":"Собрали данные о трендах рынка" },	
-			{ "img_link":"/projects/shokolad-02.jpg", "title":"Расставили акценты" }
+			{ "img_link":"/projects/shokolad-02.jpg", "title":"Расставили акценты" },
+			{ "img_link":"/projects/shokolad-03.jpg", "title":"Визуализировали данные" },
+			{ "img_link":"/projects/shokolad-04.jpg", "title":"Отрисовали дизайн в соответствии с новым бренд-буком" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "80 слайдов" },
@@ -65,8 +67,10 @@
 		"desc": "Цель: Презентовать значимые изменения в технологических процессах и эффект на бизнес-результат. Задача – отрисовать множество составляющих технологических процессов в формате видео-презентации",
 		"imgs": [
 			{ "img_link":"/projects/gazprom-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/gazprom-01.jpg", "title":"Собрали данные о трендах рынка" },	
-			{ "img_link":"/projects/gazprom-02.jpg", "title":"Расставили акценты" }
+			{ "img_link":"/projects/gazprom-01.jpg", "title":"Создали дизайн под цель" },	
+			{ "img_link":"/projects/gazprom-02.jpg", "title":"Отрисовали схематично множество элементов" },
+			{ "img_link":"/projects/gazprom-03.jpg", "title":"Настроили эффекты анимации" },
+			{ "img_link":"/projects/gazprom-04.jpg", "title":"Конвертировали слайды в видео-презентацию" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "35 слайдов" },
@@ -83,11 +87,10 @@
 		"desc": "Цель: Защитить перед иностранными акционерами новую маркетинговую стратегию",
 		"imgs": [
 			{ "img_link":"/projects/dpd-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/dpd-01.jpg", "title":"Собрали данные о трендах рынка" },	
-			{ "img_link":"/projects/dpd-02.jpg", "title":"Расставили акценты" },
-			{ "img_link":"/projects/dpd-03.jpg", "title":"Расставили акценты" },
-			{ "img_link":"/projects/dpd-04.jpg", "title":"Расставили акценты" },
-			{ "img_link":"/projects/dpd-05.jpg", "title":"Расставили акценты" }
+			{ "img_link":"/projects/dpd-01.jpg", "title":"Расставили акценты" },	
+			{ "img_link":"/projects/dpd-02.jpg", "title":"Сформулировали текущие вызовы рынка" },
+			{ "img_link":"/projects/dpd-03.jpg", "title":"Отрисовали графику и множество цифр" },
+			{ "img_link":"/projects/dpd-04.jpg", "title":"Структурировали все изменения, планируемые в новой стратегии и показали их ценность и эффект на бизнес" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "58 слайдов" },
@@ -117,7 +120,7 @@
 	},
 	
 	{
-		"title": "Lifestyle отель cтартап",
+		"title": "Lifestyle отель",
 		"cartsubtitle": "0",
 		"num": "07",
 		"tags": ["Стартап","Анализ рынка","Участие в конкурсе"],
@@ -127,8 +130,7 @@
 			{ "img_link":"/projects/lifestyle-01.jpg", "title":"Проанализировали рыночные тренды" },	
 			{ "img_link":"/projects/lifestyle-02.jpg", "title":"Показали ситуацию на российском рынке" },
 			{ "img_link":"/projects/lifestyle-03.jpg", "title":"Сформулировали суть концепта и эффективность бизнес-модели" },
-			{ "img_link":"/projects/lifestyle-04.jpg", "title":"Отрисоваали презентацию в ярком дизайне" },
-			{ "img_link":"/projects/lifestyle-05.jpg", "title":"" }
+			{ "img_link":"/projects/lifestyle-04.jpg", "title":"Отрисоваали презентацию в ярком дизайне" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "32 слайд" },
@@ -170,8 +172,7 @@
 			{ "img_link":"/projects/rostelecom-01.jpg", "title":"Сделали акцент на проблематике" },	
 			{ "img_link":"/projects/rostelecom-02.jpg", "title":"Добавили ярких цветов" },
 			{ "img_link":"/projects/rostelecom-03.jpg", "title":"Упаковали длинный текст в простые понятные пункты" },
-			{ "img_link":"/projects/rostelecom-04.jpg", "title":"Добавили инфографики для легкости восприятия" },
-			{ "img_link":"/projects/rostelecom-05.jpg", "title":"" }
+			{ "img_link":"/projects/rostelecom-04.jpg", "title":"Добавили инфографики для легкости восприятия" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "38 слайдов" },
@@ -182,20 +183,17 @@
 	},
 	
 	{
-		"title": "Ростелеком",
+		"title": "РКТ",
 		"cartsubtitle": "0",
 		"num": "10",
-		"tags": ["Проект"],
-		"desc": "Цель: Разработать презентацию, которая заинтересует зрителя темой трудоустройства и убедит в важности корректного создания резюме. Задача плюсом - разработать дизайн в соответствии с целевой аудиторией – студенты старших курсов – но в рамках корпоративного стиля компании- заказчика",
+		"tags": ["Продукт","О компании"],
+		"desc": "Цель: Разработать презентационные материалы о компании и ее новом продукте для потенциальных клиентов",
 		"imgs": [
 			{ "img_link":"/projects/pkt-00.jpg", "title":"Сформулировали структуру презентации" },	
 			{ "img_link":"/projects/pkt-01.jpg", "title":"Большие массивы текста разбили на блоки" },	
 			{ "img_link":"/projects/pkt-02.jpg", "title":"Расставили акценты" },
 			{ "img_link":"/projects/pkt-03.jpg", "title":"Использовали лаконичную графику" },
-			{ "img_link":"/projects/pkt-04.jpg", "title":"…и яркий дизайн!" },
-			{ "img_link":"/projects/pkt-05.jpg", "title":"" },
-			{ "img_link":"/projects/pkt-06.jpg", "title":"" },
-			{ "img_link":"/projects/pkt-07.jpg", "title":"" }
+			{ "img_link":"/projects/pkt-04.jpg", "title":"…и яркий дизайн!" }
 		],
 		"info": [
 			{ "icon": "/icons/services1.svg",	"desc": "34 слайдов" },

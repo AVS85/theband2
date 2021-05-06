@@ -2,7 +2,7 @@
 <section class="container index_section7">
 	<div class="row justify-content-between">
 		<div class="col-12">
-			<h2 class="section_title">Раскажите <br>о вашем проекте:</h2>
+			<h2 class="section_title">Поделитесь <br>вашей идеей</h2>
 		</div>
 
 		<div class="w-100"></div>
@@ -10,8 +10,10 @@
 		<div class="col-lg-6">
 			<div class="profile">
 				<div class="profile_foto"></div>
-				<div class="profile-name text1">Светлана Савина</div>
-				<div class="profile-msg text2">Привет! Я помогу запустить ваш проект</div>
+				<div class="profile-name text1">Куновская Юлия</div>
+				<div class="profile-msg text2">ex МегаФон, KidZania, WeWork</div>
+				<div class="profile-msg text2"><b>Привет! Поможем вашему бизнесу достичь
+цели</b></div>
 			</div>	
 		</div>
 		<div class="col-lg-6">
@@ -80,13 +82,14 @@ export default {
 	.profile
 		margin-bottom: 45px
 		.profile_foto
-			background-image: url('/employees/savina.png')
+			background-image: url('/employees/kunovskaya.jpg')
 			background-repeat: no-repeat
 			background-position: center center
 			background-size: contain
 			height: 220px
 			width: 220px
 			border-radius: 110px
+			filter: grayscale(1)
 		.profile-name
 			font-weight: bold
 			margin: 20px 0 10px 0

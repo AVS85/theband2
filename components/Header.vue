@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="d-none d-lg-block col-lg-auto">
-				<button class="btn_main btn_main-second2">Связаться</button>
+				<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
 			</div>
 		
 			<div class="d-lg-none burger"
@@ -67,7 +67,9 @@ export default {
 		}
 	},
 	methods: {
-		
+		openContactForm(){
+			this.$router.push('/#contacts')
+		}
 	},
 }
 </script>

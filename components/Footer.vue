@@ -16,13 +16,13 @@
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
-				<a href="https://www.facebook.com/TheBand.Slides/">
+				<a href="#" target="_blank">
 					<img src="/icons/social-vk.svg" alt="theband.design-vk">
 				</a>
-				<a href="">
+				<a href="https://www.facebook.com/106060577827669/posts/163244842109242/" target="_blank">
 					<img src="/icons/social-fb.svg" alt="theband.design-fb">
 				</a>
-				<a href="">
+				<a href="https://t.me/thebandslides" target="_blank">
 					<img src="/icons/social-in.svg" alt="theband.design-in">
 				</a>
 			</div>
@@ -31,15 +31,15 @@
 		<div class="row row_bottom">
 			<div class="order-lg-3 col-lg-auto col_bottom contacts">
 				<ul>
-					<li>theband@gmail com</li>
+					<li>the.band@inbox.ru</li>
 					<li>+7 (925) 709 7259</li>
 				</ul>
 			</div>
 			<div class="order-lg-1 col-lg-auto col_bottom">
 				<ul>
-					<li><nuxt-link to="/" >Пользовательское соглашение</nuxt-link></li>
-					<li><nuxt-link to="/" >Соглашение о персональных данных</nuxt-link></li>
-					<li><nuxt-link to="/" >Политика рекламной рассылки </nuxt-link></li>
+					<li><a href="/doc/theband-aggrement.pdf" target="_blank">Договор оферта</a></li>
+					<li><a href="/doc/theband-privacy-policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+					<li><a href="/doc/theband-terms-of-use.pdf" target="_blank">Пользовательское соглашение</a></li>
 				</ul>
 			</div>
 			<div class="order-lg-2 col-lg-auto col_bottom copyright">

@@ -9,7 +9,7 @@
 			<div class="items">
 				<div class="item">
 					<div class="title h1">82%</div>
-					<div class="desc">клиентов считают классным, что мы челленджим идею в процессе работы</div>
+					<div class="desc">клиентов считают классным, <br>что мы челленджим идею в процессе работы</div>
 				</div>
 				<div class="item">
 					<div class="title h1">90%</div>
