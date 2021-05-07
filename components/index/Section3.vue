@@ -20,7 +20,7 @@
 					<div class="slide_wr">
 						<div class="slide_icon"
 						:style="`background-image: url('${item.icon}')`"></div>
-						<div class="slide_title">{{item.title}}</div>
+						<div class="slide_title">{{item.header}}</div>
 						<button 
 						class="slide_btn"
 						@click="openReadmore(item)">Подробнее</button>

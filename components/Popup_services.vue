@@ -5,7 +5,7 @@
 			
 			<div class="row d-none d-md-block">
 				<div class="col">
-					<h2>{{content.title}}</h2>
+					<h2>{{content.header}}</h2>
 					<span class="text2">{{content.desc}}</span>
 				</div>
 			</div>
@@ -13,36 +13,35 @@
 			<div class="row row-slider">
 				<div class="col">
 					<swiper ref="swServices" :options="swOptions">
-						<swiper-slide v-for="(item, i) in content.items" :key="i">
+						<swiper-slide v-for="(el, i) in content.items" :key="i">
 							<div class="slide_wr">
-								<div class="slide_title">{{item.title}}</div>
+								<div class="slide_title">{{el.header}}</div>
 
-								<div class="slide_desc">
-									<div class="slide_desc-label">Результат</div>
-									<div class="slide_desc-text">{{item.desc}}</div>
-								</div>
-
-								<div class="slide_desc" v-if="item.period">
-									<div class="slide_desc-label">Продолжительность консультации</div>
-									<div class="slide_desc-text">{{item.period}}</div>
-								</div>
-
-								<div class="slide_desc" v-if="item.price">
-									<div class="slide_desc-label">Стоимость</div>
-									<div class="slide_desc-text">{{item.price}}</div>
-								</div>
-
-								<div class="slide_desc" v-if="item.price_desc">
-									<div class="slide_desc-text-cursiv">{{item.price_desc}}</div>
+								<div class="slide_desc" v-for="(el,i) in el.info" :key="i">
+									<div class="slide_desc-label">{{el.title}}</div>
+									<div class="slide_desc-text">{{el.desc}}</div>
+									<div class="slide_desc-note">{{el.note}}</div>
 								</div>
 
 								<button class="btn_main btn_main-first"
-								@click="openReadmore(item)">Заказать</button>
+								@click="clickBtnOrder">Заказать</button>
 							</div>
 						</swiper-slide>
 					</swiper>
 				</div>
 			</div>
+
+			<div class="row row_info" v-if="content.clients.length>0">
+				<div class="col-12 info-title">Наши клиенты:</div>
+				<div class="col-md-3 col-lg info"	
+				v-for="(item, j) in content.clients" :key="j">
+					<div class="info-label"
+					:style="`background-color: ${item.color}`">
+						{{item.text}}
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </template>
@@ -89,6 +88,10 @@ export default {
 	methods: {
 		close(){
 			this.$store.commit('togglePopupServices', false)
+		},
+		clickBtnOrder(){
+			this.close()
+			this.$router.push('/#contacts')
 		}
 	},
 
@@ -162,4 +165,20 @@ export default {
 						font-style: italic
 						font-size: 12px
 						line-height: 12px
+				.slide_desc-note
+					margin-top: 5px
+					font-style: italic
+					font-size: 12px
+					line-height: 12px
+
+	.row_info
+		.info-title
+			margin: 0 0 17px 0
+
+		.info-label
+			border: 1px solid transparent
+			border-radius: 7px
+			color: #fff
+			text-align: center
+			margin: 3px 0
 </style>

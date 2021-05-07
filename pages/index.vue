@@ -6,7 +6,7 @@
 			<div class="col-md-5 sideA">
 				<h1>Аналитичекое бюро</h1>
 				<p>Помогаем бизнесу достигать целей, фокусируясь на смысле. Ясно и убедительно расскажем вашу идею с помощью логики, цифр и визуальных коммуникаций</p>
-				<button class="btn_main btn_main-first">Обсудить проект</button>
+				<button class="btn_main btn_main-first" @click="clickBtnOrder">Обсудить проект</button>
 			</div>
 			<div class="d-none d-md-block col-md-5 col-lg-3 offset-md-2 offset-lg-3 sideB">
 				<swiper ref="swServices" :options="sw1Options">
@@ -14,7 +14,7 @@
 						<div class="slide_wr">
 							<div class="slide_icon"
 							:style="`background-image: url('${item.icon}')`"></div>
-							<div class="slide_title">{{item.title}}</div>
+							<div class="slide_title">{{item.header}}</div>
 							<button 
 							class="slide_btn"
 							@click="openReadmore(item)">Подробнее</button>
@@ -88,6 +88,18 @@ export default {
 			// return this.$refs.swServices.$swiper;
 		}
 	},
+	
+	methods: {
+		clickBtnOrder(){
+			this.$router.push('/#contacts')
+		},
+		openReadmore(item){
+			console.log(item);
+			this.$store.commit('setPopupServices', item)
+			this.$store.commit('togglePopupServices', true)
+		}
+	},
+
 	head() {
 		return {
 			title: "TheBand",

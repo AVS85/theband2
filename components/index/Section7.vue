@@ -23,11 +23,10 @@
 			class="form"
 			@submit.prevent="sendMsg"
 			>
-				<input type="text" name="name" class="input_main" placeholder="Имя и фамилия" required>
+				<input type="text" name="name" class="input_main" placeholder="Как вас зовут?" required>
 				<input type="text" name="email" class="input_main" placeholder="E-mail">
 				<input type="text" name="phone" class="input_main" placeholder="+7(000)000-00-00" required>
-				<input type="text" name="q" class="input_main" placeholder="Чем вам помочь?">
-				<input type="text" name="task" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
+				<input type="text" name="task" class="input_main" placeholder="Опишите задачу и сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
 				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
 			</form>
