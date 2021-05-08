@@ -13,15 +13,17 @@
 			<div class="d-none d-lg-block col">
 				<div class="menu">
 					<ul>
-						<li><nuxt-link :to="{ path: '/', hash:'#about'}">О нас</nuxt-link></li>
-						<li><nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link></li>
-						<li><nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link></li>
+						<li><a v-scroll-to="'#about'" href="#">О нас</a></li>
+						<li><a v-scroll-to="'#services'" href="#">Услуги</a></li>
+						<li><a v-scroll-to="'#contacts'" href="#">Контакты</a></li>
 						<!-- <li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li> -->
 					</ul>
 				</div>
 			</div>
 			<div class="d-none d-lg-block col-lg-auto">
-				<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
+				<!-- <a v-scroll-to="'#contacts'" href="#"> -->
+					<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
+				<!-- </a> -->
 			</div>
 		
 			<div class="d-lg-none burger"
@@ -68,7 +70,8 @@ export default {
 	},
 	methods: {
 		openContactForm(){
-			this.$router.push('/#contacts')
+			this.$scrollTo('#contacts')
+			// this.$router.push('/#contacts')
 		}
 	},
 }

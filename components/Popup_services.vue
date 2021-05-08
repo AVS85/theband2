@@ -91,7 +91,8 @@ export default {
 		},
 		clickBtnOrder(){
 			this.close()
-			this.$router.push('/#contacts')
+			this.$scrollTo('#contacts')
+			// this.$router.push('/#contacts')
 		}
 	},
 

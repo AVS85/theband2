@@ -2,8 +2,8 @@
 export default {
   publicRuntimeConfig: {
     wpBaseURL: 'http://wp-theband.na4u.ru/',
-    baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://192.168.1.12:3333',
-    // baseURL: (process.env.NODE_ENV == 'production') ? 'http://localhost' : 'http://dev.jmart.ru',
+    baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://localhost:3333',
+    // baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://192.168.1.12:3333',
   },
   /*
   ** Nuxt rendering mode
@@ -81,6 +81,9 @@ export default {
 				}
       },
     }],
+    ['vue-scrollto/nuxt', { 
+      duration: 300 
+    }]
   ],
   /*
   ** Axios module configuration

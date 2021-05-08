@@ -86,7 +86,8 @@ export default {
 
 	methods: {
 		openContactForm(){
-			this.$router.push('/#contacts')
+			// this.$router.push('/#contacts')
+			this.$scrollTo('#contacts')
 		},
 		slide(){
 			console.log(this.$refs.swServices.$swiper)

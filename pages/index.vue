@@ -91,7 +91,8 @@ export default {
 	
 	methods: {
 		clickBtnOrder(){
-			this.$router.push('/#contacts')
+			// this.$router.push('/#contacts')
+			this.$scrollTo('#contacts')
 		},
 		openReadmore(item){
 			console.log(item);
