@@ -4,7 +4,7 @@
 	<section class="container section1">
 		<div class="row">
 			<div class="col-md-5 sideA">
-				<h1>Аналитичекое бюро</h1>
+				<h1>Бюро аналитики и презентаций</h1>
 				<p>Помогаем бизнесу достигать целей, фокусируясь на смысле. Ясно и убедительно расскажем вашу идею с помощью логики, цифр и визуальных коммуникаций</p>
 				<button class="btn_main btn_main-first" @click="clickBtnOrder">Обсудить проект</button>
 			</div>

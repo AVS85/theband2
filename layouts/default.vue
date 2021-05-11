@@ -2,6 +2,7 @@
   <div>
     <Header/>
     <Nuxt />
+		<ScrollTop/>
     <Footer/>
   </div>
 </template>
