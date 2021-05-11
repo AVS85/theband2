@@ -19,10 +19,13 @@
 				<swiper-slide  v-for="(item, i) in projectsItems" :key="i">
 					<div class="slide_wr">
 						<div class="slide_num">{{item.num}}</div>
-						<div class="slide_title text1">{{item.title}}</div>
-						<div class="slide_subtitle text2">{{ (item.tags) ? item.tags.join(', ') : null  }}</div>
+						<div class="slide_desc">
+							<div class="slide_title text1">{{item.title}}</div>
+							<div class="slide_subtitle text2">{{ (item.tags) ? item.tags.join(', ') : null  }}</div>
+						</div>
 						<div class="slide_img"
-						:style="`background-image: url('${item.imgs[0].img_link}')`"></div>
+						:style="`background-image: url('${item.imgs[0].img_link}')`">
+						</div>
 						<button 
 						class="slide_btn"
 						@click="openReadmore(item)">Подробнее</button>
@@ -112,6 +115,7 @@ export default {
 			// justify-content: center
 			height: auto
 			.slide_wr
+				display: flex
 				flex-direction: column
 				justify-content: space-between
 				align-items: flex-start
@@ -134,15 +138,18 @@ export default {
 					font-family: "main-bold"
 					color: $grey_lite2
 					margin-left: 12px
-				.slide_title
-					// border: 1px solid grey
-					font-weight: bold
+				.slide_desc
+					display: flex
+					flex-direction: column
 					flex: 1
-					margin-left: 12px
-				.slide_subtitle
 					// border: 1px solid grey
-					flex: 1
-					margin-left: 12px
+					.slide_title
+						// border: 1px solid grey
+						font-weight: bold
+						margin-left: 12px
+					.slide_subtitle
+						// border: 1px solid grey
+						margin-left: 12px
 				.slide_img
 					// border: 1px solid grey
 					background-position: center

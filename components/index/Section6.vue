@@ -42,8 +42,8 @@ export default {
         },
 				breakpoints: {   
 					0: { slidesPerView: 1, spaceBetween: 5 },
-					400: { slidesPerView: 3, spaceBetween: 5 },
-					768: { slidesPerView: 4, spaceBetween: 10 },
+					400: { slidesPerView: 3, spaceBetween: 20 },
+					768: { slidesPerView: 4, spaceBetween: 20 },
           992: { slidesPerView: 5, spaceBetween: 20 }
         },
       },
@@ -61,23 +61,16 @@ export default {
 .index_section6
 	padding-top: 75px
 	padding-bottom: 75px
-	.slide_wr
-		border: 10px solid $grey_lite1
-		background-color: $grey_lite1
-		height: 70px
-		background-position: center center
-		background-repeat: no-repeat
-		background-size: contain
-
-		filter: grayscale(1)
-		opacity: .5
-		// cursor: pointer
 	.swiper-wrapper 
 		transition-timing-function: linear !important
-		// .swiper-slide
-		// 	background-color: rgba($bg_lite, .351)    
-		// 	background-repeat: no-repeat
-		// 	background-position: center
-		// 	width: 270px
-		// 	height: 270px
+	.swiper-slide
+		background-color: $grey_lite1
+		.slide_wr
+			border: 14px solid $grey_lite1
+			height: 70px
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: contain
+			filter: grayscale(1)
+			opacity: .5
 </style>
