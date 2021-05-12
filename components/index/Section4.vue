@@ -21,7 +21,11 @@
 						<div class="slide_num">{{item.num}}</div>
 						<div class="slide_desc">
 							<div class="slide_title text1">{{item.title}}</div>
-							<div class="slide_subtitle text2">{{ (item.tags) ? item.tags.join(', ') : null  }}</div>
+							<div class="slide_subtitle text2">
+								<div class="tag" 
+								v-for="(el, i) in item.tags" :key="i"
+								:style="`background-color: ${el.color}`">{{el}}</div>
+							</div>
 						</div>
 						<div class="slide_img"
 						:style="`background-image: url('${item.imgs[0].img_link}')`">
@@ -115,12 +119,12 @@ export default {
 			// justify-content: center
 			height: auto
 			.slide_wr
+				// border: 1px solid red
+				border: 1px solid transparent
 				display: flex
 				flex-direction: column
 				justify-content: space-between
 				align-items: flex-start
-				border: 1px solid transparent
-				// border: 1px solid red
 				background-color: $grey_lite1
 				border-radius: 5px
 				padding: 12px 28px 20px 0 
@@ -139,17 +143,37 @@ export default {
 					color: $grey_lite2
 					margin-left: 12px
 				.slide_desc
+					// border: 1px solid red
 					display: flex
+					flex-wrap: wrap
 					flex-direction: column
 					flex: 1
-					// border: 1px solid grey
+					margin-left: 12px
 					.slide_title
 						// border: 1px solid grey
 						font-weight: bold
-						margin-left: 12px
+						width: 100%
+						margin-bottom: 16px
 					.slide_subtitle
 						// border: 1px solid grey
-						margin-left: 12px
+						display: flex
+						flex-wrap: wrap
+						align-items: flex-start
+						// // width: 50px
+						.tag
+							display: flex
+							align-items: center
+							border: 1px solid grey
+							background-color: rgba($grey_dark2, .75)
+							border: 0
+							border-radius: 5px
+							color: #fff
+							text-transform: lowercase
+							font-size: 14px
+							line-height: 14px
+							margin: 2px 2px 2px 0 
+							padding: 4px 8px 
+
 				.slide_img
 					// border: 1px solid grey
 					background-position: center
@@ -157,7 +181,7 @@ export default {
 					background-size: cover
 					height: 140px
 					width: 100%
-					margin: 45px 0 20px 0
+					margin: 30px 0 20px 0
 				.slide_btn
 					border: 0
 					position: relative

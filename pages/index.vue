@@ -3,12 +3,12 @@
 
 	<section class="container section1">
 		<div class="row">
-			<div class="col-md-5 sideA">
+			<div class="col-lg-5 sideA">
 				<h1>Бюро аналитики и презентаций</h1>
 				<p>Помогаем бизнесу достигать целей, фокусируясь на смысле. Ясно и убедительно расскажем вашу идею с помощью логики, цифр и визуальных коммуникаций</p>
 				<button class="btn_main btn_main-first" @click="clickBtnOrder">Обсудить проект</button>
 			</div>
-			<div class="d-none d-md-block col-md-5 col-lg-3 offset-md-2 offset-lg-3 sideB">
+			<div class="d-none d-lg-block col-md-5 col-lg-5 offset-md-2 offset-lg-2 sideB">
 				<swiper ref="swServices" :options="sw1Options">
 					<swiper-slide v-for="(item, i) in servicesItems" :key="i">
 						<div class="slide_wr">
@@ -21,6 +21,8 @@
 						</div>
 					</swiper-slide>
 				</swiper>
+				<div class="swPagination-block1" slot="pagination"></div>
+
 			</div>
 		</div>
 	</section>
@@ -56,7 +58,7 @@ export default {
 			sw1Options: {
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 50,
 				// direction: 'vertical',
 				// breakpoints: {   
 				// 	0: { slidesPerView: 1, spaceBetween: 0 },
@@ -68,6 +70,9 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+				pagination: {
+					el: '.swPagination-block1'
+				},
       },
 		}
 	},
@@ -123,6 +128,7 @@ export default {
 </script>
 
 <style lang="sass">
+
 section
 	// border: 1px solid grey
 	padding-top: 105px
@@ -141,7 +147,28 @@ section
 		button
 			margin: 40px 0 0 0
 	.sideB
+		display: flex !important
+		flex-wrap: nowrap
 		// border: 1px solid grey
+		@media (max-width: 998px)
+			display: none !important
+		.swPagination-block1
+			display: flex
+			flex-direction: column
+			padding-left: 10px
+			.swiper-pagination-bullet
+				margin: 7px 0
+				width: 30px
+				border: 0
+				// min-height: 4px	
+				// max-height: 4px
+				// height: 4px
+			.swiper-pagination-bullet-active
+				background: rgba($grey_dark1, .75)
+				width: 40px
+				// transition: .25s
+				transition: 0s !important
+
 	.slide_wr
 		// border: 1px solid red
 		border-radius: 5px
@@ -153,7 +180,7 @@ section
 		background-color: $grey_lite2
 		padding: 30px 14px
 		min-height: 300px
-		width: 100%
+		width: calc(100% - 10px)
 		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
 		margin-bottom: 60px
 		user-select: none

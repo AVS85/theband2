@@ -165,3 +165,18 @@ a.nuxt-link-active
 /* exact link will show the primary color for only the exact matching link */
 a.nuxt-link-exact-active 
 	color: $grey_dark1
+
+
+.scrollbar
+	overflow-y: scroll
+	overflow-x: hidden
+	scrollbar-width: thin // FF scrollbar "auto" или "thin"  */
+	scrollbar-color: $acc $elem // FF scrollbar 
+	&::-webkit-scrollbar //Chrome-Edge-Safari scrollbar
+		width: 3px  // ширина scrollbar
+	&::-webkit-scrollbar-track 
+		background: $elem // цвет дорожки
+	&::-webkit-scrollbar-thumb
+		background-color: $acc // цвет плашки
+		border-radius: 20px // закругления плашки
+		border: 0px solid grey // padding вокруг плашки

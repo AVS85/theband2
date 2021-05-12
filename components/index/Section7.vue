@@ -11,9 +11,9 @@
 			<div class="profile">
 				<div class="profile_foto"></div>
 				<div class="profile-name text1">Куновская Юлия</div>
+				<div class="profile-msg text2"><b>Привет! Поможем вашему бизнесу достичь цели</b></div>
 				<div class="profile-msg text2">ex МегаФон, KidZania, WeWork</div>
-				<div class="profile-msg text2"><b>Привет! Поможем вашему бизнесу достичь
-цели</b></div>
+
 			</div>	
 		</div>
 		<div class="col-lg-6">
@@ -29,6 +29,7 @@
 				<input type="text" name="task" class="input_main" placeholder="Опишите задачу и сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
 				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
+				<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 			</form>
 		</div>
 	</div>
@@ -37,10 +38,21 @@
 
 <script>
 export default {
+	data() {
+		return {
+			name: '',
+			email: '',
+			phone: '',
+			task: ''
+		}
+	},
 	methods: {
 		sendMsg(){
 			this.$axios.post("https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a", {
-				message: "Hello, World",
+				name: this.name,
+				email: this.email,
+				phone: this.phone,
+				task: this.task
 				// "g-recaptcha-response": grecaptcha.getResponse(),
 			})
 			.then(function (response) {
@@ -55,6 +67,9 @@ export default {
 </script>
 
 <style lang="sass">
+.grecaptcha-badge
+	position: fixed !important
+	right: -320px !important
 .index_section7
 	.form
 		display: flex

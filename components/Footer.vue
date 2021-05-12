@@ -15,14 +15,14 @@
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
-				<a href="#" target="_blank">
-					<img src="/icons/social-vk.svg" alt="theband.design-vk">
+				<a href="#" target="_blank"
+				:style="`background-image: url(/icons/instagram.svg)`">
 				</a>
-				<a href="https://www.facebook.com/106060577827669/posts/163244842109242/" target="_blank">
-					<img src="/icons/social-fb.svg" alt="theband.design-fb">
+				<a href="https://www.facebook.com/106060577827669/posts/163244842109242/" target="_blank"
+				:style="`background-image: url(/icons/facebook.svg)`">
 				</a>
-				<a href="https://t.me/thebandslides" target="_blank">
-					<img src="/icons/social-in.svg" alt="theband.design-in">
+				<a href="https://t.me/thebandslides" target="_blank"
+				:style="`background-image: url(/icons/telegram.svg)`">
 				</a>
 			</div>
 		</div>
@@ -103,8 +103,17 @@ footer
 			justify-content: center
 			margin-top: 20px
 			margin-bottom: 20px
-			img
+			a
+				// border: 1px solid red
+				border-radius: 45px
+				height: 32px
+				width: 32px
 				margin: 5px
+				background-color: $grey_dark2
+				background-size: 50%
+				background-repeat: no-repeat
+				background-position: center center
+
 
 	.row_bottom
 		// border: 1px solid red

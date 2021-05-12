@@ -1,6 +1,6 @@
 <template>
-	<div class="popup_wrapper-services" v-if="isShow">
-		<div class="container popup_container">
+	<div class="popup_wrapper-services " v-if="isShow" @scroll.prevent>
+		<div class="container popup_container scrollbar" >
 			<div class="popup_btn-close" @click="close"></div>
 			
 			<div class="row d-none d-md-block">
@@ -102,15 +102,15 @@ export default {
 .popup_wrapper-services
 	// border: 1px solid red
 	background: rgba(208, 219, 230, 0.9)
-	// background-color: rgba(#fff, .91)
 	position: fixed
+	display: flex
+	// align-items: center
 	top: 0
 	left: 0
-	right: 0
-	bottom: 0
 	z-index: 999
-	display: flex
-	align-items: center
+	min-height: 100vh
+	max-height: 100vh
+	width: 100%
 	.popup_container
 		background-color: rgba(#fff, 1)
 		position: relative
@@ -119,6 +119,7 @@ export default {
 		padding: 50px 35px
 		filter: blur(0)
 		z-index: 1001
+		// height: auto
 		.popup_btn-close
 			position: absolute
 			// border: 1px solid red

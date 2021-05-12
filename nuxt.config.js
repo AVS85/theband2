@@ -28,7 +28,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+		script: [
+			{ src: "https://www.google.com/recaptcha/api.js?render=6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy" },
+			{ src: "/js/recaptcha.js" },
+		]
   },
   /*
   ** Global CSS
