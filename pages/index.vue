@@ -155,7 +155,8 @@ section
 		.swPagination-block1
 			display: flex
 			flex-direction: column
-			padding-left: 10px
+			padding-left: 20px
+			align-items: flex-end
 			.swiper-pagination-bullet
 				margin: 7px 0
 				width: 30px

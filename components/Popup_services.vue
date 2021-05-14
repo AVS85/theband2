@@ -104,13 +104,15 @@ export default {
 	background: rgba(208, 219, 230, 0.9)
 	position: fixed
 	display: flex
-	// align-items: center
+	align-items: center
 	top: 0
 	left: 0
 	z-index: 999
 	min-height: 100vh
 	max-height: 100vh
 	width: 100%
+	@media (max-width: 998px)
+		align-items: stretch
 	.popup_container
 		background-color: rgba(#fff, 1)
 		position: relative

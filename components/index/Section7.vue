@@ -17,20 +17,27 @@
 			</div>	
 		</div>
 		<div class="col-lg-6">
-			<!-- action="https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a" -->
-			<!-- method="post" -->
 			<form 
 			class="form"
-			@submit.prevent="sendMsg"
+			accept-charset="UTF-8"
+			@submit.prevent="sendMsg()"
+			method="POST"
+			v-if="!isSuccess"
 			>
-				<input type="text" name="name" class="input_main" placeholder="Как вас зовут?" required>
-				<input type="text" name="email" class="input_main" placeholder="E-mail">
-				<input type="text" name="phone" class="input_main" placeholder="+7(000)000-00-00" required>
-				<input type="text" name="task" class="input_main" placeholder="Опишите задачу и сроки">
+				<input v-model="name" type="text" name="name" class="input_main" placeholder="Как вас зовут?" required>
+				<input v-model="email" type="text" name="email" class="input_main" placeholder="E-mail">
+				<input v-model="phone" type="text" name="phone" class="input_main" placeholder="+7(000)000-00-00" required>
+				<input v-model="task" type="text" name="task" class="input_main" placeholder="Опишите задачу и сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
 				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
 				<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 			</form>
+			<div 
+			class="success" 
+			v-if="isSuccess">
+			<p>Заявка отправлена</p>
+			<img src="/icons/success.svg" alt="">
+			</div>
 		</div>
 	</div>
 	</section>
@@ -43,22 +50,46 @@ export default {
 			name: '',
 			email: '',
 			phone: '',
-			task: ''
+			task: '',
+
+			isSuccess: false,
+			token: null
 		}
 	},
+
+	mounted(){
+		this.recapcha()
+	},
+
 	methods: {
+		recapcha(){
+			grecaptcha.execute('6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy', {
+				action: 'homepage'
+			})
+			.then((token) => {
+				document.getElementById('captchaResponse').value = token;
+				console.log('token ', token);
+				this.token = token
+			});
+		},
 		sendMsg(){
-			this.$axios.post("https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a", {
+			console.log(grecaptcha.getResponse);
+			let data = {
 				name: this.name,
 				email: this.email,
 				phone: this.phone,
-				task: this.task
-				// "g-recaptcha-response": grecaptcha.getResponse(),
+				task: this.task,
+				"g-recaptcha-response": this.token
+				// "g-recaptcha-response": grecaptcha.getResponse()
+			}
+
+			this.$axios.post("https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a", data)
+			.then( (response) => {
+				// this.isSuccess = response.data.success ? true : false;
+				this.isSuccess = (response.status == 200) ? true : false;
+				console.log(response, this.isSuccess);
 			})
-			.then(function (response) {
-				console.log(response);
-			})
-			.catch(function (response) {
+			.catch( (response) => {
 				console.error(response);
 			});
 		}
@@ -108,4 +139,10 @@ export default {
 			font-weight: bold
 			margin: 20px 0 10px 0
 		// .profile-msg
+	.success
+		// border: 1px solid red	
+		text-align: center
+		font-size: 20px
+		line-height: 20px
+		font-weight: bold
 </style>
