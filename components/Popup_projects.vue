@@ -21,6 +21,13 @@
 				<div class="col desc">{{content.desc}}</div>
 			</div>
 
+			<div class="row-slider-control">
+				<div class="col swiperbtn">
+					<div class="btn-slide             btn-slide-grey swButton_project-prev"></div>
+					<div class="btn-slide btn-slide-r btn-slide-grey swButton_project-next"></div>
+				</div>
+			</div>
+
 			<div class="row row-slider">
 				<div class="col">
 					<swiper ref="swServices" :options="swOptions">
@@ -68,8 +75,8 @@ export default {
           992: { slidesPerView: 5, spaceBetween: 30 }
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swButton_project-next",
+          prevEl: ".swButton_project-prev",
         },
       },
 		}
@@ -162,15 +169,31 @@ export default {
 		// .desc
 
 	.row-slider
-		margin-top: 45px
+		margin-top: 25px
 		margin-bottom: 45px
-
 		.slide_wr
 			// border: 1px solid red
 			img
 				width: 100%
 				margin-bottom: 10px
-			
+
+	.row-slider-control
+		display: flex
+		justify-content: flex-end
+		// border: 1px solid red
+		.swiperbtn
+			// border: 1px solid red
+			flex: 0
+			display: flex
+			align-items: center
+			color: $grey_dark2
+			font-size: 12px
+			margin-top: 15px
+			margin-bottom: 15px
+			div
+				margin-left: 10px
+
+
 	.slide_wr-subtitle
 		font-size: 12px
 		line-height: 12px
