@@ -43,7 +43,7 @@
 					<nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link>
 				</li>
 			</ul>
-			<button class="btn_main btn_main-second2">Связаться</button>
+			<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
 		</div>
 	
 
@@ -70,6 +70,9 @@ export default {
 	},
 	methods: {
 		openContactForm(){
+			fbq('track', 'Contact'); //pixel
+
+			this.isShowMenu = false
 			this.$scrollTo('#contacts')
 			// this.$router.push('/#contacts')
 		}

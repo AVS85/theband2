@@ -86,6 +86,7 @@ export default {
 
 	methods: {
 		openContactForm(){
+			fbq('track', 'Contact'); //pixel
 			// this.$router.push('/#contacts')
 			this.$scrollTo('#contacts')
 		},

@@ -93,9 +93,14 @@ export default {
 			// return this.$refs.swServices.$swiper;
 		}
 	},
+
+	mounted(){
+		fbq('track', 'PageView'); //Посещение каждого отдельного URL
+	},
 	
 	methods: {
 		clickBtnOrder(){
+			fbq('track', 'Contact'); //pixel
 			// this.$router.push('/#contacts')
 			this.$scrollTo('#contacts')
 		},

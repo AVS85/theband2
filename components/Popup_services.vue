@@ -1,6 +1,7 @@
 <template>
 	<div class="popup_wrapper-services " v-if="isShow" @scroll.prevent>
 		<div class="container popup_container scrollbar" >
+			<!--  -->
 			<div class="popup_btn-close" @click="close"></div>
 			
 			<div class="row d-none d-md-block">
@@ -97,6 +98,7 @@ export default {
 			this.$store.commit('togglePopupServices', false)
 		},
 		clickBtnOrder(){
+			fbq('track', 'Contact'); //pixel
 			this.close()
 			this.$scrollTo('#contacts')
 			// this.$router.push('/#contacts')
@@ -113,11 +115,12 @@ export default {
 	display: flex
 	align-items: center
 	top: 0
+	bottom: 0
 	left: 0
-	z-index: 999
+	right: 0
 	min-height: 100vh
-	max-height: 100vh
 	width: 100%
+	z-index: 999
 	@media (max-width: 998px)
 		align-items: stretch
 	.popup_container
@@ -128,7 +131,8 @@ export default {
 		padding: 50px 35px
 		filter: blur(0)
 		z-index: 1001
-		// height: auto
+		max-height: 100vh
+		overflow-y: auto
 		.popup_btn-close
 			position: absolute
 			// border: 1px solid red

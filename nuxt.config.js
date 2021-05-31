@@ -2,7 +2,7 @@
 export default {
   publicRuntimeConfig: {
     wpBaseURL: 'http://wp-theband.na4u.ru/',
-    baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://localhost:3333',
+    baseURL: (process.env.NODE_ENV == 'production') ? 'https://theband.design' : 'http://192.168.1.12:3333',
     // baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://192.168.1.12:3333',
   },
   /*
@@ -24,7 +24,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { name: 'facebook-domain-verification', content: 'xeh5farsssvbk7tqqljdygkhn9ll9s' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -32,6 +33,7 @@ export default {
 		script: [
 			{ src: "https://www.google.com/recaptcha/api.js?render=6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy" },
 			{ src: "/js/recaptcha.js" },
+			{ src: "/js/fb-pixel.js" },
 		]
   },
   /*

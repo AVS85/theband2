@@ -2,7 +2,7 @@
 <section class="container index_section7">
 	<div class="row justify-content-between">
 		<div class="col-12">
-			<h2 class="section_title">Поделитесь <br>вашей идеей</h2>
+			<h2 class="section_title">Пишите - поможем <br>вашему бизнесу достичь цели</h2>
 		</div>
 
 		<div class="w-100"></div>
@@ -11,7 +11,7 @@
 			<div class="profile">
 				<div class="profile_foto"></div>
 				<div class="profile-name text1">Куновская Юлия</div>
-				<div class="profile-msg text2"><b>Привет! Поможем вашему бизнесу достичь цели</b></div>
+				<div class="profile-msg text2">Основатель The Band</div>
 				<div class="profile-msg text2">ex МегаФон, KidZania, WeWork</div>
 
 			</div>	
@@ -73,6 +73,8 @@ export default {
 			});
 		},
 		sendMsg(){
+			
+
 			console.log(grecaptcha.getResponse);
 			let data = {
 				name: this.name,
@@ -85,6 +87,8 @@ export default {
 
 			this.$axios.post("https://getform.io/f/3fb0ea34-2a92-41eb-a7e5-e3934ac8664a", data)
 			.then( (response) => {
+				fbq('track', 'Lead'); // pixel
+				
 				// this.isSuccess = response.data.success ? true : false;
 				this.isSuccess = (response.status == 200) ? true : false;
 				console.log(response, this.isSuccess);
