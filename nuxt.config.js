@@ -12,6 +12,7 @@ export default {
 	** See https://nuxtjs.org/api/configuration-target
 	 */
  	mode: 'spa',
+	//  ssr: 'false',
  	// mode: 'universal',
   target: 'static',
   // target: 'server',
@@ -48,6 +49,7 @@ export default {
   */
   plugins: [
 		{ src: '~/plugins/vue2-smooth-scroll.js', ssr: false },
+		// { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
   ],
 
   /*
@@ -87,9 +89,8 @@ export default {
 				}
       },
     }],
-    ['vue-scrollto/nuxt', { 
-      duration: 300 
-    }]
+		
+    ['vue-scrollto/nuxt', { duration: 300 }]
   ],
   /*
   ** Axios module configuration

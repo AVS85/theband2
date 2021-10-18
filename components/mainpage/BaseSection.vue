@@ -36,6 +36,7 @@ section.mpSection
 		font-size: 32px
 		line-height: 40px
 		margin-bottom: 60px
+		text-transform: uppercase
 	section.content_wrapper
 		// border: 1px solid grey
 

@@ -1,12 +1,13 @@
 <template>
 <div class="mainpage">
 
-	<Section1 />
+	<!-- <Section1 /> -->
 
-	<BaseSection title="Какие задачи решаем">
+	<!-- <BaseSection title="Какие задачи решаем">
 		<Section2 id="about"/>
-	</BaseSection>
-	<BaseSection title="Какие задачи решаем">
+	</BaseSection> -->
+
+	<BaseSection title="Услуги">
 		<Section3 id="services"/>
 	</BaseSection>
 
@@ -27,7 +28,7 @@ import BaseSection from '/components/mainpage/BaseSection.vue'
 import Section1 from '/components/mainpage/section1/Section1.vue'
 
 import Section2 from '/components/mainpage/section2/Section2.vue'
-import Section3 from '/components/mainpage/Section3.vue'
+import Section3 from '/components/mainpage/section3/Section3.vue'
 import Section4 from '/components/mainpage/Section4.vue'
 import Section5 from '/components/mainpage/Section5.vue'
 import Section6 from '/components/mainpage/Section6.vue'
@@ -121,96 +122,4 @@ export default {
 
 <style lang="sass">
 
-.mainpage
-
-	// section.mpSection
-	// 	border: 1px solid grey
-	// 	font-family: 'textMedium'
-	// 	padding-top: 60px
-	// 	padding-bottom: 60px
-	// 	header
-	// 		font-family: 'headerBold'
-	// 		font-size: 32px
-	// 		line-height: 40px
-	// 		margin-bottom: 60px
-	// 	section.content_wrapper
-	// 		border: 1px solid grey
-
-
-// .section1
-// 	.sideA
-// 		p
-// 			margin: 20px 0
-// 		button
-// 			margin: 40px 0 0 0
-// 	.sideB
-// 		display: flex !important
-// 		flex-wrap: nowrap
-// 		// border: 1px solid grey
-// 		@media (max-width: 998px)
-// 			display: none !important
-// 		.swPagination-block1
-// 			display: flex
-// 			flex-direction: column
-// 			padding-left: 20px
-// 			align-items: flex-end
-// 			.swiper-pagination-bullet
-// 				margin: 7px 0
-// 				width: 30px
-// 				border: 0
-// 				// min-height: 4px	
-// 				// max-height: 4px
-// 				// height: 4px
-// 			.swiper-pagination-bullet-active
-// 				background: rgba($grey_dark1, .75)
-// 				width: 40px
-// 				// transition: .25s
-// 				transition: 0s !important
-
-// 	.slide_wr
-// 		// border: 1px solid red
-// 		border-radius: 5px
-// 		position: relative
-// 		display: flex
-// 		flex-direction: column
-// 		justify-content: space-between
-// 		align-items: flex-start
-// 		background-color: $grey_lite2
-// 		padding: 30px 14px
-// 		min-height: 300px
-// 		width: calc(100% - 10px)
-// 		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
-// 		margin-bottom: 60px
-// 		user-select: none
-// 		cursor: grab
-// 		&:active
-// 			cursor: grabbing
-// 		.slide_icon
-// 			// border: 1px solid grey
-// 			background-position: center
-// 			background-repeat: no-repeat
-// 			background-size: contain
-// 			height: 46px
-// 			width: 46px
-// 			margin-bottom: 45px
-// 		.slide_title
-// 			// border: 1px solid grey
-// 			font-weight: bold
-// 			flex: 1
-// 		.slide_btn
-// 			border: 0
-// 			position: relative
-// 			font-size: 12px
-// 			color: $elem
-// 			background: transparent
-// 			&::after
-// 				content: ''
-// 				position: absolute
-// 				// border: 1px solid red
-// 				background-image: url('/icons/arrow-sm.svg')
-// 				background-size: contain
-// 				height: 10px
-// 				min-width: 14px
-// 				top: calc(50% - 5px)
-// 				margin-left: 10px
 </style>

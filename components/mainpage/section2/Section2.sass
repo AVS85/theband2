@@ -1,0 +1,130 @@
+.wrapper
+	display: flex
+	article
+		// border: 1px solid red
+		width: 100%
+		.top__panel
+			position: relative
+			border-radius: 5px
+			background-color: $grey_lite1
+			padding: 56px 40px
+			header 
+				// border: 1px solid red
+				font-size: 20px
+				line-height: 24px
+				z-index: 0
+				margin-right: 75px //обнулить на мобилке
+			.buttons
+				position: absolute
+				right: 40px
+				top: 56px
+				display: flex
+				z-index: 1
+				div
+					margin-left: 20px
+
+			.gallery
+				display: flex
+				// width: 500px
+				overflow: hidden
+				border: 1px solid red
+				.swiper-slide
+					display: flex
+					justify-content: center
+					border: 1px solid red
+
+
+
+		.bottom__panel	
+			background-color: $grey_lite1
+			border-radius: 5px
+			margin-top: 30px
+			padding: 56px 40px
+			.title
+				font-size: 20px
+				line-height: 24px
+				margin-bottom: 24px
+			.details
+				// border: 1px solid red
+				display: flex
+				flex-wrap: wrap
+				.detail
+					// border: 1px solid red
+					// display: flex
+					flex: 1
+					margin: 12px 0
+					font-size: 20px
+					line-height: 24px
+					font-family: 'textRegular'
+					padding: 0 25px
+					span
+						font-weight: bold
+					&::before
+						position: absolute
+						content: ''
+						height: 18px
+						width: 18px
+						background-repeat: no-repeat
+						background-size: contain
+						margin-left: -25px
+					&.icon1::before
+						background-image: url(./imgs/1.svg)
+					&.icon2::before
+						background-image: url(./imgs/2.svg)
+					&.icon3::before
+						background-image: url(./imgs/3.svg)
+					// .icon4
+					// 	background-image: url(./imgs/4.svg)
+					// .icon5
+					// 	background-image: url(./imgs/5.svg)
+
+
+	aside
+		// display: none
+		max-width: 350px
+		width: 100%
+		margin-right: 30px
+		.item
+			// border: 1px solid $blue_acc
+			position: relative
+			display: flex
+			align-items: center
+			border-radius: 5px
+			font-size: 20px
+			font-family: 'textMedium'
+			line-height: 24px
+			min-height: 56px
+			padding: 16px 40px 16px 8px
+			transition: .3s
+			cursor: pointer
+			&:hover
+				background-color: $grey_lite1
+			&.active
+				background-color: $blue_acc
+				&::before
+					// border: 1px solid $blue_acc
+					content: ''
+					background-image: url(./imgs/arrow.svg)
+					background-repeat: no-repeat
+					background-size: contain
+					position: absolute
+					height: 16px
+					width: 16px
+					right: 0
+					margin: 12px
+					transform: rotate(0)
+					opacity: 1
+					
+			&::before
+				// border: 1px solid $blue_acc
+				content: ''
+				background-image: url(./imgs/arrow.svg)
+				background-repeat: no-repeat
+				background-size: contain
+				position: absolute
+				height: 16px
+				width: 16px
+				right: 0
+				margin: 12px
+				transform: rotate(180deg)
+				opacity: .5
