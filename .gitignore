@@ -1,3 +1,5 @@
+*package-lock*
+*.pdf
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
@@ -88,3 +90,5 @@ sw.*
 
 # Vim swap files
 *.swp
+static/doc/theband-privacy-policy.pdf
+static/doc/theband-terms-of-use.pdf
