@@ -1,42 +1,9 @@
 <template>
-<section class="container ind_services">
-	<div class="row justify-content-between align-items-center">
-		<div class="col">
-			<h2 class="section_title">Наши услуги</h2>
-		</div>
-		<div class="d-none d-md-block col-auto">
-			<div class="swiperbtn">
-				<span>Больше услуг</span>
-				<button class="btn-slide 						 btn-slide-grey swSlideL-services"></button>
-				<button class="btn-slide btn-slide-r btn-slide-grey swSlideR-services"></button>
-			</div>
-		</div>
+	<section class="">
+		
+		456
 
-		<div class="w-100"></div>
-
-		<div class="col-12">
-			<swiper ref="swServices" :options="swServicesOptions">
-				<swiper-slide v-for="(item, i) in servicesItems" :key="i">
-					<div class="slide_wr">
-						<div class="slide_icon"
-						:style="`background-image: url('${item.icon}')`"></div>
-						<div class="slide_title">{{item.header}}</div>
-						<button 
-						class="slide_btn"
-						@click="openReadmore(item)">Подробнее</button>
-					</div>
-				</swiper-slide>
-				<div class="d-sm-none swPagination-services" slot="pagination"></div>
-			</swiper>
-		</div>
-	</div>
-
-	<div class="row justify-content-center">
-		<div class="col-auto col-md-12 ind_services-btn">
-			<button class="btn_main btn_main-optional"  @click="openContactForm">Заказать проект</button>
-		</div>
-	</div>
-</section>
+	</section>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-<header>
+<header class="header">
 	<div class="container">
 
 		<div class="row row_header">
@@ -82,7 +82,7 @@ export default {
 
 <style lang="sass">
 
-header
+header.header
 	position: relative
 	display: flex
 	align-items: center

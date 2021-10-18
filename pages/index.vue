@@ -1,34 +1,15 @@
 <template>
-<div>
+<div class="mainpage">
 
-	<section class="container section1">
-		<div class="row">
-			<div class="col-lg-5 sideA">
-				<h1>Бюро аналитики и презентаций</h1>
-				<p>Помогаем бизнесу достигать целей, фокусируясь на смысле. Ясно и убедительно расскажем вашу идею с помощью логики, цифр и визуальных коммуникаций</p>
-				<button class="btn_main btn_main-first" @click="clickBtnOrder">Обсудить проект</button>
-			</div>
-			<div class="d-none d-lg-block col-md-5 col-lg-5 offset-md-2 offset-lg-2 sideB">
-				<swiper ref="swServices" :options="sw1Options">
-					<swiper-slide v-for="(item, i) in servicesItems" :key="i">
-						<div class="slide_wr">
-							<div class="slide_icon"
-							:style="`background-image: url('${item.icon}')`"></div>
-							<div class="slide_title">{{item.header}}</div>
-							<button 
-							class="slide_btn"
-							@click="openReadmore(item)">Подробнее</button>
-						</div>
-					</swiper-slide>
-				</swiper>
-				<div class="swPagination-block1" slot="pagination"></div>
+	<Section1 />
 
-			</div>
-		</div>
-	</section>
+	<BaseSection title="Какие задачи решаем">
+		<Section2 id="about"/>
+	</BaseSection>
+	<BaseSection title="Какие задачи решаем">
+		<Section3 id="services"/>
+	</BaseSection>
 
-	<Section2 id="about"/>
-	<Section3 id="services"/>
 	<Section4 />
 	<Section5 />
 	<Section6 />
@@ -41,12 +22,16 @@
 import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 
-import Section2 from '/components/index/Section2.vue'
-import Section3 from '/components/index/Section3.vue'
-import Section4 from '/components/index/Section4.vue'
-import Section5 from '/components/index/Section5.vue'
-import Section6 from '/components/index/Section6.vue'
-import Section7 from '/components/index/Section7.vue'
+
+import BaseSection from '/components/mainpage/BaseSection.vue'
+import Section1 from '/components/mainpage/section1/Section1.vue'
+
+import Section2 from '/components/mainpage/section2/Section2.vue'
+import Section3 from '/components/mainpage/Section3.vue'
+import Section4 from '/components/mainpage/Section4.vue'
+import Section5 from '/components/mainpage/Section5.vue'
+import Section6 from '/components/mainpage/Section6.vue'
+import Section7 from '/components/mainpage/Section7.vue'
 
 export default {
 	async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
@@ -77,6 +62,8 @@ export default {
 		}
 	},
 	components: {
+		BaseSection,
+		Section1,
 		Section2,
 		Section3,
 		Section4,
@@ -134,91 +121,96 @@ export default {
 
 <style lang="sass">
 
-section
-	// border: 1px solid grey
-	padding-top: 105px
-	padding-bottom: 105px
-	@media (max-width: 998px)
-		padding-top: 75px
-		padding-bottom: 75px
-	.section_title
-		margin-bottom: 40px
-	.section_subtitle
-		margin-top: -20px
-.section1
-	.sideA
-		p
-			margin: 20px 0
-		button
-			margin: 40px 0 0 0
-	.sideB
-		display: flex !important
-		flex-wrap: nowrap
-		// border: 1px solid grey
-		@media (max-width: 998px)
-			display: none !important
-		.swPagination-block1
-			display: flex
-			flex-direction: column
-			padding-left: 20px
-			align-items: flex-end
-			.swiper-pagination-bullet
-				margin: 7px 0
-				width: 30px
-				border: 0
-				// min-height: 4px	
-				// max-height: 4px
-				// height: 4px
-			.swiper-pagination-bullet-active
-				background: rgba($grey_dark1, .75)
-				width: 40px
-				// transition: .25s
-				transition: 0s !important
+.mainpage
 
-	.slide_wr
-		// border: 1px solid red
-		border-radius: 5px
-		position: relative
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		align-items: flex-start
-		background-color: $grey_lite2
-		padding: 30px 14px
-		min-height: 300px
-		width: calc(100% - 10px)
-		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
-		margin-bottom: 60px
-		user-select: none
-		cursor: grab
-		&:active
-			cursor: grabbing
-		.slide_icon
-			// border: 1px solid grey
-			background-position: center
-			background-repeat: no-repeat
-			background-size: contain
-			height: 46px
-			width: 46px
-			margin-bottom: 45px
-		.slide_title
-			// border: 1px solid grey
-			font-weight: bold
-			flex: 1
-		.slide_btn
-			border: 0
-			position: relative
-			font-size: 12px
-			color: $elem
-			background: transparent
-			&::after
-				content: ''
-				position: absolute
-				// border: 1px solid red
-				background-image: url('/icons/arrow-sm.svg')
-				background-size: contain
-				height: 10px
-				min-width: 14px
-				top: calc(50% - 5px)
-				margin-left: 10px
+	// section.mpSection
+	// 	border: 1px solid grey
+	// 	font-family: 'textMedium'
+	// 	padding-top: 60px
+	// 	padding-bottom: 60px
+	// 	header
+	// 		font-family: 'headerBold'
+	// 		font-size: 32px
+	// 		line-height: 40px
+	// 		margin-bottom: 60px
+	// 	section.content_wrapper
+	// 		border: 1px solid grey
+
+
+// .section1
+// 	.sideA
+// 		p
+// 			margin: 20px 0
+// 		button
+// 			margin: 40px 0 0 0
+// 	.sideB
+// 		display: flex !important
+// 		flex-wrap: nowrap
+// 		// border: 1px solid grey
+// 		@media (max-width: 998px)
+// 			display: none !important
+// 		.swPagination-block1
+// 			display: flex
+// 			flex-direction: column
+// 			padding-left: 20px
+// 			align-items: flex-end
+// 			.swiper-pagination-bullet
+// 				margin: 7px 0
+// 				width: 30px
+// 				border: 0
+// 				// min-height: 4px	
+// 				// max-height: 4px
+// 				// height: 4px
+// 			.swiper-pagination-bullet-active
+// 				background: rgba($grey_dark1, .75)
+// 				width: 40px
+// 				// transition: .25s
+// 				transition: 0s !important
+
+// 	.slide_wr
+// 		// border: 1px solid red
+// 		border-radius: 5px
+// 		position: relative
+// 		display: flex
+// 		flex-direction: column
+// 		justify-content: space-between
+// 		align-items: flex-start
+// 		background-color: $grey_lite2
+// 		padding: 30px 14px
+// 		min-height: 300px
+// 		width: calc(100% - 10px)
+// 		box-shadow: 0px 59px 59px -50px rgba(213, 222, 232, .51)
+// 		margin-bottom: 60px
+// 		user-select: none
+// 		cursor: grab
+// 		&:active
+// 			cursor: grabbing
+// 		.slide_icon
+// 			// border: 1px solid grey
+// 			background-position: center
+// 			background-repeat: no-repeat
+// 			background-size: contain
+// 			height: 46px
+// 			width: 46px
+// 			margin-bottom: 45px
+// 		.slide_title
+// 			// border: 1px solid grey
+// 			font-weight: bold
+// 			flex: 1
+// 		.slide_btn
+// 			border: 0
+// 			position: relative
+// 			font-size: 12px
+// 			color: $elem
+// 			background: transparent
+// 			&::after
+// 				content: ''
+// 				position: absolute
+// 				// border: 1px solid red
+// 				background-image: url('/icons/arrow-sm.svg')
+// 				background-size: contain
+// 				height: 10px
+// 				min-width: 14px
+// 				top: calc(50% - 5px)
+// 				margin-left: 10px
 </style>
