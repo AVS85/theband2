@@ -7,14 +7,18 @@
 		<Section2 id="about"/>
 	</BaseSection> -->
 
-	<BaseSection title="Услуги">
+	<!-- <BaseSection title="Услуги">
 		<Section3 id="services"/>
+	</BaseSection> -->
+
+	<BaseSection title="Главная ценность нашей работы в проработке ваших идей с учетом цели и бизнес-специфики">
+		<Section4 />
 	</BaseSection>
 
-	<Section4 />
-	<Section5 />
-	<Section6 />
-	<Section7 id="contacts"/>
+	<Section44 />
+	<!-- <Section5 /> -->
+	<!-- <Section6 /> -->
+	<!-- <Section7 id="contacts"/> -->
 
 </div>
 </template>
@@ -29,7 +33,11 @@ import Section1 from '/components/mainpage/section1/Section1.vue'
 
 import Section2 from '/components/mainpage/section2/Section2.vue'
 import Section3 from '/components/mainpage/section3/Section3.vue'
-import Section4 from '/components/mainpage/Section4.vue'
+import Section4 from '/components/mainpage/section4/Section4.vue'
+
+import Section44 from '/components/mainpage/Section4.vue'
+
+
 import Section5 from '/components/mainpage/Section5.vue'
 import Section6 from '/components/mainpage/Section6.vue'
 import Section7 from '/components/mainpage/Section7.vue'
@@ -68,6 +76,7 @@ export default {
 		Section2,
 		Section3,
 		Section4,
+		Section44,
 		Section5,
 		Section6,
 		Section7,
