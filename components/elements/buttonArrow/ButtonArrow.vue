@@ -15,13 +15,16 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-button
-	height: 24px
-	width: 24px
-	background-image: url(./imgs/icon.svg)
-	background-repeat: no-repeat
-	background-size: contain
-	border: 0
-	&.prev
-		transform: rotate(180deg)
+div
+	display: flex
+	align-items: center
+	button
+		height: 24px
+		width: 24px
+		background-image: url(./imgs/icon.svg)
+		background-repeat: no-repeat
+		background-size: contain
+		border: 0
+		&.prev
+			transform: rotate(180deg)
 </style>
