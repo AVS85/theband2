@@ -1,6 +1,6 @@
 <template>
 <div>
-	<button :class="icon"></button>
+	<button :class="icon" @click="onClick"></button>
 </div>
 </template>
 
@@ -10,7 +10,13 @@ export default {
 		icon: {
 			type: String
 		}
+	},
+	methods: {
+		onClick(){
+			this.$emit('onClick')
+		},
 	}
+
 }
 </script>
 
