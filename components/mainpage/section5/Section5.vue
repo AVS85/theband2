@@ -19,8 +19,8 @@
 					<BtnArrow icon="prev" @onClick="nextSlide" />
 					<BtnArrow	icon="next" @onClick="nextSlide" />
 				</div>
-				<div class="progressbar">
-					<div class="progressbar__shutter"></div>
+				<div class="pb">
+					<ProgressBar :progress="progress" />
 				</div>
 			</div>
 		</div>
