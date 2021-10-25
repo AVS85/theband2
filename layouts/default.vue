@@ -3,7 +3,7 @@
     <Header/>
     <Nuxt />
 		<ScrollTop/>
-    <Footer/>
+    <!-- <Footer/> -->
   </div>
 </template>
 

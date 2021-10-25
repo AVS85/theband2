@@ -25,7 +25,7 @@
 
 	<!-- <Section44 /> -->
 	<!-- <Section5 /> -->
-	<Section6 />
+	<!-- <Section6 /> -->
 	<!-- <Section7 id="contacts"/> -->
 
 </div>
