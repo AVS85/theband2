@@ -1,3 +1,12 @@
+.wrapperBtnConnected
+	// border: 1px solid red
+	position: absolute
+	top: -110px
+	right: 0
+	width: 100%
+	max-width: 255px
+
+
 .swiper-slide
 	// border: 1px solid red
 	border-radius: 5px
@@ -6,6 +15,7 @@
 	width: 35%
 	transition: .25s
 	aspect-ratio: 1.6 / 1
+	overflow: hidden
 	// &-active
 		// height: 277px
 		// width: 445px
@@ -22,12 +32,17 @@
 	display: flex
 	align-items: center
 	margin-top: 40px
+	@media (max-width: 576px)
+		margin-top: 24px
 	.buttons
 		// border: 1px solid red
 		display: flex
 		margin-right: 64px
 		::v-deep button
-			// border: 1px solid red !important
+			// border: 1px solid red 
 			margin-right: 16px
+		@media (max-width: 576px)
+			display: none
 	.pb
+		// border: 1px solid red
 		width: 100%

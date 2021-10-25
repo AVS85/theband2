@@ -1,28 +1,29 @@
 import BtnArrow from '../../elements/buttonArrow/ButtonArrow.vue'
+import BtnMain from '../../elements/buttonMain/ButtonMain.vue'
 import ProgressBar from './ProgressBar.vue'
 import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 export default {
 	components: {
-		Swiper,	SwiperSlide, BtnArrow, ProgressBar
+		Swiper,	SwiperSlide, BtnArrow, BtnMain, ProgressBar
 	},
 	data() {
 		return {
 			progress: 0,
 			swOptions_portfolio: {
         // loop: true,
-        slidesPerView: 'auto',
-        slidesPerView: 2,
+        // slidesPerView: 'auto',
+        slidesPerView: 1,
         spaceBetween: 30,
         // autoplay: {
         //   delay: 3500,
         //   disableOnInteraction: false,
         // },
-				// breakpoints: {   
-				// 	501: { slidesPerView: 2, spaceBetween: 20 },
-				// 	768: { slidesPerView: 3, spaceBetween: 30 },
-        //   992: { slidesPerView: 4, spaceBetween: 30 }
-        // },
+				breakpoints: {   
+					576: { slidesPerView: 2, spaceBetween: 20 },
+					768: { slidesPerView: 3, spaceBetween: 30 },
+          992: { slidesPerView: 4, spaceBetween: 30 }
+        },
         // navigation: {
         //   nextEl: ".swSlideR-portfolio",
         //   prevEl: ".swSlideL-portfolio",
@@ -59,8 +60,11 @@ export default {
 		}
 	},
 	methods: {
+		prevSlide(){
+			this.$refs.swPortfolio.$swiper.slidePrev()
+		},
 		nextSlide(){
-			console.log('next', this.$refs.swPortfolio.$swiper);
+			this.$refs.swPortfolio.$swiper.slideNext()
 		},
 		// openContactForm(){
 		// 	this.$router.push('/#contacts')

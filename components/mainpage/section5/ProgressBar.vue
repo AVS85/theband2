@@ -17,11 +17,13 @@ export default {
 
 <style lang="sass" scoped>
 .progressbar
-	border: 1px solid red
-	height: 2px
+	// border-top: 1px solid $grey_dark2
+	background-color: rgba($grey_dark2, .25 )
+	// height: 2px
 	width: 100%	
-	transition: .25s
 	&__shutter
-		border: 1px solid red
+		border: 1px solid $green_acc
+		background-color: $green_acc
+		transition: .725s
 		width: 100px
 </style>

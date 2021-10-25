@@ -1,5 +1,10 @@
 <template>
 <section class="wrapper">
+
+	<div class="wrapperBtnConnected">
+		<BtnMain title="Связаться" />
+	</div>
+
 	<div class="row">
 		<div class="col-12">
 			<swiper ref="swPortfolio" :options="swOptions_portfolio">
@@ -16,7 +21,7 @@
 		<div class="col">
 			<div class="control">
 				<div class="buttons">
-					<BtnArrow icon="prev" @onClick="nextSlide" />
+					<BtnArrow icon="prev" @onClick="prevSlide" />
 					<BtnArrow	icon="next" @onClick="nextSlide" />
 				</div>
 				<div class="pb">
