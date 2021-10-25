@@ -11,7 +11,7 @@ export default {
 			progress: 0,
 			swOptions_portfolio: {
         // loop: true,
-        // slidesPerView: 'auto',
+        slidesPerView: 'auto',
         slidesPerView: 2,
         spaceBetween: 30,
         // autoplay: {
@@ -30,35 +30,18 @@ export default {
 				// pagination: {
 				// 	el: '.swPagination-portfolio'
 				// },
-				// watchSlidesProgress : true,
+				watchSlidesProgress : false,
 				on: {
-					touchEnd: (swiper, event) => {
-						console.log(swiper, event);
-						// console.log(this.$refs.swPortfolio.$swiper);
-
-
+					slideChange: () => {
 						let progress = this.swiper.progress
-						// let progress = this.$refs.swPortfolio.$swiper.progress
-
 						if ( typeof progress === 'number' ){ 
 							progress = Math.floor(progress*100);
 							(progress < 0) ? progress = 0 : '';
 							(progress > 100) ? progress = 100 : '';
 							this.progress = Math.abs(progress)
 						}
-
 					},
-					// progress: (progress) => {
-						// this.progress = Math.abs(progress)
-						// console.log(this.progress);
-						// if ( typeof progress === 'number' ){ 
-						// 	progress = Math.floor(progress*100);
-						// 	(progress < 0) ? progress = 0 : '';
-						// 	(progress > 100) ? progress = 100 : '';
-						// 	this.progress = Math.abs(progress)
-						// 	console.log('f' , this.progress);
-						// }
-					// }, 
+
 				}
 
       },
