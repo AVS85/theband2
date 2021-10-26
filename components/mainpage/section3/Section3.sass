@@ -3,13 +3,22 @@
 // 	$iconSize: 12px
 
 .services
-	// border: 1px solid red
-	margin-bottom: 100px
+	padding-bottom: 30px
+	@media (max-width: 768px)
+		padding-bottom: 0
+	&:not(:first-child)
+		padding-top: 50px
+	&:not(:last-child)
+		border-bottom: 1px solid $grey_lite1
 	.title
 		font-size: 28px
 		line-height: 34px
 		font-family: 'headerSemiBold'
 		margin-left: calc(32px + 14px)
+		@media (max-width: 768px)
+			// margin-left: calc(24px + 7px)
+			font-size: 18px
+			line-height: 22px
 		&::after
 			// border: 1px solid red
 			position: absolute
@@ -20,12 +29,17 @@
 			background-size: contain
 			margin-left: calc(-32px - 14px)
 			top: 0
+			@media (max-width: 768px)
+				height: 24px
+				width: 24px
 		&.icon1::after
 			background-image: url(./imgs/1.svg)
 		&.icon2::after
 			background-image: url(./imgs/2.svg)
 		&.icon3::after
 			background-image: url(./imgs/3.svg)
+		&.icon4::after
+			background-image: url(./imgs/4.svg)
 
 		.subtitle
 			font-size: 16px
@@ -33,8 +47,11 @@
 			font-family: 'textRegular'
 			margin-top: 24px
 			color: $grey_dark2
-			@media (max-width: 992px)
+			@media (max-width: 768px)
+				font-size: 14px
+				line-height: 16px
 				margin-top: 8px
+				margin-bottom: 16px
 				
 	
 	.desc
@@ -48,7 +65,10 @@
 			font-size: 18px
 			line-height: 24px
 			list-style-type: none
-			// list-style-position: inside
+			@media (max-width: 768px)
+				font-size: 14px
+				line-height: 24px
+				margin-bottom: 8px
 			&::before
 				position: absolute
 				content: ""
@@ -58,17 +78,17 @@
 				height: 8px
 				top: 8px
 				left: -20px
-				// margin-right: 0.2rem
+				@media (max-width: 768px)
+					top: 4px
 
-		@media (max-width: 992px)
-			margin-top: 8px
-			margin-bottom: 16px
 
 	.price
 		display: flex
 		flex-wrap: wrap
 		justify-content: flex-end
-		@media (max-width: 992px)
+		@media (max-width: 768px)
+			padding-left: 46px
+			justify-content: flex-start
 			align-items: center
 			margin-top: 8px
 			margin-bottom: 16px
@@ -85,6 +105,11 @@
 			max-width: 56px
 			min-width: 56px
 			margin-left: 16px
+			@media (max-width: 768px)
+				min-height: 40px
+				max-height: 40px
+				max-width: 40px
+				min-width: 40px
 		.value
 			display: flex
 			align-items: center
@@ -102,4 +127,21 @@
 				line-height: 32px
 				margin-left: 18px
 
-
+.control
+	display: flex
+	align-items: center
+	margin-top: 16px
+	.buttons
+		// border: 1px solid red
+		display: flex
+		justify-content: flex-end
+		// margin-left: 64px
+		::v-deep button
+			// border: 1px solid red 
+			margin-left: 16px
+		@media (max-width: 576px)
+			display: none
+	.pb
+		// border: 1px solid red
+		width: 100%
+		padding-right: 16px

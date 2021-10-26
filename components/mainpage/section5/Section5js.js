@@ -1,6 +1,6 @@
 import BtnArrow from '../../elements/buttonArrow/ButtonArrow.vue'
 import BtnMain from '../../elements/buttonMain/ButtonMain.vue'
-import ProgressBar from './ProgressBar.vue'
+import ProgressBar from '../../progressBar/ProgressBar.vue'
 import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 export default {

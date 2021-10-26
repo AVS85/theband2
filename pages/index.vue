@@ -7,13 +7,13 @@
 		<Section2 id="about"/>
 	</BaseSection> -->
 
-	<!-- <BaseSection title="Услуги">
+	<BaseSection title="Услуги">
 		<Section3 id="services"/>
-	</BaseSection> -->
+	</BaseSection>
 
-	<!-- <BaseSection title="Главная ценность нашей работы в проработке ваших идей с учетом цели и бизнес-специфики">
+	<BaseSection title="Главная ценность нашей работы в проработке ваших идей с учетом цели и бизнес-специфики">
 		<Section4 />
-	</BaseSection> -->
+	</BaseSection>
 
 	<BaseSection 
 		title="Портфолио"

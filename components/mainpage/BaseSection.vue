@@ -63,6 +63,8 @@ section.mpSection
 		margin-bottom: 60px
 		text-transform: uppercase
 		@media (max-width: 768px)
+			font-size: 24px
+			line-height: 32px
 			margin-bottom: 32px
 	section.content_wrapper
 		// border: 1px solid grey
