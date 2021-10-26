@@ -128,3 +128,31 @@
 				margin: 12px
 				transform: rotate(180deg)
 				opacity: .5
+
+	.mobile
+		.item
+			border: 1px solid $grey_lite1
+			background-color: $grey_lite1
+			position: relative
+			.dropdownlist__wrapper
+				position: absolute
+				// border: 1px solid red
+				bottom: 0
+				width: calc(100% - 24px)
+				z-index: 9999
+				.dropdownlist
+					background-color: $grey_lite1
+					border: 1px solid $grey_dark2
+
+					border-radius: 5px
+					position: absolute
+					top: 0
+					padding: 16px
+					margin-top: 0
+					&__item
+						// border: 1px solid red
+						padding: 12px 10px
+						.active
+							background-color: $grey_dark2
+							border-radius: 8px
+

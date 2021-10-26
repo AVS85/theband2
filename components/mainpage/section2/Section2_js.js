@@ -10,6 +10,7 @@ export default {
 	data() {
 		return {
 			projectsList: [],
+			selected: null,
 			activeIndex: 0,
 			alltTypeList:[
 				{ title: 'Защита стратегии'},
@@ -22,6 +23,13 @@ export default {
 				{ title: 'Презентация компании'},
 				{ title: 'Защита бюджета'},
 				{ title: 'Дашборд'},
+			],
+			options: [
+				{ value: null, text: 'Please select an option' },
+				{ value: 'a', text: 'This is First option' },
+				{ value: 'b', text: 'Selected Option' },
+				{ value: { C: '3PO' }, text: 'This is an option with object value' },
+				{ value: 'd', text: 'This one is disabled', disabled: true }
 			],
 
 

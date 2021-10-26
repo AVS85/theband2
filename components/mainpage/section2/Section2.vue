@@ -2,8 +2,8 @@
 	<section class="wrapper">
 		<div class="row">
 
-			<div class="col-4">
-				<aside class="issuesToSolve">
+			<div class="d-none d-lg-block col-lg-4">
+				<aside class="desktop">
 					<div
 					class="item"
 					:class="{active: i==activeIndex}"
@@ -13,7 +13,30 @@
 				</aside>
 			</div>
 
-			<div class="col-8">
+			<div class="d-lg-none">
+				<aside class="mobile">
+					<div
+					class="item" >
+						{{activeProject.task}}
+						<div class="dropdownlist__wrapper">
+
+							<div class="dropdownlist">
+								<div
+								class="dropdownlist__item"
+								v-for="(item, i) in projectsList" :key="i"
+								@click="activeIndex = i"
+								>
+
+								{{item.task}}
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+
+			<div class="col-lg-8">
 				<article>
 					<div class="top__panel">
 						<header>{{activeProject.task || 0}}</header>
