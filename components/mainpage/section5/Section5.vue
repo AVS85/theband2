@@ -1,8 +1,8 @@
 <template>
 <section class="wrapper">
 
-	<div class="wrapperBtnConnected">
-		<BtnMain title="Связаться" />
+	<div class="wrapperBtnConnected__top d-none d-md-block">
+		<BtnMain title="Связаться" @onClick="scrollToContactForm" />
 	</div>
 
 	<div class="row">
@@ -27,6 +27,13 @@
 				<div class="pb">
 					<ProgressBar :progress="progress" />
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col d-md-none">
+			<div class="wrapperBtnConnected__bottom">
+				<BtnMain title="Связаться" @onClick="scrollToContactForm" />
 			</div>
 		</div>
 	</div>

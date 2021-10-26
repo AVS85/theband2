@@ -53,12 +53,17 @@ section.mpSection
 	font-family: 'textMedium'
 	padding-top: 60px
 	padding-bottom: 60px
+	@media (max-width: 768px)
+		padding-top: 40px
+		padding-bottom: 40px
 	header
 		font-family: 'headerBold'
 		font-size: 32px
 		line-height: 40px
 		margin-bottom: 60px
 		text-transform: uppercase
+		@media (max-width: 768px)
+			margin-bottom: 32px
 	section.content_wrapper
 		// border: 1px solid grey
 

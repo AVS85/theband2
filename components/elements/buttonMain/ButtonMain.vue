@@ -1,6 +1,6 @@
 <template>
 <div>
-	<button>{{title}}</button>
+	<button @click="onClick">{{title}}</button>
 </div>
 </template>
 
@@ -8,6 +8,9 @@
 export default {
 	props:{
 		title: String
+	},
+	methods:{
+		onClick(){ this.$emit('onClick') }
 	}
 }
 </script>

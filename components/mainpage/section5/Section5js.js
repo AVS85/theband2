@@ -60,6 +60,12 @@ export default {
 		}
 	},
 	methods: {
+		scrollToContactForm(){
+			fbq('track', 'Contact'); //pixel
+			// this.isShowMenu = false
+			this.$scrollTo('#contacts')
+			// this.$router.push('/#contacts')
+		},
 		prevSlide(){
 			this.$refs.swPortfolio.$swiper.slidePrev()
 		},
