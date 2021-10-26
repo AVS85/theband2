@@ -1,60 +1,52 @@
 <template>
 	<section class="wrapper">
+		<div class="row">
 
-		<aside class="issuesToSolve">
-			<div
-			class="item"
-			:class="{active: i==activeIndex}"
-			v-for="(item, i) in alltTypeList" :key="i"
-			@click="activeIndex = i"
-			>{{item.title}}</div>
-		</aside>
-
-
-		<article>
-			<div class="top__panel">
-
-				<header>{{activeItem.title}}</header>
-
-				<div class="gallery">
-
-
-					<!-- <swiper ref="swServices" :options="swServicesOptions">
-						<swiper-slide v-for="(item, i) in alltTypeList" :key="i">
-								{{i}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque autem pariatur cumque ullam. Qui molestiae harum cupiditate ratione eum optio quam atque pariatur non provident. Omnis rem ipsam id perspiciatis?
-								Consequatur, reprehenderit placeat voluptatem quaerat libero recusandae corporis aperiam illo aspernatur officia deserunt delectus esse reiciendis eaque ipsam numquam quo quod, at mollitia. Culpa corporis quaerat non odio rerum autem.
-						</swiper-slide>
-					</swiper> -->
-
-
-				</div>
-
-				<div class="buttons">
-					<BtnArrow icon="prev" />
-					<BtnArrow	icon="next" />
-				</div>
-
+			<div class="col-4">
+				<aside class="issuesToSolve">
+					<div
+					class="item"
+					:class="{active: i==activeIndex}"
+					v-for="(item, i) in projectsList" :key="i"
+					@click="activeIndex = i"
+					>{{item.task}}</div>
+				</aside>
 			</div>
 
-			<div class="bottom__panel">
-				<div class="title">Проект в цифрах:</div>
-				<div class="details">
-					<div class="detail icon1">
-						<!-- <div class="icon icon1" /> -->
-							<span>26 слайдов</span>
+			<div class="col-8">
+				<article>
+					<div class="top__panel">
+						<header>{{activeProject.task || 0}}</header>
+						<div class="gallery">
+							<swiper ref="swTasks" :options="swOptions">
+								<swiper-slide v-for="(item, i) in activeProject.imgs" :key="i">
+									<img :src="item.img_link" alt="">
+									<p>{{`${i+1}. ${item.title}`}}</p>
+								</swiper-slide>
+							</swiper>
+						</div>
+						<div class="buttons">
+							<BtnArrow icon="prev" @onClick="prevSlide" />
+							<BtnArrow	icon="next" @onClick="nextSlide" />
+						</div>
 					</div>
-					<div class="detail icon2">
-						<!-- <div class="icon icon2" /> -->
-							<span>12 дней</span> на реализацию
-					</div>
-					<div class="detail icon3">
-						<!-- <div class="icon icon3" /> -->
-							<span>9 человек</span> в команде проекта
-					</div>
-				</div>
-			</div>
-		</article>
 
+					<div class="bottom__panel">
+						<div class="title">Проект в цифрах:</div>
+						<div class="details">
+							<div
+							 class="detail"
+							 v-for="(item, i) in activeProject.info" :key="i"
+							 :class="item.icon"
+							 v-html="item.desc" >
+							</div>
+						</div>
+
+					</div>
+				</article>
+			</div>
+
+		</div>	
 	</section>
 </template>
 

@@ -3,9 +3,9 @@
 
 	<!-- <Section1 /> -->
 
-	<!-- <BaseSection title="Какие задачи решаем">
+	<BaseSection title="Какие задачи решаем">
 		<Section2 id="about"/>
-	</BaseSection> -->
+	</BaseSection>
 
 	<BaseSection title="Услуги">
 		<Section3 id="services"/>

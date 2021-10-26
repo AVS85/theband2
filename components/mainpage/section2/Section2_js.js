@@ -9,6 +9,7 @@ export default {
 	},
 	data() {
 		return {
+			projectsList: [],
 			activeIndex: 0,
 			alltTypeList:[
 				{ title: 'Защита стратегии'},
@@ -24,19 +25,19 @@ export default {
 			],
 
 
-			swServicesOptions: {
+			swOptions: {
         // loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 30,
         // autoplay: {
         //   delay: 3500,
         //   disableOnInteraction: false,
         // },
-				// breakpoints: {   
-				// 	576: { slidesPerView: 2, spaceBetween: 20 },
-				// 	768: { slidesPerView: 3, spaceBetween: 30 },
-        //   992: { slidesPerView: 4, spaceBetween: 30 }
-        // },
+				breakpoints: {   
+					576: { slidesPerView: 2, spaceBetween: 20 },
+					// 768: { slidesPerView: 3, spaceBetween: 30 },
+          // 992: { slidesPerView: 4, spaceBetween: 30 }
+        },
         // navigation: {
         //   nextEl: ".swSlideR-services",
         //   prevEl: ".swSlideL-services",
@@ -48,12 +49,26 @@ export default {
 		}
 	},
 	computed: {
-		activeItem(){
-			return this.alltTypeList[this.activeIndex]
+		activeProject(){
+			return this.projectsList[this.activeIndex] || []
 		},
-		swiper() {
-			return this.$refs.swServices.$swiper;
-		}
-	}
+		// activeImages(){
+		// 	return this.activeProject?.imgs
+		// },
+	},
+	methods: {
+		prevSlide(){
+			this.$refs.swTasks.$swiper.slidePrev()
+		},
+		nextSlide(){
+			this.$refs.swTasks.$swiper.slideNext()
+		},
+	},
+	async mounted() {
+		await this.$axios(`${this.$config.baseURL}/api_task.json`)
+		.then( res => this.projectsList = res.data )
+		.catch( egorka => console.log('loading projects...', egorka) )
+		console.log(this.projectsList);
+	},
 	
 }

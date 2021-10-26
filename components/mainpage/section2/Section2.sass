@@ -1,8 +1,9 @@
 .wrapper
-	display: flex
+	// display: flex
 	article
+		display: block
 		// border: 1px solid red
-		width: 100%
+		// width: 100%
 		.top__panel
 			position: relative
 			border-radius: 5px
@@ -27,11 +28,17 @@
 				display: flex
 				// width: 500px
 				overflow: hidden
-				border: 1px solid red
+				// border: 1px solid red
 				.swiper-slide
-					display: flex
-					justify-content: center
-					border: 1px solid red
+					// display: flex
+					// justify-content: center
+					// border: 1px solid red
+					img
+						width: 100%
+					p
+						font-size: 12px
+						line-height: 16px
+						margin-top: 8px
 
 
 
@@ -49,16 +56,12 @@
 				display: flex
 				flex-wrap: wrap
 				.detail
-					// border: 1px solid red
-					// display: flex
 					flex: 1
 					margin: 12px 0
-					font-size: 20px
-					line-height: 24px
+					font-size: 16px
+					line-height: 20px
 					font-family: 'textRegular'
 					padding: 0 25px
-					span
-						font-weight: bold
 					&::before
 						position: absolute
 						content: ''
@@ -73,16 +76,13 @@
 						background-image: url(./imgs/2.svg)
 					&.icon3::before
 						background-image: url(./imgs/3.svg)
-					// .icon4
-					// 	background-image: url(./imgs/4.svg)
-					// .icon5
-					// 	background-image: url(./imgs/5.svg)
+					&.icon4::before
+						background-image: url(./imgs/4.svg)
 
 
 	aside
-		// display: none
 		max-width: 350px
-		width: 100%
+		// width: 100%
 		margin-right: 30px
 		.item
 			// border: 1px solid $blue_acc
