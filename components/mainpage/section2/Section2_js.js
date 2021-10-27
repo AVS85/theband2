@@ -16,6 +16,8 @@ export default {
 			activeIndex: 0,
 			isShowDropDownList: false,
 			progress: 0,
+			progressItemsCount: 0,
+			progressBarActiveIndex: 0,
 			alltTypeList:[
 				{ title: 'Защита стратегии'},
 				{ title: 'Бизнес-план'},
@@ -36,6 +38,8 @@ export default {
 				{ value: 'd', text: 'This one is disabled', disabled: true }
 			],
 
+			observer: true,
+			observeSlideChildren: true,
 
 			swOptions: {
         // loop: true,
@@ -46,7 +50,7 @@ export default {
         //   disableOnInteraction: false,
         // },
 				breakpoints: {   
-					576: { slidesPerView: 2, spaceBetween: 20 },
+					992: { slidesPerView: 2, spaceBetween: 20 },
 					// 768: { slidesPerView: 3, spaceBetween: 30 },
           // 992: { slidesPerView: 4, spaceBetween: 30 }
         },
@@ -58,7 +62,19 @@ export default {
 				// 	el: '.swPagination-services'
 				// },
 				on: {
+					// init: () => {
+					// 	this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
+					// }, 
+					// resize: () => {
+					// 	// this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
+					// }, 
+					// observerUpdate: () => {
+					// 	this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
+					// }, 
 					slideChange: () => {
+						console.log(this.$refs.swTasks.$swiper);
+						this.progressBarActiveIndex = this.$refs.swTasks.$swiper.activeIndex
+						// this.progressItemsCount = this.$refs.swTasks.$swiper.snapGrid.length
 						let progress = this.$refs.swTasks.$swiper.progress
 						if ( typeof progress === 'number' ){ 
 							progress = Math.floor(progress*100);
@@ -73,6 +89,7 @@ export default {
 		}
 	},
 	computed: {
+		progressBarItemsCount(){ return this.activeProject.imgs?.length || 0 },
 		activeProject(){
 			return this.projectsList[this.activeIndex] || []
 		},

@@ -1,32 +1,30 @@
 <template>
 <div class="mainpage">
 
-	<!-- <Section1 /> -->
+	<Section1 />
 
+	<div class="scrollmark" id="about" />
 	<BaseSection title="Какие задачи решаем">
-		<Section2 id="about"/>
+		<Section2 />
 	</BaseSection>
 
 	<BaseSection title="Услуги">
-		<Section3 id="services"/>
+		<Section3 />
 	</BaseSection>
 
 	<BaseSection title="Главная ценность нашей работы в проработке ваших идей с учетом цели и бизнес-специфики">
 		<Section4 />
 	</BaseSection>
 
-	<BaseSection 
-		title="Портфолио"
-		rootBgColor="#F3F6F9">
-			<Section5 />
+	<div class="scrollmark" id="services" />
+	<BaseSection title="Портфолио" rootBgColor="#F3F6F9">
+		<Section5 />
 	</BaseSection>
 
-
-
-	<!-- <Section44 /> -->
-	<!-- <Section5 /> -->
-	<!-- <Section6 /> -->
-	<!-- <Section7 id="contacts"/> -->
+	<div class="scrollmark" id="contacts" />
+	<BaseSection title="Раскажите о вашем проекте:">
+		<Section7 />
+	</BaseSection>
 
 </div>
 </template>

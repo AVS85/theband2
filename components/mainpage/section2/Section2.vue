@@ -53,17 +53,20 @@
 								</swiper-slide>
 							</swiper>
 						</div>
-						<div class="buttons">
+						<div class="buttons d-none d-lg-flex">
 							<BtnArrow icon="prev" @onClick="prevSlide" />
 							<BtnArrow	icon="next" @onClick="nextSlide" />
 						</div>
 					</div>
-				<div class="pb">
-					<ProgressBar 
-					:count="5" 
-					:activeindex="2" 
-					:progress="77" />
-				</div>
+
+					<div class="middle_panel d-lg-none">
+						<ProgressBar 
+						type="dash"
+						:count="progressBarItemsCount" 
+						:activeindex="progressBarActiveIndex" 
+						:progress="progress" />
+					</div>
+
 					<div class="bottom__panel">
 						<div class="title">Проект в цифрах:</div>
 						<div class="details">
