@@ -1,11 +1,6 @@
 <template>
-<section class="container index_section7">
+<section class="wrapper">
 	<div class="row justify-content-between">
-		<div class="col-12">
-			<h2 class="section_title">Пишите - поможем <br>вашему бизнесу достичь цели</h2>
-		</div>
-
-		<div class="w-100"></div>
 		
 		<div class="col-lg-6">
 			<div class="profile">
@@ -24,10 +19,10 @@
 			method="POST"
 			v-if="!isSuccess"
 			>
-				<input v-model="name" type="text" name="name" class="input_main" placeholder="Как вас зовут?" required>
+				<input v-model="name" type="text" name="name" class="input_main" placeholder="Как Вас зовут?" required>
 				<input v-model="email" type="text" name="email" class="input_main" placeholder="E-mail">
-				<input v-model="phone" type="text" name="phone" class="input_main" placeholder="+7(000)000-00-00" required>
-				<input v-model="task" type="text" name="task" class="input_main" placeholder="Опишите задачу и сроки">
+				<input v-model="phone" type="text" name="phone" class="input_main" placeholder="+7 (000) 000-00-00" required>
+				<input v-model="task" type="text" name="task" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
 				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
 				<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
@@ -101,11 +96,13 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .grecaptcha-badge
 	position: fixed !important
-	right: -320px !important
-.index_section7
+	right: -1320px !important
+
+
+.wrapper
 	.form
 		display: flex
 		align-items: center
@@ -114,20 +111,25 @@ export default {
 			background-color: transparent
 			border: 0
 			border-bottom: 1px solid $grey_dark2
-			color: $grey_dark2
-			font-size: 15px
+			color: $grey_dark1
+			font-size: 16px
+			line-height: 20px
 			padding: 10px 5px
 			width: 100%
 			margin-bottom: 40px
 			&::placeholder
 				color: $grey_dark2
+				font-family: 'textRegular'
+				font-size: 16px
+				line-height: 20px
 		.confidence_msg
-			font-size: 12px
-			line-height: 12px
+			font-size: 14px
+			line-height: 16px
 			span
 				color: $green_acc
 		button
 			margin-top: 45px
+
 	.profile
 		margin-bottom: 45px
 		.profile_foto
@@ -140,6 +142,8 @@ export default {
 			border-radius: 110px
 			filter: grayscale(1)
 		.profile-name
+			font-size: 20px
+			line-height: 24px
 			font-weight: bold
 			margin: 20px 0 10px 0
 		// .profile-msg

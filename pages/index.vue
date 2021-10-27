@@ -20,6 +20,8 @@
 	<BaseSection title="Портфолио" rootBgColor="#F3F6F9">
 		<Section5 />
 	</BaseSection>
+	
+	<Section6 />
 
 	<div class="scrollmark" id="contacts" />
 	<BaseSection title="Раскажите о вашем проекте:">
@@ -41,12 +43,12 @@ import Section2 from '/components/mainpage/section2/Section2.vue'
 import Section3 from '/components/mainpage/section3/Section3.vue'
 import Section4 from '/components/mainpage/section4/Section4.vue'
 import Section5 from '/components/mainpage/section5/Section5.vue'
+import Section6 from '/components/mainpage/section6/Section6.vue'
+import Section7 from '/components/mainpage/section7/Section7.vue'
 
-import Section44 from '/components/mainpage/Section4.vue'
+// import Section44 from '/components/mainpage/Section4.vue'
 
 
-import Section6 from '/components/mainpage/Section6.vue'
-import Section7 from '/components/mainpage/Section7.vue'
 
 export default {
 	async asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
@@ -77,12 +79,12 @@ export default {
 		}
 	},
 	components: {
+		// Section44,
 		BaseSection,
 		Section1,
 		Section2,
 		Section3,
 		Section4,
-		Section44,
 		Section5,
 		Section6,
 		Section7,
@@ -134,7 +136,3 @@ export default {
 	},
 }
 </script>
-
-<style lang="sass">
-
-</style>

@@ -2,7 +2,8 @@
 export default {
   publicRuntimeConfig: {
     wpBaseURL: 'http://wp-theband.na4u.ru/',
-    baseURL: (process.env.NODE_ENV == 'production') ? 'https://theband.design' : 'http://192.168.1.12:3333',
+    // baseURL: (process.env.NODE_ENV == 'production') ? 'localhost' : 'http://localhost',
+    baseURL: (process.env.NODE_ENV == 'production') ? '' : '',
     // baseURL: (process.env.NODE_ENV == 'production') ? 'http://theband2.na4u.ru' : 'http://192.168.1.12:3333',
   },
   /*
@@ -97,7 +98,8 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-		baseURL: 'http://wp-theband.na4u.ru/wp-json/wp'
+		baseURL: process.env.BASE_URL
+		// baseURL: 'http://wp-theband.na4u.ru/wp-json/wp'
 	},
   /*
   ** Build configuration
