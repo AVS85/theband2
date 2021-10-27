@@ -12,6 +12,7 @@ export default {
 			projectsList: [],
 			selected: null,
 			activeIndex: 0,
+			isShowDropDownList: false,
 			alltTypeList:[
 				{ title: 'Защита стратегии'},
 				{ title: 'Бизнес-план'},
@@ -65,6 +66,11 @@ export default {
 		// },
 	},
 	methods: {
+		onClickDropDownListItem(i){
+			this.activeIndex = i
+			setTimeout( () => {this.isShowDropDownList = !this.isShowDropDownList}, 250 )
+			
+		},
 		prevSlide(){
 			this.$refs.swTasks.$swiper.slidePrev()
 		},

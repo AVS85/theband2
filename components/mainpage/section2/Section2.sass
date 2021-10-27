@@ -83,7 +83,7 @@
 	aside
 		max-width: 350px
 		// width: 100%
-		margin-right: 30px
+		// margin-right: 30px
 		.item
 			// border: 1px solid $blue_acc
 			position: relative
@@ -129,30 +129,51 @@
 				transform: rotate(180deg)
 				opacity: .5
 
-	.mobile
+	aside.mobile
+		max-width: 100%
 		.item
 			border: 1px solid $grey_lite1
 			background-color: $grey_lite1
 			position: relative
+			margin-bottom: 16px
+			user-select: none
+			&.isOpen
+				color: $grey_dark2
+				&::before
+					transform: rotate(0)
+
 			.dropdownlist__wrapper
 				position: absolute
 				// border: 1px solid red
 				bottom: 0
-				width: calc(100% - 24px)
+				width: calc(100% - 16px)
 				z-index: 9999
 				.dropdownlist
 					background-color: $grey_lite1
-					border: 1px solid $grey_dark2
+					border: 1px solid rgba($grey_dark2, .25)
+					box-shadow: 0 0 7px $grey_dark2
 
 					border-radius: 5px
 					position: absolute
 					top: 0
 					padding: 16px
-					margin-top: 0
+					margin-top: 8px
+					width: 100%
 					&__item
 						// border: 1px solid red
 						padding: 12px 10px
-						.active
+						transition: .25s
+						margin: 3px 0
+						color: $textMain
+						font-size: 14px
+						line-height: 16px
+						&.active
 							background-color: $grey_dark2
 							border-radius: 8px
+							color: $textMain
+							font-weight: bold
+						&:hover
+							background-color: rgba($grey_dark2, .25)
+							border-radius: 8px
+							color: $textMain
 

@@ -13,18 +13,23 @@
 				</aside>
 			</div>
 
-			<div class="d-lg-none">
+			<div class="d-lg-none col-12">
 				<aside class="mobile">
 					<div
-					class="item" >
+					class="item" 
+					:class="{isOpen: isShowDropDownList}"
+					@click="isShowDropDownList = !isShowDropDownList"
+					>
 						{{activeProject.task}}
 						<div class="dropdownlist__wrapper">
 
-							<div class="dropdownlist">
+							<div class="dropdownlist"
+							v-show="isShowDropDownList">
 								<div
 								class="dropdownlist__item"
+								:class="{active: i==activeIndex}"
 								v-for="(item, i) in projectsList" :key="i"
-								@click="activeIndex = i"
+								@click.stop="onClickDropDownListItem(i)"
 								>
 
 								{{item.task}}
