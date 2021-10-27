@@ -44,7 +44,7 @@
 			<div class="col-lg-8">
 				<article>
 					<div class="top__panel">
-						<header>{{activeProject.task || 0}}</header>
+						<header class="d-none d-lg-block">{{activeProject.task || 0}}</header>
 						<div class="gallery">
 							<swiper ref="swTasks" :options="swOptions">
 								<swiper-slide v-for="(item, i) in activeProject.imgs" :key="i">
@@ -58,7 +58,12 @@
 							<BtnArrow	icon="next" @onClick="nextSlide" />
 						</div>
 					</div>
-
+				<div class="pb">
+					<ProgressBar 
+					:count="5" 
+					:activeindex="2" 
+					:progress="77" />
+				</div>
 					<div class="bottom__panel">
 						<div class="title">Проект в цифрах:</div>
 						<div class="details">

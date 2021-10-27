@@ -7,9 +7,17 @@
 <script>
 export default {
 	props: {
+		count: {
+			type: Number,
+			default: 0
+		}, 
+		activeindex:{
+			type: Number,
+			default: 0
+		}, 
 		progress: {
 			type: Number,
-			default: 10
+			default: 0
 		}
 	}
 }

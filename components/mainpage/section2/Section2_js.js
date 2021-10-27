@@ -1,10 +1,12 @@
 import BtnArrow from '../../elements/buttonArrow/ButtonArrow.vue'
+import ProgressBar from '../../progressBar/ProgressBar.vue'
+
 import { Swiper, SwiperSlide } from "vue-awesome-swiper"
 import 'swiper/css/swiper.css'
 
 export default {
 	components: { 
-		BtnArrow,
+		BtnArrow, ProgressBar,
 		Swiper,	SwiperSlide
 	},
 	data() {
@@ -13,6 +15,7 @@ export default {
 			selected: null,
 			activeIndex: 0,
 			isShowDropDownList: false,
+			progress: 0,
 			alltTypeList:[
 				{ title: 'Защита стратегии'},
 				{ title: 'Бизнес-план'},
@@ -54,6 +57,18 @@ export default {
 				// pagination: {
 				// 	el: '.swPagination-services'
 				// },
+				on: {
+					slideChange: () => {
+						let progress = this.$refs.swTasks.$swiper.progress
+						if ( typeof progress === 'number' ){ 
+							progress = Math.floor(progress*100);
+							(progress < 0) ? progress = 0 : '';
+							(progress > 100) ? progress = 100 : '';
+							this.progress = Math.abs(progress)
+						}
+					},
+
+				}
       },
 		}
 	},

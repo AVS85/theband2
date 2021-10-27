@@ -9,6 +9,9 @@
 			border-radius: 5px
 			background-color: $grey_lite1
 			padding: 56px 40px
+			@media (max-width: 992px)
+				padding: 24px 16px
+
 			header 
 				// border: 1px solid red
 				font-size: 20px
@@ -47,14 +50,24 @@
 			border-radius: 5px
 			margin-top: 30px
 			padding: 56px 40px
+			@media (max-width: 992px)
+				margin-top: 0
+				padding: 24px 16px
+
 			.title
 				font-size: 20px
+				font-weight: bold
 				line-height: 24px
 				margin-bottom: 24px
+				@media (max-width: 992px)
+					font-size: 18px
+					line-height: 22px
 			.details
 				// border: 1px solid red
 				display: flex
 				flex-wrap: wrap
+				@media (max-width: 992px)
+					flex-direction: column
 				.detail
 					flex: 1
 					margin: 12px 0
