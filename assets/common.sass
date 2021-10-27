@@ -15,6 +15,13 @@
 	src: url('~assets/fonts/Inter-Medium.otf')
 
 @font-face
+	//fw:400
+
+	font-family: 'headerRegular'
+	font-display: swap
+	src: url('~assets/fonts/Inter-Regular.otf')
+
+@font-face
 	//fw:500
 	font-family: 'textMedium'
 	font-display: swap
@@ -29,16 +36,30 @@
 
 	
 $green_acc: #7ADAA2
-$blue_acc: #87D0F0
-$textMain: #344756
+$blue_acc:  #87D0F0
+$textMain:  #344756
 $grey_lite1: #F3F6F9
 $grey_dark1: #344756
 $grey_dark2: #BCC5D4
 
 
+// scrollbar
+html
+	scrollbar-width: thin // FF scrollbar "auto" или "thin"  */
+	scrollbar-color: $green_acc transparent // FF scrollbar
+	&::-webkit-scrollbar //Chrome-Edge-Safari scrollbar
+		width: 5px  // ширина scrollbar
+	&::-webkit-scrollbar-track
+		background: transparent // цвет дорожки
+	&::-webkit-scrollbar-thumb
+		background-color: $green_acc // цвет плашки
+		border-radius: 2px // закругления плашки
+		border: 0px solid transparent // padding вокруг плашки
 body
 	background-color: #fff
 	color: $textMain
+
+
 
 p
 	font-family: inherit
@@ -71,34 +92,34 @@ a
 	text-decoration: none !important
 
 //* КНОПКИ
-.btn_main
-	border: 0
-	border-radius: 5px
-	color: #fff
-	font-family: inherit
-	font-size: 18px
-	height: 50px
-	width: 255px
-	transition: .25s
-	&-first
-		background-color: $green_acc
-		&:hover
-			background-color: rgba($green_acc, .75)
-	&-second1
-		background-color: $grey_dark1
-		&:hover
-			background-color: rgba($grey_dark1, .75)
-	&-second2
-		background-color: $grey_dark2
-		&:hover
-			background-color: rgba($grey_dark2, .75)
-	&-optional
-		background-color: transparent
-		border: 2px solid $grey_dark1
-		color: $grey_dark1
-		&:hover
-			border: 2px solid  rgba($green_acc, .75)
-			color: $green_acc
+// .btn_main
+// 	border: 0
+// 	border-radius: 5px
+// 	color: #fff
+// 	font-family: inherit
+// 	font-size: 18px
+// 	height: 50px
+// 	width: 255px
+// 	transition: .25s
+// 	&-first
+// 		background-color: $green_acc
+// 		&:hover
+// 			background-color: rgba($green_acc, .75)
+// 	&-second1
+// 		background-color: $grey_dark1
+// 		&:hover
+// 			background-color: rgba($grey_dark1, .75)
+// 	&-second2
+// 		background-color: $grey_dark2
+// 		&:hover
+// 			background-color: rgba($grey_dark2, .75)
+// 	&-optional
+// 		background-color: transparent
+// 		border: 2px solid $grey_dark1
+// 		color: $grey_dark1
+// 		&:hover
+// 			border: 2px solid  rgba($green_acc, .75)
+// 			color: $green_acc
 
 
 

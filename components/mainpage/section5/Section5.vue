@@ -2,7 +2,9 @@
 <section class="wrapper">
 
 	<div class="wrapperBtnConnected__top d-none d-md-block">
-		<BtnMain title="Связаться" @onClick="scrollToContactForm" />
+		<BtnMain 
+		type="type1"
+		title="Связаться" @onClick="scrollToContactForm" />
 	</div>
 
 	<div class="row">

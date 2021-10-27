@@ -12,7 +12,7 @@
 				<div class="actions__text">Помогаем достигать цели, фокусируясь на смысле</div>
 			</div>
 			<div class="col-auto actions">
-				<div class="actions__button"></div>
+				<div class="actions__button" @click="() => this.$scrollTo('#contacts')"></div>
 			</div>
 		</div>
 	</section>

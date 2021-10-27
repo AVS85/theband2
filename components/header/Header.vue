@@ -6,7 +6,7 @@
 			<div class="col-auto">
 				<div class="logo">
 					<nuxt-link to="/">
-						<img src="/logo-theband.png" alt="logo">
+						<img src="./imgs/logo.png" alt="logo">
 					</nuxt-link>
 				</div>
 			</div>
@@ -21,9 +21,12 @@
 				</div>
 			</div>
 			<div class="d-none d-lg-block col-lg-auto">
-				<!-- <a v-scroll-to="'#contacts'" href="#"> -->
-					<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
-				<!-- </a> -->
+				<div class="wrapperBtnContacts">
+					<ButtonMain 
+					type="type3"
+					title="Связаться"
+					@onClick="openContactForm" />
+				</div>
 			</div>
 		
 			<div class="d-lg-none burger"
@@ -43,7 +46,11 @@
 					<nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link>
 				</li>
 			</ul>
-			<button class="btn_main btn_main-second2" @click="openContactForm">Связаться</button>
+
+			<ButtonMain 
+				type="type3"
+				title="Связаться"
+				@onClick="openContactForm" />
 		</div>
 	
 
@@ -56,11 +63,13 @@
 <script>
 import popup from '/components/Popup_services.vue'
 import popupProjects from '/components/Popup_projects.vue'
+import ButtonMain from '../elements/buttonMain/ButtonMain.vue'
 
 export default {
 	components: {
 		popup,
-		popupProjects
+		popupProjects,
+		ButtonMain
 	},
 	data() {
 		return {
@@ -121,7 +130,8 @@ header.header
 		z-index: 99
 		@media (max-width: 998px)
 			justify-content: center
-
+		.wrapperBtnContacts
+			width: 255px
 	.burger
 		// border: 1px solid $elem
 		position: absolute
@@ -148,6 +158,7 @@ header.header
 		// border: 1px solid red
 		display: flex
 		align-self: center
+		font-family: 'textRegular'
 		ul
 			// border: 1px solid grey
 			display: flex
@@ -156,7 +167,7 @@ header.header
 			li
 				// border: 1px solid rede: none
 				font-size: 18px
-				line-height: 18px
+				line-height: 24px
 				padding: 0 16px
 				list-style: none
 				a

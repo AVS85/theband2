@@ -14,6 +14,7 @@
 		<div class="col-lg-6">
 			<form 
 			class="form"
+			ref="contactForm"
 			accept-charset="UTF-8"
 			@submit.prevent="sendMsg()"
 			method="POST"
@@ -24,7 +25,12 @@
 				<input v-model="phone" type="text" name="phone" class="input_main" placeholder="+7 (000) 000-00-00" required>
 				<input v-model="task" type="text" name="task" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
 				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
-				<button type="submit" class="btn_main btn_main-second1">Отправить</button>
+
+				<ButtonMain 
+				type="type2"
+				title="Отправить"
+				@onClick="() => this.$refs.contactForm.submit()" />
+
 				<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 			</form>
 			<div 
@@ -39,7 +45,10 @@
 </template>
 
 <script>
+import ButtonMain from '../../elements/buttonMain/ButtonMain.vue'
+
 export default {
+	components: {ButtonMain},
 	data() {
 		return {
 			name: '',

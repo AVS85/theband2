@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <Nuxt />
 		<ScrollTop/>
     <Footer/>
@@ -10,3 +10,10 @@
 <style lang="sass">
 
 </style>
+
+<script>
+// import Header from '../components/header/Header.vue'
+// export default {
+// 	components: { Header }
+// }
+</script>
