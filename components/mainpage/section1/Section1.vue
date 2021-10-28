@@ -3,7 +3,7 @@
 		<div class="row justify-content-between">
 			<div class="col-12">
 				<div class="title">
-					Сервис <span>презентаций</span> <br>для бизнеса и стартапов
+					Сервис <span class="img">.</span> <span>презентаций</span> <br>для бизнеса и стартапов
 				</div>
 			</div>
 		</div>
@@ -40,10 +40,20 @@ section
 		line-height: 86px
 		text-transform: uppercase
 		margin-bottom: 32px
+		span.img
+			// display: inline-block
+			background-color: transparent
+			background-image: url(./img/1.svg)
+			background-position: center
+			background-repeat: no-repeat
+			background-size: contain
+			border-radius: 0
+			color: transparent
+
 		span
-			background: $green_acc
+			background: $grey_lite1
 			border-radius: 43px
-			color: #fff
+			// color: #fff
 			padding: 5px 20px
 		@media (max-width: 768px)
 			font-size: 40px
