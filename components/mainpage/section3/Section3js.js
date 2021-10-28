@@ -89,6 +89,10 @@ export default {
 	mounted(){	},
 
 	methods: {
+		scrollToContactForm(){
+			fbq('track', 'Contact'); //pixel
+			this.$scrollTo('#contacts')
+		},
 		prevSlide(){
 			this.$refs.swServices.$swiper.slidePrev()
 		},

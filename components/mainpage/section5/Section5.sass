@@ -1,11 +1,11 @@
 .wrapperBtnConnected
 	// border: 1px solid red
 	&__top
+		position: absolute
 		max-width: 255px
 		width: 100%
-		position: absolute
 		top: -110px
-		right: 0
+		right: 15px
 	&__bottom
 		margin-top: 32px
 
@@ -16,19 +16,52 @@
 	// height: 277px
 	width: 35%
 	transition: .25s
-	aspect-ratio: 1.6 / 1
+	// aspect-ratio: 1.6 / 1
 	overflow: hidden
 	// &-active
 		// height: 277px
 		// width: 445px
-	.slide_img
-		display: flex
-		align-items: flex-end
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
+	.innerSlideWrapper
+		position: relative
 		width: 100%
-		// width: 100%
+		background: #fff
+		border: 1px solid #E1E4EA
+		box-sizing: border-box
+		border-radius: 5px
+		padding: 16px
+		.slide_img2
+			img
+				width: 100%
+		.slide_img
+			border: 1px solid red
+			// display: flex
+			align-items: flex-end
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			border-radius: 4px
+			// height: 100%
+
+			position: relative
+			width: 100%
+			aspect-ratio: 2 / 1
+			
+
+			// width: 100%
+		.slide_info
+			display: flex
+			justify-content: space-between
+			margin-top: 16px
+			font-size: 16px
+			line-height: 20px
+			.title
+				font-family: 'textMedium'
+			.date
+				white-space: nowrap
+				font-family: 'textRegular'
+				color: $grey_dark2
+
+
 			
 .control
 	display: flex

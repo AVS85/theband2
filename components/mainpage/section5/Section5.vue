@@ -12,8 +12,17 @@
 			<swiper ref="swPortfolio" :options="swOptions_portfolio">
 				<swiper-slide  
 				v-for="(item, i) in projectsItems" :key="i">
-					<div class="slide_img"
-					:style="`background-image: url('${item.imgs[0].img_link}')`">
+					<div class="innerSlideWrapper">
+						
+						<!-- <div class="slide_img" :style="`background-image: url('${item.imgs[0].img_link}')`"></div> -->
+						<div class="slide_img2">
+							<img :src="`${item.imgs[0].img_link}`" alt="">
+						</div>
+						<div class="slide_info">
+							<div class="title">{{item.task}}</div>
+							<div class="date">11 / 2021</div>
+
+						</div>
 					</div>
 				</swiper-slide>
 			</swiper>

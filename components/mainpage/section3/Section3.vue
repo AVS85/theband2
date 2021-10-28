@@ -20,7 +20,7 @@
 									от
 									<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
 								</div>
-								<button></button>
+								<button @click="scrollToContactForm"></button>
 							</div>
 
 							<div class="desc" v-html="el.descHhtml"></div>
@@ -63,7 +63,7 @@
 							от
 							<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
 						</div>
-						<button></button>
+						<button @click="scrollToContactForm"></button>
 					</div>
 				</div>
 		</div>

@@ -22,7 +22,7 @@ export default {
 				breakpoints: {   
 					576: { slidesPerView: 2, spaceBetween: 20 },
 					768: { slidesPerView: 3, spaceBetween: 30 },
-          992: { slidesPerView: 4, spaceBetween: 30 }
+          // 992: { slidesPerView: 4, spaceBetween: 30 }
         },
         // navigation: {
         //   nextEl: ".swSlideR-portfolio",
@@ -46,25 +46,30 @@ export default {
 				}
 
       },
+			projectsItems: []
 		}
 	},
 	updated() {
 		// console.log('updated');
 	},
 	computed: {
-		...mapGetters(
-			{ projectsItems: "getProjects", }
-		),
+		// ...mapGetters(
+		// 	{ projectsItems: "getProjects", }
+		// ),
 		swiper() {
 			return this.$refs.swPortfolio.$swiper;
 		}
 	},
+	async mounted() {
+		await this.$axios(`${this.$config.baseURL}/api_task.json`)
+		.then( res => this.projectsItems = res.data )
+		.catch( egorka => console.log('loading projects...', egorka) )
+		console.log(this.projectsItems);
+	},
 	methods: {
 		scrollToContactForm(){
 			fbq('track', 'Contact'); //pixel
-			// this.isShowMenu = false
 			this.$scrollTo('#contacts')
-			// this.$router.push('/#contacts')
 		},
 		prevSlide(){
 			this.$refs.swPortfolio.$swiper.slidePrev()

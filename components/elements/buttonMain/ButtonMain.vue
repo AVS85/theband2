@@ -28,7 +28,7 @@ button
 	border-radius: 5px
 	font-size: 18px
 	font-family: 'headerRegular'
-	line-height: 24px
+	line-height: 18px
 	height: 50px
 	min-width: 100%
 	width: 255px
@@ -36,8 +36,10 @@ button
 	transition: .35s
 
 	&.type1
-		background-color: #7ADAA2
-		color: #fff
+		border-radius: 5px
+		border: 2px solid #7ADAA2
+		background-color: transparent
+		color: #7ADAA2
 		&:hover
 			background-color: #75B38E
 		&:disabled
