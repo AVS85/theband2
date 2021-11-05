@@ -9,57 +9,85 @@
 	&__bottom
 		margin-top: 32px
 
-.swiper-slide
-	// border: 1px solid red
-	border-radius: 5px
-	display: flex
-	// height: 277px
-	width: 35%
-	transition: .25s
-	// aspect-ratio: 1.6 / 1
-	overflow: hidden
-	// &-active
-		// height: 277px
-		// width: 445px
-	.innerSlideWrapper
-		position: relative
+.popupGallery
+	// border: 3px solid green
+	width: 100%
+	position: relative
+	.swiper-container
+		// border: 2px solid green
+		height: 100%
 		width: 100%
-		background: #fff
-		border: 1px solid #E1E4EA
-		box-sizing: border-box
-		border-radius: 5px
-		padding: 16px
-		.slide_img2
-			img
-				width: 100%
-		.slide_img
-			border: 1px solid red
-			// display: flex
-			align-items: flex-end
+		.swiper-slide
+			// border: 2px solid red
+			position: relative
+			transition: .25s
+			width: 100% !important
 			background-position: center
 			background-repeat: no-repeat
-			background-size: cover
-			border-radius: 4px
-			// height: 100%
+			background-size: contain
+			// border-radius: 5px
 
+
+	
+.mainGallery
+	.swiper-slide
+		// border: 1px solid red
+		// border-radius: 5px
+		display: flex
+		// height: 277px
+		// width: 35%
+		transition: .25s
+		// aspect-ratio: 1.6 / 1
+		overflow: hidden
+		// &-active
+		// 	height: 277px
+		// 	width: 445px
+
+		.innerSlideWrapper
 			position: relative
 			width: 100%
-			aspect-ratio: 2 / 1
-			
+			background: #fff
+			// border: 1px solid #E1E4EA
+			box-sizing: border-box
+			// padding: 16px
+			img
+				width: 100%
+				border-radius: 5px
+	 
 
-			// width: 100%
-		.slide_info
-			display: flex
-			justify-content: space-between
-			margin-top: 16px
-			font-size: 16px
-			line-height: 20px
-			.title
-				font-family: 'textMedium'
-			.date
-				white-space: nowrap
-				font-family: 'textRegular'
-				color: $grey_dark2
+	// .innerSlideWrapper // слайд с описанием
+	// 	position: relative
+	// 	width: 100%
+	// 	background: #fff
+	// 	border: 1px solid #E1E4EA
+	// 	box-sizing: border-box
+	// 	border-radius: 5px
+	// 	padding: 16px
+	// 	.slide_img2
+	// 		img
+	// 			width: 100%
+	// 	.slide_img
+	// 		border: 1px solid red
+	// 		align-items: flex-end
+	// 		background-position: center
+	// 		background-repeat: no-repeat
+	// 		background-size: cover
+	// 		border-radius: 4px
+	// 		position: relative
+	// 		width: 100%
+	// 		aspect-ratio: 2 / 1
+	// 	.slide_info
+	// 		display: flex
+	// 		justify-content: space-between
+	// 		margin-top: 16px
+	// 		font-size: 16px
+	// 		line-height: 20px
+	// 		.title
+	// 			font-family: 'textMedium'
+	// 		.date
+	// 			white-space: nowrap
+	// 			font-family: 'textRegular'
+	// 			color: $grey_dark2
 
 
 			

@@ -1,5 +1,35 @@
 <template>
 <section class="wrapper">
+	<Popup
+	v-if="isShowZoom"
+	@closePopup="isShowZoom = !isShowZoom">
+
+		<div class=" popupGallery">
+
+					<swiper 
+					:options="{...swOptions_portfolio_popup, initialSlide: clickedIndex}">
+						<swiper-slide v-for="(item, i) in projectsItems" :key="i"
+						:style="`background-image: url('${item.imgs[0].img_link}')`">
+							<!-- {{i}} -->
+								 <!-- <img class="img" :src="`${projectsItems[i].imgs[0].img_link}`"> -->
+						
+						</swiper-slide>
+						<!-- <swiper-slide  
+						v-for="(item, i) in projectsItems" :key="i">
+							<div class="innerSlidePopupWrapper">
+								<div 
+								class="slide_img" 
+								:style="`background-image: url('${item.imgs[0].img_link}')`">
+									456
+								</div>
+							</div>
+						</swiper-slide> -->
+					</swiper>
+
+		</div>
+		
+		
+	</Popup>
 
 	<div class="wrapperBtnConnected__top d-none d-md-block">
 		<BtnMain 
@@ -9,23 +39,33 @@
 
 	<div class="row">
 		<div class="col-12">
-			<swiper ref="swPortfolio" :options="swOptions_portfolio">
-				<swiper-slide  
+			<div class="mainGallery">
+
+				<swiper ref="swPortfolio" :options="swOptions_portfolio">
+					<swiper-slide  
+					v-for="(item, i) in projectsItems" :key="i">
+						<div class="innerSlideWrapper">
+							<img 
+							:src="`${item.imgs[0].img_link}`"
+							alt=""
+							>
+							<!-- <div class="slide_img" :style="`background-image: url('${item.imgs[0].img_link}')`"></div> -->
+						</div>
+					</swiper-slide>
+				<!-- <swiper-slide  
 				v-for="(item, i) in projectsItems" :key="i">
 					<div class="innerSlideWrapper">
-						
-						<!-- <div class="slide_img" :style="`background-image: url('${item.imgs[0].img_link}')`"></div> -->
 						<div class="slide_img2">
 							<img :src="`${item.imgs[0].img_link}`" alt="">
 						</div>
 						<div class="slide_info">
 							<div class="title">{{item.task}}</div>
 							<div class="date">11 / 2021</div>
-
 						</div>
 					</div>
-				</swiper-slide>
-			</swiper>
+				</swiper-slide> -->
+				</swiper>
+			</div>
 		</div>
 	</div>
 	<div class="row">
