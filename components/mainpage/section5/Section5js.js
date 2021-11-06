@@ -11,7 +11,7 @@ export default {
 	},
 	data() {
 		return {
-			isShowZoom: true,
+			isShowZoom: false,
 			clickedIndex: 0,
 			progress: 0,
 

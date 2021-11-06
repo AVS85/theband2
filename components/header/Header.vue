@@ -15,6 +15,7 @@
 					<ul>
 						<li><a v-scroll-to="'#about'" href="#">О нас</a></li>
 						<li><a v-scroll-to="'#services'" href="#">Услуги</a></li>
+						<li><a v-scroll-to="'#portfolio'" href="#">Портфолио</a></li>
 						<li><a v-scroll-to="'#contacts'" href="#">Контакты</a></li>
 						<!-- <li><nuxt-link :to="{ path: '/blog'}">Блог</nuxt-link></li> -->
 					</ul>
@@ -43,13 +44,16 @@
 					<nuxt-link :to="{ path: '/', hash:'#services'}">Услуги</nuxt-link>
 				</li>
 				<li @click="isShowMenu = !isShowMenu">
+					<nuxt-link :to="{ path: '/', hash:'#portfolio'}">Портфолио</nuxt-link>
+				</li>
+				<li @click="isShowMenu = !isShowMenu">
 					<nuxt-link :to="{ path: '/', hash:'#contacts'}">Контакты</nuxt-link>
 				</li>
 			</ul>
 
 			<ButtonMain 
 				type="type3"
-				title="Связаться"
+				title="Связаться1"
 				@onClick="openContactForm" />
 		</div>
 	

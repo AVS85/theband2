@@ -1,7 +1,7 @@
 <template>
 <div class="mainpage">
 
-	<!-- <Section1 />
+	<Section1 />
 
 	<div class="scrollmark" id="about" />
 	<BaseSection title="Какие задачи решаем">
@@ -14,9 +14,9 @@
 
 	<BaseSection title="Главная ценность нашей работы в проработке ваших идей с учетом цели и бизнес-специфики">
 		<Section4 />
-	</BaseSection> -->
+	</BaseSection>
 
-	<div class="scrollmark" id="services" />
+	<div class="scrollmark" id="portfolio" />
 	<BaseSection title="Портфолио" rootBgColor="#F3F6F9">
 		<Section5 />
 	</BaseSection>
