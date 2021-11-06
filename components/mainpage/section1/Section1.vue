@@ -84,6 +84,10 @@ section
 			width: 170px
 			margin: 0 70px
 			cursor: pointer
+			transition: .25s
+			&:hover
+				background-image: url(./img/button-hover.svg)	
+				
 			@media (max-width: 768px)
 				margin: 0
 				height: 104px

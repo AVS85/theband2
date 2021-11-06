@@ -46,6 +46,7 @@
 			line-height: 24px
 			font-family: 'textRegular'
 			margin-top: 24px
+			margin-bottom: 24px
 			color: $grey_dark2
 			@media (max-width: 768px)
 				font-size: 14px
@@ -105,14 +106,21 @@
 			max-width: 56px
 			min-width: 56px
 			margin-left: 16px
+			transition: .25s
+			&:hover
+				background-color: $green_acc
+
 			@media (max-width: 768px)
 				min-height: 40px
 				max-height: 40px
 				max-width: 40px
 				min-width: 40px
 		.value
+			// border: 1px solid red
+
 			display: flex
-			align-items: center
+			align-items: flex-end
+			flex-direction: column
 			color: $grey_dark2
 			font-size: 16px
 			font-family: 'textRegular'
@@ -120,12 +128,20 @@
 			margin-bottom: 60px // убрать на мобильных рарешениях
 			@media (max-width: 992px)
 				margin-bottom: 0
+			div
+				text-align: right
+				// border: 1px solid red
 			span
 				color: $grey_dark1
 				font-size: 24px
 				font-family: 'textMedium'
 				line-height: 32px
 				margin-left: 18px
+			.subtitle
+				margin-top: 8px
+				span
+					font-size: 18px
+					line-height: 20px !important
 
 .control
 	display: flex

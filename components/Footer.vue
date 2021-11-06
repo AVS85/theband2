@@ -11,14 +11,14 @@
 					<ul>
 						<li><a v-scroll-to="'#about'" href="#">О нас</a></li>
 						<li><a v-scroll-to="'#services'" href="#">Услуги</a></li>
-						<li><a v-scroll-to="'#contacts'" href="#">Контакты</a></li>
+						<li><a v-scroll-to="'#portfolio'" href="#">Портфолио</a></li>
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
 				<a href="#" target="_blank"
 				:style="`background-image: url(/icons/instagram.svg)`">
 				</a>
-				<a href="https://www.facebook.com/106060577827669/posts/163244842109242/" target="_blank"
+				<a href="https://web.facebook.com/TheBand.Slides" target="_blank"
 				:style="`background-image: url(/icons/facebook.svg)`">
 				</a>
 				<a href="https://t.me/thebandslides" target="_blank"
@@ -30,7 +30,7 @@
 		<div class="row row_bottom">
 			<div class="order-lg-3 col-lg-auto col_bottom contacts">
 				<ul>
-					<li>the.band@inbox.ru</li>
+					<li>hello.theband.design@gmail.com</li>
 					<li>+7 (925) 709 7259</li>
 				</ul>
 			</div>

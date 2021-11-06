@@ -6,8 +6,9 @@
 			<div class="profile">
 				<div class="profile_foto"></div>
 				<div class="profile-name text1">Куновская Юлия</div>
-				<div class="profile-msg text2">Основатель The Band</div>
-				<div class="profile-msg text2">ex МегаФон, KidZania, WeWork</div>
+				<div class="profile-msg text2">Основатель и руководитель сервиса <br>The Band.</div>
+				<div class="profile-msg text3">Опыт управления бизнес-подразделениями и 13+ лет. Продуктовая и предпринимательская экспертиза. Опыт подготовки презентаций для уровня ТОП-менеджеров и акционеров 8 лет</div>
+				<div class="profile-msg text3">ex Wework, KidZania Moscow, MegaFon</div>
 
 			</div>	
 		</div>
@@ -24,7 +25,7 @@
 				<input v-model="email" type="text" name="email" class="input_main" placeholder="E-mail">
 				<input v-model="phone" type="text" name="phone" class="input_main" placeholder="+7 (000) 000-00-00" required>
 				<input v-model="task" type="text" name="task" class="input_main" placeholder="Опишите задачу: ситуацию, цель, бюджет, сроки">
-				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span>политикой конфиденциальности</span></p>
+				<p class="confidence_msg">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <span><a href="/doc/theband-privacy-policy.pdf" target="_blank">политикой конфиденциальности</a></span></p>
 
 				<ButtonMain 
 				type="type2"
@@ -116,6 +117,8 @@ export default {
 		display: flex
 		align-items: center
 		flex-direction: column
+		a
+			color: $green_acc
 		input
 			background-color: transparent
 			border: 0
@@ -155,6 +158,18 @@ export default {
 			line-height: 24px
 			font-weight: bold
 			margin: 20px 0 10px 0
+		.text2
+			margin: 16px 0
+			font-size: 16px
+			line-height: 20px
+			font-family: 'textRegular'
+			font-weight: bold
+		.text3
+			margin: 16px 0
+			font-size: 16px
+			line-height: 20px
+			font-family: 'textRegular'
+
 		// .profile-msg
 	.success
 		// border: 1px solid red	

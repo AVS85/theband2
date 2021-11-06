@@ -31,6 +31,14 @@ div
 		background-repeat: no-repeat
 		background-size: contain
 		border: 0
+		transition: .25s
+
+		&:hover
+			background-image: url(./imgs/icon-hover.svg)
+			
 		&.prev
 			transform: rotate(180deg)
+			background-image: url(./imgs/icon.svg)
+			&:hover
+				background-image: url(./imgs/icon-hover.svg)
 </style>

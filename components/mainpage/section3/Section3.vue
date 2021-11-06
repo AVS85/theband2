@@ -17,8 +17,11 @@
 							
 							<div class="price">
 								<div class="value">
-									от
-									<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
+									<div>
+										от
+										<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
+									</div>
+									<div>{{el.subprice}}</div>
 								</div>
 								<button @click="scrollToContactForm"></button>
 							</div>
@@ -60,8 +63,13 @@
 				<div class="col-lg-2">
 					<div class="price">
 						<div class="value">
-							от
-							<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
+								<div>
+									от
+									<span>{{parseInt(el.price).toLocaleString()}}&#8381;</span>
+								</div>
+								<div class="subtitle">
+									<span>{{el.subprice}}</span>
+								</div>
 						</div>
 						<button @click="scrollToContactForm"></button>
 					</div>

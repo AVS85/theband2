@@ -1,223 +1,151 @@
 [
 	{
-		"title": "Data Оil Рlatform",
 		"task": "Защита стратегии",
-		"cartsubtitle": "0",
-		"num": "01",
-		"tags": ["Стартап","Анализ рынка"],
-		"desc": "Убедить потенциальных партнеров – крупные нефтедобывающие и нефтеперерабатывающие компании Африки – в необходимости и своевременности создания единой data-платформы",
 		"imgs": [
-			{ "img_link":"/projects/gana-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/gana-01.jpg", "title":"Проанализировали рынок страны, где планируется запускать проект" },	
-			{ "img_link":"/projects/gana-02.jpg", "title":"Сделали акцент на текущих потерях рынка в отсутствие единого верного data-источника" },	
-			{ "img_link":"/projects/gana-03.jpg", "title":"Сформулировали ценности продукта" },	
-			{ "img_link":"/projects/gana-04.jpg", "title":"Разработали дизайн" }	
+			{ "img_link":"/tasks/1-defense-stategy/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/1-defense-stategy/2.jpg", "title":"Визуализировали цифры" },	
+			{ "img_link":"/tasks/1-defense-stategy/3.jpg", "title":"Сложили корректный для стратегии сторилайн" },	
+			{ "img_link":"/tasks/1-defense-stategy/4.jpg", "title":"Помогли сформулировать тренды рынка" }
 		],
 		"info": [
-			{	"icon": "icon1",	"desc": "<b>15 слайдов</b>" },
-			{	"icon": "icon2",	"desc": "<b>15 дней</b> на реализацию" },
+			{	"icon": "icon1",	"desc": "<b>58 слайдов</b>" },
+			{	"icon": "icon2",	"desc": "<b>14 дней</b> на реализацию" },
 			{	"icon": "icon3",	"desc": "<b>3 человек</b> в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "Qonversion",
 		"task": "Бизнес-план",
-
-		"cartsubtitle": "0",
-		"num": "02",
-		"tags": ["Продукт","Визуализация данных"],
-		"desc": "Замотивировать потенциальных клиентов подключить trial продукта и увидеть прикладную бизнес-ценность его использования. Продукт - data-платформа по аналитике мобильных приложений",
 		"imgs": [
-			{ "img_link":"/projects/qonversion-00.jpg", "title":"Сформировали структуру" },	
-			{ "img_link":"/projects/qonversion-01.jpg", "title":"Расставили акценты" },	
-			{ "img_link":"/projects/qonversion-02.jpg", "title":"Предложили лучшее визуальное решение для отображения данных и цифр" },	
-			{ "img_link":"/projects/qonversion-03.jpg", "title":"Визуализировали цифры и графики" },	
-			{ "img_link":"/projects/qonversion-04.jpg", "title":"Упаковали дизайн" }	
+			{ "img_link":"/tasks/2-business-plan/1.jpg", "title":"-" },	
+			{ "img_link":"/tasks/2-business-plan/2.jpg", "title":"-" },	
+			{ "img_link":"/tasks/2-business-plan/3.jpg", "title":"-" },	
+			{ "img_link":"/tasks/2-business-plan/4.jpg", "title":"-" }
 		],
 		"info": [
-			{	"icon": "icon1",	"desc": "15 слайдов" },
-			{	"icon": "icon2",	"desc": "15 дней на реализацию" },
-			{	"icon": "icon3",	"desc": "3 чел.в команде проекта" }
+			{	"icon": "icon1",	"desc": "XX слайдов" },
+			{	"icon": "icon2",	"desc": "XX дней на реализацию" },
+			{	"icon": "icon3",	"desc": "XX человек команде проекта" }
 		]
 	},
 	
 	{
-		"title": "Шоколадница",
 		"task": "Выступление на конференции",
-
-		"cartsubtitle": "0",
-		"num": "03",
-		"tags": ["Проект","Инвестиции в проект"],
-		"desc": "Убедить управляющую команду компании в необходимости изменений, доказать несостоятельность текущего подхода в управлении, предложить ребрендинг и кардинально изменить концепт кофеен",
 		"imgs": [
-			{ "img_link":"/projects/shokolad-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/shokolad-01.jpg", "title":"Собрали данные о трендах рынка" },	
-			{ "img_link":"/projects/shokolad-02.jpg", "title":"Расставили акценты" },
-			{ "img_link":"/projects/shokolad-03.jpg", "title":"Визуализировали данные" },
-			{ "img_link":"/projects/shokolad-04.jpg", "title":"Отрисовали дизайн в соответствии с новым бренд-буком" }
+			{ "img_link":"/tasks/3-conference/1.jpg", "title":"Собрали весь контент спикера и сформировали структуру" },	
+			{ "img_link":"/tasks/3-conference/2.jpg", "title":"Разработали визуальные решения" },	
+			{ "img_link":"/tasks/3-conference/3.jpg", "title":"Сформулировали яркий сторилайн" },
+			{ "img_link":"/tasks/3-conference/4.jpg", "title":"Оформили графикой, расставили цветовые акценты" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "80 слайдов" },
-			{ "icon": "icon2",	"desc": "8 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "icon1",	"desc": "28 слайдов" },
+			{ "icon": "icon2",	"desc": "5 дней на реализацию" },
+			{ "icon": "icon3",	"desc": "1 человек команде проекта" }
 		]
 	},
 	
 	{
-		"title": "Газпром нефть",
 		"task": "Презентация продукта",
-
-		"cartsubtitle": "0",
-		"num": "04",
-		"tags": ["Видео-презентация","Выступление на конференции"],
-		"desc": "Презентовать значимые изменения в технологических процессах и эффект на бизнес-результат. Задача – отрисовать множество составляющих технологических процессов в формате видео-презентации",
 		"imgs": [
-			{ "img_link":"/projects/gazprom-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/gazprom-01.jpg", "title":"Создали дизайн под цель" },	
-			{ "img_link":"/projects/gazprom-02.jpg", "title":"Отрисовали схематично множество элементов" },
-			{ "img_link":"/projects/gazprom-03.jpg", "title":"Настроили эффекты анимации" },
-			{ "img_link":"/projects/gazprom-04.jpg", "title":"Конвертировали слайды в видео-презентацию" }
+			{ "img_link":"/tasks/4-product-presentation/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/4-product-presentation/2.jpg", "title":"Помогли сформулировать тренды и проблематику рынка" },	
+			{ "img_link":"/tasks/4-product-presentation/3.jpg", "title":"Визуализировали цифры и данные" },
+			{ "img_link":"/tasks/4-product-presentation/4.jpg", "title":"Сложили понятный сторилайн" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "35 слайдов" },
-			{ "icon": "icon2",	"desc": "21 день на реализацию" },
-			{ "icon": "icon3",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "icon1",	"desc": "25 слайдов" },
+			{ "icon": "icon2",	"desc": "7 день на реализацию" },
+			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "DPD",
 		"task": "Подготовка ТОП команд к выступлению",
-
-		"cartsubtitle": "0",
-		"num": "05",
-		"tags": ["Стратегия"],
-		"desc": "Защитить перед иностранными акционерами новую маркетинговую стратегию",
 		"imgs": [
-			{ "img_link":"/projects/dpd-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/dpd-01.jpg", "title":"Расставили акценты" },	
-			{ "img_link":"/projects/dpd-02.jpg", "title":"Сформулировали текущие вызовы рынка" },
-			{ "img_link":"/projects/dpd-03.jpg", "title":"Отрисовали графику и множество цифр" },
-			{ "img_link":"/projects/dpd-04.jpg", "title":"Структурировали все изменения, планируемые в новой стратегии и показали их ценность и эффект на бизнес" }
+			{ "img_link":"/tasks/5-top-teams/1.jpg", "title":"Разработали структуру всех презентаций, соблюдая общую канву и сторилайн мероприятия" },	
+			{ "img_link":"/tasks/5-top-teams/2.jpg", "title":"Визуализировали цифры, данные рынка, проблематику" },	
+			{ "img_link":"/tasks/5-top-teams/3.jpg", "title":"Отрисовали все презентации с учетом пожеланий к визуалу каждого спикера, но оставаясь в стилистике бренд-бука" },
+			{ "img_link":"/tasks/5-top-teams/4.jpg", "title":"Расставили яркие акценты" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "58 слайдов" },
-			{ "icon": "icon2",	"desc": "18 день на реализацию" },
-			{ "icon": "icon3",	"desc": "3 чел.в команде проекта" }
+			{ "icon": "icon1",	"desc": "150+ слайдов" },
+			{ "icon": "icon2",	"desc": "21 день на реализацию" },
+			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "SKOLKOVO Стартап академия",
 		"task": "Питч дек для стартапа",
-
-		"cartsubtitle": "0",
-		"num": "06",
-		"tags": ["Проект","Инвестиции в проект"],
-		"desc": "Защитить новое видение Стартап академии и инвестиции на проект",
 		"imgs": [
-			{ "img_link":"/projects/skolkovo-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/skolkovo-01.jpg", "title":"Определили актуальную проблематику" },	
-			{ "img_link":"/projects/skolkovo-02.jpg", "title":"Визуализировали цифры" },
-			{ "img_link":"/projects/skolkovo-03.jpg", "title":"Конкретизировали целевой портрет аудитории нового проекта" },
-			{ "img_link":"/projects/skolkovo-04.jpg", "title":"Показали эффект на прибыль от реализации" }
+			{ "img_link":"/tasks/6-pitch/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/6-pitch/2.jpg", "title":"Визуализировали проблематику рынка в цифрах" },	
+			{ "img_link":"/tasks/6-pitch/3.jpg", "title":"Помогли рассказать об идее и концепте" },
+			{ "img_link":"/tasks/6-pitch/4.jpg", "title":"Оформили презентацию в ярком запоминающемся дизайне" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "31 слайд" },
-			{ "icon": "icon2",	"desc": "14 день на реализацию" },
-			{ "icon": "icon3",	"desc": "1 чел.в команде проекта" }
-		]
-	},
-	
-	{
-		"title": "Lifestyle отель",
-		"task": "Защита проекта",
-
-		"cartsubtitle": "0",
-		"num": "07",
-		"tags": ["Стартап","Анализ рынка","Участие в конкурсе"],
-		"desc": "Подготовиться к участию во Всероссийском конкурсе «Мастера гостеприимства» и презентовать идею создания сети lifestyle-отелей",
-		"imgs": [
-			{ "img_link":"/projects/lifestyle-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/lifestyle-01.jpg", "title":"Проанализировали рыночные тренды" },	
-			{ "img_link":"/projects/lifestyle-02.jpg", "title":"Показали ситуацию на российском рынке" },
-			{ "img_link":"/projects/lifestyle-03.jpg", "title":"Сформулировали суть концепта и эффективность бизнес-модели" },
-			{ "img_link":"/projects/lifestyle-04.jpg", "title":"Отрисоваали презентацию в ярком дизайне" }
-		],
-		"info": [
-			{ "icon": "icon1",	"desc": "32 слайд" },
+			{ "icon": "icon1",	"desc": "32 слайда" },
 			{ "icon": "icon2",	"desc": "4 дня на реализацию" },
-			{ "icon": "icon3",	"desc": "3 чел.в команде проекта" },
-			{ "icon": "icon4",	"desc": "Первый приз среди 21 000 заявок" }
+			{ "icon": "icon3",	"desc": "1 человек в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "Green Flow",
-		"task": "Презентация компании",
-
-		"cartsubtitle": "0",
-		"num": "08",
-		"tags": ["Выступление на конференции","Видео-презентация"],
-		"desc": "Презентовать эффективность бизнес-модели сети отелей Green Flow на профессиональной конференции",
+		"task": "Защита проекта",
 		"imgs": [
-			{ "img_link":"/projects/relife_spa-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/relife_spa-01.jpg", "title":"Рассказали историю по классике сторителлинга" },	
-			{ "img_link":"/projects/relife_spa-02.jpg", "title":"Сформулировали суть концепции отеля в 4х пунктах" },
-			{ "img_link":"/projects/relife_spa-03.jpg", "title":"Настроили анимацию и конвертировали презентацию в видео-формат" },
-			{ "img_link":"/projects/relife_spa-04.jpg", "title":"Показали влияние выбранных отелем концепта и бизнес-модели на экономику проекта" }
+			{ "img_link":"/tasks/7-defense-project/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/7-defense-project/2.jpg", "title":"Визуализировали цифры" },	
+			{ "img_link":"/tasks/7-defense-project/3.jpg", "title":"Сложили понятный сторилайн" },
+			{ "img_link":"/tasks/7-defense-project/4.jpg", "title":"Помогли сформулировать вызовы рынка" }
 		],
 		"info": [
 			{ "icon": "icon1",	"desc": "18 слайдов" },
 			{ "icon": "icon2",	"desc": "8 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "3 чел.в команде проекта" },
-			{ "icon": "icon4",	"desc": "Презентация признана лучшей в рамках конференции" }
+			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "Ростелеком",
+		"task": "Презентация компании",
+		"imgs": [
+			{ "img_link":"/tasks/8-company-prenestation/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/8-company-prenestation/2.jpg", "title":"Разложили контент на компоненты" },	
+			{ "img_link":"/tasks/8-company-prenestation/3.jpg", "title":"Добавили инфографики" },
+			{ "img_link":"/tasks/8-company-prenestation/4.jpg", "title":"-" }
+		],
+		"info": [
+			{ "icon": "icon1",	"desc": "20 слайдов" },
+			{ "icon": "icon2",	"desc": "3 дня на реализацию" },
+			{ "icon": "icon3",	"desc": "1 человек в команде проекта" }
+		]
+	},
+	
+	{
 		"task": "Защита бюджета",
-
-		"cartsubtitle": "0",
-		"num": "09",
-		"tags": ["Проект"],
-		"desc": "Разработать презентацию, которая заинтересует зрителя темой трудоустройства и убедит в важности корректного создания резюме. Задача плюсом - разработать дизайн в соответствии с целевой аудиторией – студенты старших курсов – но в рамках корпоративного стиля компании- заказчика",
 		"imgs": [
-			{ "img_link":"/projects/rostelecom-00.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/projects/rostelecom-01.jpg", "title":"Сделали акцент на проблематике" },	
-			{ "img_link":"/projects/rostelecom-02.jpg", "title":"Добавили ярких цветов" },
-			{ "img_link":"/projects/rostelecom-03.jpg", "title":"Упаковали длинный текст в простые понятные пункты" },
-			{ "img_link":"/projects/rostelecom-04.jpg", "title":"Добавили инфографики для легкости восприятия" }
+			{ "img_link":"/tasks/9-defense-budget/1.jpg", "title":"Разработали структуру презентации" },	
+			{ "img_link":"/tasks/9-defense-budget/2.jpg", "title":"Сформулировали проблематику" },	
+			{ "img_link":"/tasks/9-defense-budget/3.jpg", "title":"Усилили рыночными  трендами" },
+			{ "img_link":"/tasks/9-defense-budget/4.jpg", "title":"Раскрыли решение. Защитили необходимый бюджет на проект" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "38 слайдов" },
-			{ "icon": "icon2",	"desc": "14 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "1 чел.в команде проекта" },
-			{ "icon": "icon4",	"desc": "Проект занял 2-ое место на внутреннем конкурсе проектного комитета Ростелеком. Сама презентация признана лучшей на конкурсе" }
+			{ "icon": "icon1",	"desc": "80 слайдов" },
+			{ "icon": "icon2",	"desc": "8 дней на реализацию" },
+			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
 		]
 	},
 	
 	{
-		"title": "РКТ",
-		"task": "Дашборд",
-
-		"cartsubtitle": "0",
-		"num": "10",
-		"tags": ["Продукт","О компании"],
-		"desc": "Разработать презентационные материалы о компании и ее новом продукте для потенциальных клиентов",
+		"task": "Визуализация данных",
 		"imgs": [
-			{ "img_link":"/projects/pkt-00.jpg", "title":"Сформулировали структуру презентации" },	
-			{ "img_link":"/projects/pkt-01.jpg", "title":"Большие массивы текста разбили на блоки" },	
-			{ "img_link":"/projects/pkt-02.jpg", "title":"Расставили акценты" },
-			{ "img_link":"/projects/pkt-03.jpg", "title":"Использовали лаконичную графику" },
-			{ "img_link":"/projects/pkt-04.jpg", "title":"…и яркий дизайн!" }
+			{ "img_link":"/tasks/10-data-visual/1.jpg", "title":"-" },	
+			{ "img_link":"/tasks/10-data-visual/2.jpg", "title":"-" },	
+			{ "img_link":"/tasks/10-data-visual/3.jpg", "title":"-" },
+			{ "img_link":"/tasks/10-data-visual/4.jpg", "title":"-" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "34 слайдов" },
-			{ "icon": "icon2",	"desc": "3 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "2 чел.в команде проекта" }
+			{ "icon": "icon1",	"desc": "XX слайдов" },
+			{ "icon": "icon2",	"desc": "XX дней на реализацию" },
+			{ "icon": "icon3",	"desc": "XX человека в команде проекта" }
 		]
 	}
 ]

@@ -41,7 +41,8 @@ button
 		background-color: transparent
 		color: #7ADAA2
 		&:hover
-			background-color: #75B38E
+			background-color: #7ADAA2
+			color: #fff
 		&:disabled
 			background-color: #C0F1D4
 
@@ -49,7 +50,7 @@ button
 		background-color: #344756
 		color: #fff
 		&:hover
-			background-color: #344756
+			background-color: #BCC5D4
 		&:disabled
 			background-color: #E4E8EE
 			

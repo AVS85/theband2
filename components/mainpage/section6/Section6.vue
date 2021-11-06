@@ -11,6 +11,15 @@
 			<div class="slide_wr" style="background-image: url(/clients/greenflow.png)"></div>
 		</swiper-slide>
 		<swiper-slide>
+			<div class="slide_wr" style="background-image: url(/clients/prolegal.png)"></div>
+		</swiper-slide>
+		<swiper-slide>
+			<div class="slide_wr" style="background-image: url(/clients/skalar.png)"></div>
+		</swiper-slide>
+		<swiper-slide>
+			<div class="slide_wr" style="background-image: url(/clients/ozon.png)"></div>
+		</swiper-slide>
+		<swiper-slide>
 			<div class="slide_wr" style="background-image: url(/clients/megafon.png)"></div>
 		</swiper-slide>
 		<swiper-slide>
@@ -30,9 +39,6 @@
 		</swiper-slide>
 		<swiper-slide>
 			<div class="slide_wr" style="background-image: url(/clients/skolkovo.jpg)"></div>
-		</swiper-slide>
-		<swiper-slide>
-			<div class="slide_wr" style="background-image: url(/clients/techkrep.png)"></div>
 		</swiper-slide>
 		<swiper-slide>
 			<div class="slide_wr" style="background-image: url(/clients/wework.png)"></div>
