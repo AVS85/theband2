@@ -106,6 +106,8 @@ export default {
 		},
 		onClickDropDownListItem(i){
 			this.activeIndex = i
+			this.$refs.swTasks.$swiper.update()
+			this.$refs.swTasks.$swiper.slideTo(0, 1000)
 			setTimeout( () => {this.isShowDropDownList = !this.isShowDropDownList}, 250 )
 			
 		},
