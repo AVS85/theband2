@@ -26,6 +26,28 @@
 			background-repeat: no-repeat
 			background-size: contain
 			// border-radius: 5px
+			cursor: pointer
+	.swButton_popup
+		// border: 2px solid red
+		width: 45px
+		height: 45px
+		background-color: rgba(#fff, .35)
+		background-repeat: no-repeat
+		background-size: 55%
+		background-position: center
+		border-radius: 50%
+		position: absolute
+		top: calc(50% - 23px)
+		z-index: 99
+		// margin: 15px
+		&.prev
+			background-image: url(./icons/prev.svg)
+			left: 25px
+		&.next
+			background-image: url(./icons/next.svg)
+			right: 25px
+
+
 
 
 	
@@ -50,6 +72,7 @@
 			// border: 1px solid #E1E4EA
 			box-sizing: border-box
 			// padding: 16px
+			cursor: pointer
 			img
 				width: 100%
 				border-radius: 5px

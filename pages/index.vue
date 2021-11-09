@@ -8,6 +8,7 @@
 		<Section2 />
 	</BaseSection>
 
+	<div class="scrollmark" id="services" />
 	<BaseSection title="Услуги">
 		<Section3 />
 	</BaseSection>

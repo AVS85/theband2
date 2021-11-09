@@ -30,13 +30,13 @@ export default {
 				{ title: 'Защита бюджета'},
 				{ title: 'Дашборд'},
 			],
-			options: [
-				{ value: null, text: 'Please select an option' },
-				{ value: 'a', text: 'This is First option' },
-				{ value: 'b', text: 'Selected Option' },
-				{ value: { C: '3PO' }, text: 'This is an option with object value' },
-				{ value: 'd', text: 'This one is disabled', disabled: true }
-			],
+			// options: [
+			// 	{ value: null, text: 'Please select an option' },
+			// 	{ value: 'a', text: 'This is First option' },
+			// 	{ value: 'b', text: 'Selected Option' },
+			// 	{ value: { C: '3PO' }, text: 'This is an option with object value' },
+			// 	{ value: 'd', text: 'This one is disabled', disabled: true }
+			// ],
 
 			observer: true,
 			observeSlideChildren: true,
@@ -69,7 +69,8 @@ export default {
 					// 	// this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
 					// }, 
 					// observerUpdate: () => {
-					// 	this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
+					// 	console.log('observerUpdate');
+					// 	// this.progressItemsCount = this.$refs.swTasks.$swiper?.snapGrid.length || 0
 					// }, 
 					slideChange: () => {
 						console.log(this.$refs.swTasks.$swiper);
@@ -98,6 +99,11 @@ export default {
 		// },
 	},
 	methods: {
+		onClickAsideItem(i){
+			this.activeIndex = i
+			this.$refs.swTasks.$swiper.update()
+			this.$refs.swTasks.$swiper.slideTo(0, 1000)
+		},
 		onClickDropDownListItem(i){
 			this.activeIndex = i
 			setTimeout( () => {this.isShowDropDownList = !this.isShowDropDownList}, 250 )

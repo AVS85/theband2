@@ -8,7 +8,7 @@
 					class="item"
 					:class="{active: i==activeIndex}"
 					v-for="(item, i) in projectsList" :key="i"
-					@click="activeIndex = i"
+					@click="onClickAsideItem(i)"
 					>{{item.task}}</div>
 				</aside>
 			</div>

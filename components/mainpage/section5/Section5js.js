@@ -19,10 +19,10 @@ export default {
         slidesPerView: 1,
         spaceBetween: 30,
 
-				// navigation: {
-        //   nextEl: ".swButton_project-next",
-        //   prevEl: ".swButton_project-prev",
-        // },
+				navigation: {
+          nextEl: ".swButton_popup.next",
+          prevEl: ".swButton_popup.prev",
+        },
 			},
 
 			swOptions_portfolio: {
