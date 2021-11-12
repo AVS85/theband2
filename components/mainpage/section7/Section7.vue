@@ -2,13 +2,12 @@
 <section class="wrapper">
 	<div class="row justify-content-between">
 		
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<div class="profile">
 				<div class="profile_foto"></div>
 				<div class="profile-name text1">Куновская Юлия</div>
 				<div class="profile-msg text2">Основатель и руководитель сервиса <br>The Band.</div>
-				<div class="profile-msg text3">Опыт управления бизнес-подразделениями и 13+ лет. Продуктовая и предпринимательская экспертиза. Опыт подготовки презентаций для уровня ТОП-менеджеров и акционеров 8 лет</div>
-				<div class="profile-msg text3">ex Wework, KidZania Moscow, MegaFon</div>
+				<div class="profile-msg text3">Опыт управления бизнес-подразделениями 15 лет. Продуктовая и предпринимательская экспертиза. <br>8 лет опыта создания презентаций для ТОП-менеджеров и акционеров</div>
 
 			</div>	
 		</div>

@@ -49,7 +49,7 @@
 							<swiper ref="swTasks" :options="swOptions">
 								<swiper-slide v-for="(item, i) in activeProject.imgs" :key="i">
 									<img :src="item.img_link" alt="">
-									<p>{{`${i+1}. ${item.title}`}}</p>
+									<p>{{item.title}}</p>
 								</swiper-slide>
 							</swiper>
 						</div>

@@ -2,150 +2,150 @@
 	{
 		"task": "Защита стратегии",
 		"imgs": [
-			{ "img_link":"/tasks/1-defense-stategy/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/1-defense-stategy/2.jpg", "title":"Визуализировали цифры" },	
-			{ "img_link":"/tasks/1-defense-stategy/3.jpg", "title":"Сложили корректный для стратегии сторилайн" },	
-			{ "img_link":"/tasks/1-defense-stategy/4.jpg", "title":"Помогли сформулировать тренды рынка" }
+			{ "img_link":"/tasks/1-defense-stategy/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/1-defense-stategy/2.jpg", "title":"Визуализированы цифры" },	
+			{ "img_link":"/tasks/1-defense-stategy/3.jpg", "title":"Сформирован корректный для стратегии сторилайн" },	
+			{ "img_link":"/tasks/1-defense-stategy/4.jpg", "title":"Сформулированы тренды рынка" }
 		],
 		"info": [
 			{	"icon": "icon1",	"desc": "<b>58 слайдов</b>" },
-			{	"icon": "icon2",	"desc": "<b>14 дней</b> на реализацию" },
-			{	"icon": "icon3",	"desc": "<b>3 человек</b> в команде проекта" }
+			{	"icon": "icon2",	"desc": "<b>14 дней</b><br>на реализацию" },
+			{	"icon": "icon3",	"desc": "<b>3 человек</b><br> в команде проекта" }
 		]
 	},
 	
 	{
-		"task": "Бизнес-план",
+		"task": "Годовой отчет",
 		"imgs": [
-			{ "img_link":"/tasks/2-business-plan/1.jpg", "title":"-" },	
-			{ "img_link":"/tasks/2-business-plan/2.jpg", "title":"-" },	
-			{ "img_link":"/tasks/2-business-plan/3.jpg", "title":"-" },	
-			{ "img_link":"/tasks/2-business-plan/4.jpg", "title":"-" }
+			{ "img_link":"/tasks/2-year-report/1.jpg", "title":"Основные отчетные события компании разделены на блоки" },	
+			{ "img_link":"/tasks/2-year-report/2.jpg", "title":"Визуализирован таймлайн событий" },	
+			{ "img_link":"/tasks/2-year-report/3.jpg", "title":"Расставлены акценты" },	
+			{ "img_link":"/tasks/2-year-report/4.jpg", "title":"Презентация оформлена в фирменном стиле компании" }
 		],
 		"info": [
-			{	"icon": "icon1",	"desc": "XX слайдов" },
-			{	"icon": "icon2",	"desc": "XX дней на реализацию" },
-			{	"icon": "icon3",	"desc": "XX человек команде проекта" }
+			{	"icon": "icon1",	"desc": "<b>4 слайда</b>" },
+			{	"icon": "icon2",	"desc": "<b>3 дня<b></br> на реализацию" },
+			{	"icon": "icon3",	"desc": "<b>2 человек</b><br> команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Выступление на конференции",
 		"imgs": [
-			{ "img_link":"/tasks/3-conference/1.jpg", "title":"Собрали весь контент спикера и сформировали структуру" },	
-			{ "img_link":"/tasks/3-conference/2.jpg", "title":"Разработали визуальные решения" },	
-			{ "img_link":"/tasks/3-conference/3.jpg", "title":"Сформулировали яркий сторилайн" },
-			{ "img_link":"/tasks/3-conference/4.jpg", "title":"Оформили графикой, расставили цветовые акценты" }
+			{ "img_link":"/tasks/3-conference/1.jpg", "title":"Собран контент спикера, сформирована структура презентации" },	
+			{ "img_link":"/tasks/3-conference/2.jpg", "title":"Разработаны визуальные решения" },	
+			{ "img_link":"/tasks/3-conference/3.jpg", "title":"Сформулирован сторилайн" },
+			{ "img_link":"/tasks/3-conference/4.jpg", "title":"Выполнен дизайн графики, расставлены цветовые акценты" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "28 слайдов" },
-			{ "icon": "icon2",	"desc": "5 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "1 человек команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>28 слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>5 дней</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>2 человека</b><br> команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Презентация продукта",
 		"imgs": [
-			{ "img_link":"/tasks/4-product-presentation/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/4-product-presentation/2.jpg", "title":"Помогли сформулировать тренды и проблематику рынка" },	
-			{ "img_link":"/tasks/4-product-presentation/3.jpg", "title":"Визуализировали цифры и данные" },
-			{ "img_link":"/tasks/4-product-presentation/4.jpg", "title":"Сложили понятный сторилайн" }
+			{ "img_link":"/tasks/4-product-presentation/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/4-product-presentation/2.jpg", "title":"Сформулированы тренды и проблематика рынка" },	
+			{ "img_link":"/tasks/4-product-presentation/3.jpg", "title":"Визуализированы цифры и данные" },
+			{ "img_link":"/tasks/4-product-presentation/4.jpg", "title":"Сформулированы ценности продукта" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "25 слайдов" },
-			{ "icon": "icon2",	"desc": "7 день на реализацию" },
-			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>25 слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>7 день</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>3 человека</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Подготовка ТОП команд к выступлению",
 		"imgs": [
-			{ "img_link":"/tasks/5-top-teams/1.jpg", "title":"Разработали структуру всех презентаций, соблюдая общую канву и сторилайн мероприятия" },	
-			{ "img_link":"/tasks/5-top-teams/2.jpg", "title":"Визуализировали цифры, данные рынка, проблематику" },	
-			{ "img_link":"/tasks/5-top-teams/3.jpg", "title":"Отрисовали все презентации с учетом пожеланий к визуалу каждого спикера, но оставаясь в стилистике бренд-бука" },
-			{ "img_link":"/tasks/5-top-teams/4.jpg", "title":"Расставили яркие акценты" }
+			{ "img_link":"/tasks/5-top-teams/1.jpg", "title":"Разработана структура презентаций всех спикеров в общей логике мероприятия" },	
+			{ "img_link":"/tasks/5-top-teams/2.jpg", "title":"Визуализированы цифры, данные рынка, проблематика" },	
+			{ "img_link":"/tasks/5-top-teams/3.jpg", "title":"Презентации отрисованы с учетом пожеланий к визуалу каждого спикера и с соблюдением единой стилистики бренд-бука" },
+			{ "img_link":"/tasks/5-top-teams/4.jpg", "title":"Расставлены яркие акценты" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "150+ слайдов" },
-			{ "icon": "icon2",	"desc": "21 день на реализацию" },
-			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>180+ слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>21 день</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>3 человека</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Питч дек для стартапа",
 		"imgs": [
-			{ "img_link":"/tasks/6-pitch/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/6-pitch/2.jpg", "title":"Визуализировали проблематику рынка в цифрах" },	
-			{ "img_link":"/tasks/6-pitch/3.jpg", "title":"Помогли рассказать об идее и концепте" },
-			{ "img_link":"/tasks/6-pitch/4.jpg", "title":"Оформили презентацию в ярком запоминающемся дизайне" }
+			{ "img_link":"/tasks/6-pitch/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/6-pitch/2.jpg", "title":"Визуализирована проблематика рынка в цифрах" },	
+			{ "img_link":"/tasks/6-pitch/3.jpg", "title":"Сформулирована основная идея концепта" },
+			{ "img_link":"/tasks/6-pitch/4.jpg", "title":"Презентация оформлена в ярком запоминающемся дизайне" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "32 слайда" },
-			{ "icon": "icon2",	"desc": "4 дня на реализацию" },
-			{ "icon": "icon3",	"desc": "1 человек в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>32 слайда</b>" },
+			{ "icon": "icon2",	"desc": "<b>4 дня</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>1 человек</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Защита проекта",
 		"imgs": [
-			{ "img_link":"/tasks/7-defense-project/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/7-defense-project/2.jpg", "title":"Визуализировали цифры" },	
-			{ "img_link":"/tasks/7-defense-project/3.jpg", "title":"Сложили понятный сторилайн" },
-			{ "img_link":"/tasks/7-defense-project/4.jpg", "title":"Помогли сформулировать вызовы рынка" }
+			{ "img_link":"/tasks/7-defense-project/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/7-defense-project/2.jpg", "title":"Визуализированы цифры" },	
+			{ "img_link":"/tasks/7-defense-project/3.jpg", "title":"Сформулированы ценности проекта" },
+			{ "img_link":"/tasks/7-defense-project/4.jpg", "title":"Сформулированы вызовы рынка" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "18 слайдов" },
-			{ "icon": "icon2",	"desc": "8 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>18 слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>8 дней</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>3 человека</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Презентация компании",
 		"imgs": [
-			{ "img_link":"/tasks/8-company-prenestation/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/8-company-prenestation/2.jpg", "title":"Разложили контент на компоненты" },	
-			{ "img_link":"/tasks/8-company-prenestation/3.jpg", "title":"Добавили инфографики" },
-			{ "img_link":"/tasks/8-company-prenestation/4.jpg", "title":"-" }
+			{ "img_link":"/tasks/8-company-prenestation/1.jpg", "title":"Создана структура презентации" },	
+			{ "img_link":"/tasks/8-company-prenestation/2.jpg", "title":"Разработан нестандартный дизайн" },	
+			{ "img_link":"/tasks/8-company-prenestation/3.jpg", "title":"Контент разделен на блоки" },
+			{ "img_link":"/tasks/8-company-prenestation/4.jpg", "title":"Соблюдена строгость стилистики с учетом бизнес специфики компании" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "20 слайдов" },
-			{ "icon": "icon2",	"desc": "3 дня на реализацию" },
-			{ "icon": "icon3",	"desc": "1 человек в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>34 слайда</b>" },
+			{ "icon": "icon2",	"desc": "<b>14 дней</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>2 человека</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Защита бюджета",
 		"imgs": [
-			{ "img_link":"/tasks/9-defense-budget/1.jpg", "title":"Разработали структуру презентации" },	
-			{ "img_link":"/tasks/9-defense-budget/2.jpg", "title":"Сформулировали проблематику" },	
-			{ "img_link":"/tasks/9-defense-budget/3.jpg", "title":"Усилили рыночными  трендами" },
-			{ "img_link":"/tasks/9-defense-budget/4.jpg", "title":"Раскрыли решение. Защитили необходимый бюджет на проект" }
+			{ "img_link":"/tasks/9-defense-budget/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/9-defense-budget/2.jpg", "title":"Визуализированы цифры" },	
+			{ "img_link":"/tasks/9-defense-budget/3.jpg", "title":"Сформулирована проблематика и тренды рынка" },
+			{ "img_link":"/tasks/9-defense-budget/4.jpg", "title":"Обозначены предпосылки выделения бюджета на проект в целях предотвращения негативных трендов" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "80 слайдов" },
-			{ "icon": "icon2",	"desc": "8 дней на реализацию" },
-			{ "icon": "icon3",	"desc": "3 человека в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>80 слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>8 дней</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>3 человека</b><br> в команде проекта" }
 		]
 	},
 	
 	{
 		"task": "Визуализация данных",
 		"imgs": [
-			{ "img_link":"/tasks/10-data-visual/1.jpg", "title":"-" },	
-			{ "img_link":"/tasks/10-data-visual/2.jpg", "title":"-" },	
-			{ "img_link":"/tasks/10-data-visual/3.jpg", "title":"-" },
-			{ "img_link":"/tasks/10-data-visual/4.jpg", "title":"-" }
+			{ "img_link":"/tasks/10-data-visual/1.jpg", "title":"Разработана структура презентации" },	
+			{ "img_link":"/tasks/10-data-visual/2.jpg", "title":"Визуализированы цифры" },	
+			{ "img_link":"/tasks/10-data-visual/3.jpg", "title":"Презентация выполнена в стиле минимализма" },
+			{ "img_link":"/tasks/10-data-visual/4.jpg", "title":"Отрисованы графики" }
 		],
 		"info": [
-			{ "icon": "icon1",	"desc": "XX слайдов" },
-			{ "icon": "icon2",	"desc": "XX дней на реализацию" },
-			{ "icon": "icon3",	"desc": "XX человека в команде проекта" }
+			{ "icon": "icon1",	"desc": "<b>20 слайдов</b>" },
+			{ "icon": "icon2",	"desc": "<b>11 дней</b><br> на реализацию" },
+			{ "icon": "icon3",	"desc": "<b>2 человека</b><br> в команде проекта" }
 		]
 	}
 ]
