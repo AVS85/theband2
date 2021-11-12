@@ -7,7 +7,7 @@
 			<swiper 
 			:options="{...swOptions_portfolio_popup, initialSlide: clickedIndex}">
 				<swiper-slide v-for="(item, i) in projectsItems" :key="i"
-				:style="`background-image: url('${item.imgs[0].img_link}')`">
+				:style="`background-image: url('${item.img_url}')`">
 				</swiper-slide>
 			</swiper>
 	    <div class="swButton_popup next">
@@ -34,7 +34,7 @@
 					v-for="(item, i) in projectsItems" :key="i">
 						<div class="innerSlideWrapper">
 							<img 
-							:src="`${item.imgs[0].img_link}`"
+							:src="`${item.img_url}`"
 							alt="">
 						</div>
 					</swiper-slide>

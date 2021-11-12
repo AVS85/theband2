@@ -83,7 +83,7 @@ export default {
 		}
 	},
 	async mounted() {
-		await this.$axios(`${this.$config.baseURL}/api_task.json`)
+		await this.$axios(`${this.$config.baseURL}/api_portfolio.json`)
 		.then( res => this.projectsItems = res.data )
 		.catch( egorka => console.log('loading projects...', egorka) )
 		// console.log(this.projectsItems);
