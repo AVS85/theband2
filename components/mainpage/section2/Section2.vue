@@ -19,9 +19,10 @@
 					class="item" 
 					:class="{isOpen: isShowDropDownList}"
 					@click="isShowDropDownList = !isShowDropDownList"
-					v-html="activeProject.task">
-						<div class="dropdownlist__wrapper">
+					>
+						<span v-html="activeProject.task" />
 
+						<div class="dropdownlist__wrapper">
 							<div class="dropdownlist"
 							v-show="isShowDropDownList">
 								<div
@@ -29,10 +30,8 @@
 								:class="{active: i==activeIndex}"
 								v-for="(item, i) in projectsList" :key="i"
 								@click.stop="onClickDropDownListItem(i)"
-								v-html="item.task">
-								</div>
+								v-html="item.task"></div>
 							</div>
-							
 						</div>
 					</div>
 				</aside>

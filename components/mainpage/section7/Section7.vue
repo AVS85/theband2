@@ -16,7 +16,7 @@
 			class="form"
 			ref="contactForm"
 			accept-charset="UTF-8"
-			@submit.prevent="sendMsg()"
+			@submit.prevent="sendMsg"
 			method="POST"
 			v-if="!isSuccess"
 			>
@@ -29,7 +29,10 @@
 				<ButtonMain 
 				type="type2"
 				title="Отправить"
-				@onClick="() => this.$refs.contactForm.submit()" />
+				/>
+				<!-- @onClick="sendMsg"  -->
+				<!-- <input type="submit"> -->
+				<!-- @onClick="() => this.$refs.contactForm.submit().prevent" /> -->
 
 				<input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 			</form>
@@ -67,19 +70,19 @@ export default {
 
 	methods: {
 		recapcha(){
-			grecaptcha.execute('6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy', {
-				action: 'homepage'
-			})
-			.then((token) => {
-				document.getElementById('captchaResponse').value = token;
-				console.log('token ', token);
-				this.token = token
-			});
+			// grecaptcha.execute('6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy', {
+			// 	action: 'homepage'
+			// })
+			// .then((token) => {
+			// 	document.getElementById('captchaResponse').value = token;
+			// 	console.log('token ', token);
+			// 	this.token = token
+			// });
 		},
-		sendMsg(){
+		sendMsg(e){
 			
-
-			console.log(grecaptcha.getResponse);
+			console.log(e);
+			// console.log(grecaptcha.getResponse);
 			let data = {
 				name: this.name,
 				email: this.email,

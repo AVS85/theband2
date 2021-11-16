@@ -33,8 +33,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
 		script: [
-			{ src: "https://www.google.com/recaptcha/api.js?render=6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy" },
-			{ src: "/js/recaptcha.js" },
+			// { src: "https://www.google.com/recaptcha/api.js?render=6LfK2NEaAAAAAP2vR6unr-w3QNOowHYAQ7yjy-jy" },
+			// { src: "/js/recaptcha.js" },
 			{ src: "/js/fb-pixel.js" },
 		]
   },
@@ -75,24 +75,33 @@ export default {
   modules: [
     'bootstrap-vue/nuxt', // Doc: https://bootstrap-vue.js.org
     '@nuxtjs/axios',      // Doc: https://axios.nuxtjs.org/usage
-		['nuxt-mail', {
-      message: {
-        to: 'seo.resait@yandex.ru',
-      },
-      smtp: {
-        host: "http://mail.getcode.xyz",
-        port: 465,
-				secure: true, // true for 465, false for other ports
-        // port: 587,
-				auth: {
-					login: 'test@getcode.xyz',
-					pass: 'tEst2021test'
-				}
-      },
-    }],
+		'@nuxtjs/recaptcha' ,
+		// ['nuxt-mail', {
+    //   message: {
+    //     to: 'seo.resait@yandex.ru',
+    //   },
+    //   smtp: {
+    //     host: "http://mail.getcode.xyz",
+    //     port: 465,
+		// 		secure: true, // true for 465, false for other ports
+    //     // port: 587,
+		// 		auth: {
+		// 			login: 'test@getcode.xyz',
+		// 			pass: 'tEst2021test'
+		// 		}
+    //   },
+    // }],
 		
     ['vue-scrollto/nuxt', { duration: 300 }]
   ],
+	recaptcha: {
+    siteKey: '6Ld-PNgZAAAAANs5ZqEqzvPurNFHLk8wiqmijRjj',    // Site key for requests
+    hideBadge: true, // Hide badge element (v3 & v2 via size=invisible)
+    // language: String,   // Recaptcha language (v2)
+    version: 2,     // Version
+    // size: String        // Size: 'compact', 'normal', 'invisible' (v2)
+  },
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
