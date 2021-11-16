@@ -5,6 +5,7 @@ import Popup from '../../popup/Popup.vue'
 import Zoomer from '../../zoomer/Zoomer.vue'
 import { mapGetters } from 'vuex'
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+
 export default {
 	components: {
 		Swiper,	SwiperSlide, BtnArrow, BtnMain, ProgressBar, Popup, Zoomer
@@ -14,7 +15,8 @@ export default {
 			isShowZoom: false,
 			clickedIndex: 0,
 			progress: 0,
-
+			activeIndex: 0,
+			progressBarActiveIndex: 0,
 			swOptions_portfolio_popup: {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -56,12 +58,13 @@ export default {
 						// console.log(this.$refs.swPortfolio.$swiper);
 					},
 					slideChange: () => {
-						let progress = this.swiper.progress
+						let progress = this.$refs.swPortfolio.$swiper.progress
 						if ( typeof progress === 'number' ){ 
 							progress = Math.floor(progress*100);
 							(progress < 0) ? progress = 0 : '';
 							(progress > 100) ? progress = 100 : '';
-							this.progress = Math.abs(progress)
+							this.progressBarChange(progress)
+							// this.progress = Math.abs(progress)
 						}
 					},
 
@@ -78,6 +81,10 @@ export default {
 		// ...mapGetters(
 		// 	{ projectsItems: "getProjects", }
 		// ),
+		progressBarItemsCount(){ return this.projectsItems.length || 0 },
+		activeProject(){
+			return this.projectsItems[this.activeIndex] || []
+		},
 		swiper() {
 			return this.$refs.swPortfolio.$swiper;
 		}
@@ -88,7 +95,16 @@ export default {
 		.catch( egorka => console.log('loading projects...', egorka) )
 		// console.log(this.projectsItems);
 	},
+	// watch: {
+	// 	progress(){
+	// 		console.log('listing....');
+	// 	}
+	// },
 	methods: {
+		async progressBarChange(progress){
+			// console.log('sdsdsd');
+			this.progress = Math.abs(progress)
+		},
 		scrollToContactForm(){
 			fbq('track', 'Contact'); //pixel
 			this.$scrollTo('#contacts')

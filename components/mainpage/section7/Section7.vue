@@ -6,7 +6,7 @@
 			<div class="profile">
 				<div class="profile_foto"></div>
 				<div class="profile-name text1">Куновская Юлия</div>
-				<div class="profile-msg text2">Основатель и руководитель сервиса <br>The Band.</div>
+				<div class="profile-msg text2">Основатель и руководитель сервиса The&nbsp;Band.</div>
 				<div class="profile-msg text3">Опыт управления бизнес-подразделениями 15 лет. Продуктовая и предпринимательская экспертиза. <br>8 лет опыта создания презентаций для ТОП-менеджеров и акционеров</div>
 
 			</div>	

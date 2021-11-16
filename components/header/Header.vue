@@ -6,7 +6,7 @@
 			<div class="col-auto">
 				<div class="logo">
 					<nuxt-link to="/">
-						<img src="./imgs/logo.png" alt="logo">
+						<img src="/logo.svg" alt="logo theband design">
 					</nuxt-link>
 				</div>
 			</div>
@@ -53,7 +53,7 @@
 
 			<ButtonMain 
 				type="type3"
-				title="Связаться1"
+				title="Связаться"
 				@onClick="openContactForm" />
 		</div>
 	

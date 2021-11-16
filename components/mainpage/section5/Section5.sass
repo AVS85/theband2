@@ -129,11 +129,14 @@
 		// border: 1px solid red
 		display: flex
 		margin-right: 64px
-		::v-deep button
-			// border: 1px solid red 
-			margin-right: 16px
+		@media (max-width: 768px)
+			margin-right: 32px
 		@media (max-width: 576px)
-			display: none
+			margin-right: 16px
+		::v-deep button
+			margin-right: 16px
+			// @media (max-width: 576px)
+			// 	display: none
 	.pb
 		// border: 1px solid red
 		width: 100%

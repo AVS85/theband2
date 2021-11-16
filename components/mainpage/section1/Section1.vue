@@ -9,7 +9,7 @@
 		</div>
 		<div class="row justify-content-end">
 			<div class="col-lg-5 actions">
-				<div class="actions__text">Помогаем достигать цели, фокусируясь на смысле</div>
+				<div class="actions__text">Помогаем достигать цели, фокусируясь на&nbsp;смысле</div>
 			</div>
 			<div class="col-auto actions">
 				<div class="actions__button" @click="() => this.$scrollTo('#contacts')"></div>

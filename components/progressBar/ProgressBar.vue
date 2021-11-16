@@ -45,7 +45,7 @@ export default {
 		compIndexActiveSlide(){
 			let {count, progress} = this
 			console.log(count);
-			return this.progress/100
+			return progress/100
 		}
 	}
 }

@@ -4,7 +4,7 @@
 		<div class="row row_top">
 			<div class="col-lg-auto logo">
 				<nuxt-link to="/">
-					<img src="/logo-theband.png" alt="logo">
+					<img src="/logo.svg" alt="logo theband design">
 				</nuxt-link>
 			</div>
 			<div class="col-lg-auto menu">

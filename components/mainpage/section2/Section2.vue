@@ -9,7 +9,7 @@
 					:class="{active: i==activeIndex}"
 					v-for="(item, i) in projectsList" :key="i"
 					@click="onClickAsideItem(i)"
-					>{{item.task}}</div>
+					v-html="item.task"></div>
 				</aside>
 			</div>
 
@@ -19,8 +19,7 @@
 					class="item" 
 					:class="{isOpen: isShowDropDownList}"
 					@click="isShowDropDownList = !isShowDropDownList"
-					>
-						{{activeProject.task}}
+					v-html="activeProject.task">
 						<div class="dropdownlist__wrapper">
 
 							<div class="dropdownlist"
@@ -30,12 +29,10 @@
 								:class="{active: i==activeIndex}"
 								v-for="(item, i) in projectsList" :key="i"
 								@click.stop="onClickDropDownListItem(i)"
-								>
-
-								{{item.task}}
+								v-html="item.task">
 								</div>
-
 							</div>
+							
 						</div>
 					</div>
 				</aside>
