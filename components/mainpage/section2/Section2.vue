@@ -40,7 +40,7 @@
 			<div class="col-lg-8">
 				<article>
 					<div class="top__panel">
-						<header class="d-none d-lg-block">{{activeProject.task || 0}}</header>
+						<header class="d-none d-lg-block" v-html="activeProject.task"></header>
 						<div class="gallery">
 							<swiper ref="swTasks" :options="swOptions">
 								<swiper-slide v-for="(item, i) in activeProject.imgs" :key="i">
