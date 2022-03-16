@@ -15,7 +15,7 @@
 					</ul>
 			</div>
 			<div class="col-lg-auto social">
-				<a href="#" target="_blank"
+				<!-- <a href="#" target="_blank"
 				:style="`background-image: url(/icons/instagram.svg)`">
 				</a>
 				<a href="https://web.facebook.com/TheBand.Slides" target="_blank"
@@ -23,7 +23,7 @@
 				</a>
 				<a href="https://t.me/thebandslides" target="_blank"
 				:style="`background-image: url(/icons/telegram.svg)`">
-				</a>
+				</a> -->
 			</div>
 		</div>
 
@@ -31,7 +31,7 @@
 			<div class="order-lg-3 col-lg-auto col_bottom contacts">
 				<ul>
 					<li>hello.theband.design@gmail.com</li>
-					<li>+7 (925) 709 7259</li>
+					<!-- <li>+7 (925) 709 7259</li> -->
 				</ul>
 			</div>
 			<div class="order-lg-1 col-lg-auto col_bottom">

@@ -25,7 +25,7 @@
 	<Section6 />
 
 	<div class="scrollmark" id="contacts" />
-	<BaseSection title="Раскажите о вашем проекте:">
+	<BaseSection title="Раскажите нам о вашем проекте:">
 		<Section7 />
 	</BaseSection>
 
