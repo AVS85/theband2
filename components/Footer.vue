@@ -36,7 +36,7 @@
 			</div>
 			<div class="order-lg-1 col-lg-auto col_bottom">
 				<ul>
-					<li><a href="/doc/theband-aggrement.pdf" target="_blank">Договор оферта</a></li>
+					<!-- <li><a href="/doc/theband-aggrement.pdf" target="_blank">Договор оферта</a></li> -->
 					<li><a href="/doc/theband-privacy-policy.pdf" target="_blank">Политика конфиденциальности</a></li>
 					<li><a href="/doc/theband-terms-of-use.pdf" target="_blank">Пользовательское соглашение</a></li>
 				</ul>
